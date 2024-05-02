@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-    spec.name         = 'MealzUIiOSSDKRelease'
+    spec.name         = 'MealzNaviOSSDKRelease'
     spec.version      = '1.1.0-alpha'
     spec.summary      = 'Mealz UI iOS SDK'
     spec.description  = <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
     spec.author             = { "Diarmuid McGonagle" => "it@miam.tech" }
     spec.platform     = :ios, "12.0"
     spec.swift_version = '5.8'
-    spec.source       = { :git => "https://github.com/miamtech/MealzUIiOSSDKRelease.git", :tag => "#{spec.version}" }
-    spec.dependency 'MealziOSSDKRelease', '~> 1.1.0-alpha'
+    spec.source       = { :git => "https://github.com/miamtech/MealzNaviOSSDKRelease.git", :tag => "#{spec.version}" }
+    spec.dependency 'MealzUIiOSSDKRelease', '~> 1.1.0-alpha'
     spec.static_framework = true
 end
