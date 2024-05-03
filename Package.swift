@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MealzUIiOSSDKRelease",
-            path: "./MealzUIIiOSSDK.xcframework"
+            path: "./MealzUIiOSSDK.xcframework"
         )
     ]
 )
