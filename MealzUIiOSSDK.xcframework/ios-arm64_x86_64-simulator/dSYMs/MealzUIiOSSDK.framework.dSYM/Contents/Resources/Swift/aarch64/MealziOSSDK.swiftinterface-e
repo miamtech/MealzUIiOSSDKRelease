@@ -1,0 +1,3475 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MealziOSSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import DeveloperToolsSupport
+import Foundation
+@_exported import MealziOSSDK
+import Swift
+import SwiftUI
+import UIKit
+import _AVKit_SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import mealzcore
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class MyBasketVM : mealzcore.MyBasketViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($myBasketStatus) public var myBasketStatus: mealzcore.ComponentUiState {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $myBasketStatus: Combine.Published<mealzcore.ComponentUiState>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.MyBasketContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.MyBasketContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($productCount) public var productCount: Swift.Int {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $productCount: Combine.Published<Swift.Int>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($totalPrice) public var totalPrice: Swift.Double {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $totalPrice: Combine.Published<Swift.Double>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($recipeCount) public var recipeCount: Swift.Int {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $recipeCount: Combine.Published<Swift.Int>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MyProductsProductCard<ProductCardTemplate, LoadingProductTemplate> : SwiftUI.View where ProductCardTemplate : MealziOSSDK.MyProductsProductCardProtocol, LoadingProductTemplate : MealziOSSDK.LoadingProtocol {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK21MyProductsProductCardV4bodyQrvp", 0) __<ProductCardTemplate, LoadingProductTemplate>
+}
+@available(iOS 14, *)
+public struct TypeSafeMyProductsProductCard : MealziOSSDK.MyProductsProductCardProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MyProductsProductCardProtocol
+  public func content(params: MealziOSSDK.MyProductsProductCardParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK29TypeSafeMyProductsProductCardV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MyProductsProductCardProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MyProductsProductCardParameters) -> Self.Content
+}
+@available(iOS 13, *)
+public struct MyProductsProductCardParameters {
+  public let entry: mealzcore.BasketEntry
+  public let isLocked: Swift.Bool
+  public let onReplaceProduct: () -> Swift.Void
+  public let updateQuantity: (Swift.Int) -> Swift.Void
+  public init(entry: mealzcore.BasketEntry, isLocked: Swift.Bool, onReplaceProduct: @escaping () -> Swift.Void, updateQuantity: @escaping (Swift.Int) -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MyProducts<MyProductsParameters, BaseViews> : SwiftUI.View where MyProductsParameters : MealziOSSDK.MyProductsParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: MyProductsParameters, baseViews: BaseViews, myProductsViewModel: MealziOSSDK.MyProductsVM)
+  @_Concurrency.MainActor(unsafe) public init(params: MyProductsParameters, baseViews: BaseViews)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK10MyProductsV4bodyQrvp", 0) __<MyProductsParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol MyProductsParametersProtocol {
+  associatedtype ProductCard : MealziOSSDK.MyProductsProductCardProtocol
+  associatedtype LoadingProduct : MealziOSSDK.LoadingProtocol
+  associatedtype OpenItemSelectorCallToAction : MealziOSSDK.BaseButtonProtocol
+  var productCard: Self.ProductCard { get }
+  var loadingProduct: Self.LoadingProduct { get }
+  var itemSelectorCTA: Self.OpenItemSelectorCallToAction { get }
+  var actions: MealziOSSDK.MyProductsActions { get set }
+}
+public struct MyProductsActions {
+  public init(onNoResultsRedirect: @escaping () -> Swift.Void, openItemSelector: @escaping (Swift.String?) -> Swift.Void)
+}
+@available(iOS 14, *)
+public class BasketEntryVM : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.BasketEntryContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.BasketEntryContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(instance: mealzcore.BasketEntryViewModel)
+  public func addProduct()
+  public func updateQuantity(quantity: Swift.Int)
+  public func replaceProduct()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension mealzcore.BasketEntryViewModel : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@available(iOS 14, *)
+public class BasketEntryInRecipeVM : MealziOSSDK.BasketEntryVM {
+  public init(instance: mealzcore.BasketEntryInRecipeViewModel)
+  public func ignoreProduct()
+  @objc deinit
+}
+extension mealzcore.BasketEntryInRecipeViewModel : Swift.Identifiable {
+}
+@available(iOS 14, *)
+public class BasketEntryStandaloneVM : MealziOSSDK.BasketEntryVM {
+  public init(instance: mealzcore.BasketEntryStandaloneViewModel)
+  @objc deinit
+}
+@available(iOS 14, *)
+extension MealziOSSDK.BasketEntryStandaloneVM : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+public enum SelectedMyBasketPage : Swift.Int {
+  case recipes
+  case products
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MyBasket<MyBasketParameters, MyBasketBaseViews, MyMealsParameters, MyMealsBaseViews, MyProductsParameters, MyProductsBaseViews> : SwiftUI.View where MyBasketParameters : MealziOSSDK.MyBasketParametersProtocol, MyBasketBaseViews : MealziOSSDK.BaseViewsProtocol, MyMealsParameters : MealziOSSDK.MyMealsParametersProtocol, MyMealsBaseViews : MealziOSSDK.BaseViewsProtocol, MyProductsParameters : MealziOSSDK.MyProductsParametersProtocol, MyProductsBaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(myBasketParams: MyBasketParameters, myBasketBaseViews: MyBasketBaseViews, myMealsParams: MyMealsParameters, myMealsBaseViews: MyMealsBaseViews, myProductsParams: MyProductsParameters, myProductsBaseViews: MyProductsBaseViews, footerHeight: CoreFoundation.CGFloat = 80, gridConfig: MealziOSSDK.CatalogRecipesListGridConfig)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK8MyBasketV4bodyQrvp", 0) __<MyBasketParameters, MyBasketBaseViews, MyMealsParameters, MyMealsBaseViews, MyProductsParameters, MyProductsBaseViews>
+}
+@available(iOS 14, *)
+public protocol MyBasketParametersProtocol {
+  associatedtype Title : MealziOSSDK.BaseTitleProtocol
+  associatedtype Swapper : MealziOSSDK.MyBasketSwapperProtocol
+  associatedtype Footer : MealziOSSDK.MyBasketFooterProtocol
+  var title: Self.Title { get }
+  var swapper: Self.Swapper { get }
+  var footer: Self.Footer { get }
+  var actions: MealziOSSDK.MyBasketActions { get set }
+}
+public struct MyBasketActions {
+  public init(onSubmitOrder: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeMyBasketSwapper : MealziOSSDK.MyBasketSwapperProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MyBasketSwapperProtocol
+  public func content(params: MealziOSSDK.MyBasketSwapperParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK23TypeSafeMyBasketSwapperV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MyBasketSwapperProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MyBasketSwapperParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct MyBasketSwapperParameters {
+  @SwiftUI.Binding @_projectedValueProperty($selection) public var selection: MealziOSSDK.SelectedMyBasketPage {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  public var $selection: SwiftUI.Binding<MealziOSSDK.SelectedMyBasketPage> {
+    get
+  }
+  public init(selection: SwiftUI.Binding<MealziOSSDK.SelectedMyBasketPage>)
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class FavoritesVM : mealzcore.FavoritePageViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.FavoritePageContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.FavoritePageContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class BasketPreviewVM : mealzcore.BasketPreviewViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($basketPreviewInfo) public var basketPreviewInfo: mealzcore.BasketPreviewInfo? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $basketPreviewInfo: Combine.Published<mealzcore.BasketPreviewInfo?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.BasketPreviewContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.BasketPreviewContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isReloading) public var isReloading: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isReloading: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init(recipeId: Swift.String)
+  public var numberOfGuests: Swift.Int {
+    get
+  }
+  public var deletingRecipe: Swift.Bool {
+    get
+  }
+  public var price: Swift.Double {
+    get
+  }
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class MealPlannerBasketPreviewVM : mealzcore.MealPlannerBasketPreviewViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.MealPlannerBasketPreviewContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.MealPlannerBasketPreviewContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($recipesVMs) public var recipesVMs: [mealzcore.MealPlannerBasketPreviewRecipeRowViewModel] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $recipesVMs: Combine.Published<[mealzcore.MealPlannerBasketPreviewRecipeRowViewModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($totalPriceS) public var totalPriceS: Swift.Double {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $totalPriceS: Combine.Published<Swift.Double>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($productCountS) public var productCountS: Swift.Int {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $productCountS: Combine.Published<Swift.Int>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isLoading) public var isLoading: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isLoading: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+public class MealPlannerBasketPreviewRecipeRowVM : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.DynamicRecipeDetailContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.DynamicRecipeDetailContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($recipeRowStateS) public var recipeRowStateS: mealzcore.RecipeRowState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $recipeRowStateS: Combine.Published<mealzcore.RecipeRowState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($foundProducts) public var foundProducts: [mealzcore.BasketEntryInRecipeViewModel] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $foundProducts: Combine.Published<[mealzcore.BasketEntryInRecipeViewModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($deletedProducts) public var deletedProducts: [mealzcore.BasketEntryInRecipeViewModel] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $deletedProducts: Combine.Published<[mealzcore.BasketEntryInRecipeViewModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($oftenDeletedProducts) public var oftenDeletedProducts: [mealzcore.BasketEntryInRecipeViewModel] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $oftenDeletedProducts: Combine.Published<[mealzcore.BasketEntryInRecipeViewModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($unavailableProducts) public var unavailableProducts: [mealzcore.BasketEntryInRecipeViewModel] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $unavailableProducts: Combine.Published<[mealzcore.BasketEntryInRecipeViewModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(instance: mealzcore.MealPlannerBasketPreviewRecipeRowViewModel)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension mealzcore.MealPlannerBasketPreviewRecipeRowViewModel : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class MealPlannerMealsVM : mealzcore.MealPlannerMealsViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($meals) public var meals: [mealzcore.MealPlannerRecipe?] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $meals: Combine.Published<[mealzcore.MealPlannerRecipe?]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($totalPrice) public var totalPrice: Swift.Double {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $totalPrice: Combine.Published<Swift.Double>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.MealPlannerMealsContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.MealPlannerMealsContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public func removeRecipe(_ withId: Swift.String)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 13, *)
+public class MealPlannerReplaceRecipeViewModel : mealzcore.MealPlannerReplaceRecipePageViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.RecipesPageContractState? {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.RecipesPageContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($recipes) public var recipes: [mealzcore.Recipe] {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $recipes: Combine.Published<[mealzcore.Recipe]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class MealPlannerFormVM : mealzcore.MealPlannerFormViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($mealPlannerCriteria) public var mealPlannerCriteria: MealziOSSDK.MealPlannerCriteria {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $mealPlannerCriteria: Combine.Published<MealziOSSDK.MealPlannerCriteria>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.MealPlannerFormContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.MealPlannerFormContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($errorAppeared) public var errorAppeared: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $errorAppeared: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class MealPlannerRecapVM : mealzcore.MealPlannerRecapViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($numberOfMeals) public var numberOfMeals: Swift.Int {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $numberOfMeals: Combine.Published<Swift.Int>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($totalPrice) public var totalPrice: Swift.Double {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $totalPrice: Combine.Published<Swift.Double>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.MealPlannerRecapContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.MealPlannerRecapContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+public class BasketTagVM : mealzcore.BasketTagViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($recipes) public var recipes: [mealzcore.Recipe] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $recipes: Combine.Published<[mealzcore.Recipe]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.BasketTagContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.BasketTagContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(retailerProductId: Swift.String)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class DynamicRecipeDetailsVM : mealzcore.DynamicRecipeDetailViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($recipe) public var recipe: mealzcore.Recipe? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $recipe: Combine.Published<mealzcore.Recipe?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($ingredients) public var ingredients: [mealzcore.Ingredient]? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $ingredients: Combine.Published<[mealzcore.Ingredient]?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.DynamicRecipeDetailContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.DynamicRecipeDetailContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isInCart) public var isInCart: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isInCart: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($guest) public var guest: Swift.Int {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $guest: Combine.Published<Swift.Int>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($guestUpdating) public var guestUpdating: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $guestUpdating: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($canBeAddedProducts) public var canBeAddedProducts: [mealzcore.BasketEntryInRecipeViewModel] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $canBeAddedProducts: Combine.Published<[mealzcore.BasketEntryInRecipeViewModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($oftenDeletedProducts) public var oftenDeletedProducts: [mealzcore.BasketEntryInRecipeViewModel] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $oftenDeletedProducts: Combine.Published<[mealzcore.BasketEntryInRecipeViewModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($unavailableProducts) public var unavailableProducts: [mealzcore.BasketEntryInRecipeViewModel] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $unavailableProducts: Combine.Published<[mealzcore.BasketEntryInRecipeViewModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($footer) public var footer: MealziOSSDK.RecipeDetailsFooterVM? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $footer: Combine.Published<MealziOSSDK.RecipeDetailsFooterVM?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init(continueShopping: @escaping () -> Swift.Void, changeProduct: @escaping (Swift.String) -> Swift.Void)
+  public var isLikeEnabled: Swift.Bool {
+    get
+  }
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 14, *)
+public class RecipeDetailsFooterVM : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.DynamicRecipeDetailFooterContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.DynamicRecipeDetailFooterContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($price) public var price: Swift.Double? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $price: Combine.Published<Swift.Double?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($pricePerGuest) public var pricePerGuest: Swift.Double? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $pricePerGuest: Combine.Published<Swift.Double?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($priceForRemainingProduct) public var priceForRemainingProduct: Swift.Double? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $priceForRemainingProduct: Combine.Published<Swift.Double?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($priceStatus) public var priceStatus: mealzcore.ComponentUiState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $priceStatus: Combine.Published<mealzcore.ComponentUiState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($ingredientStatus) public var ingredientStatus: mealzcore.IngredientStatus? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $ingredientStatus: Combine.Published<mealzcore.IngredientStatus?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isAddingAllIngredients) public var isAddingAllIngredients: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isAddingAllIngredients: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public func onContinueShopping()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class ItemSelectorVM : mealzcore.ItemSelectorViewModel, Foundation.ObservableObject {
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class RecipeCarouselVM : mealzcore.RecipeCarouselViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($suggestions) public var suggestions: [mealzcore.Recipe] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $suggestions: Combine.Published<[mealzcore.Recipe]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.RecipeCarouselContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.RecipeCarouselContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class MyMealVM : mealzcore.MyMealViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($recipes) public var recipes: [mealzcore.Recipe] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $recipes: Combine.Published<[mealzcore.Recipe]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.MyMealContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.MyMealContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class MealsInBasketButtonVM : mealzcore.MyMealButtonViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.MyMealButtonContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.MyMealButtonContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public var mealsCount: Swift.Int
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class PriceVM : mealzcore.RecipePricingViewModel, Combine.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.PricingContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.PricingContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public struct CatalogPackage : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public var title: Swift.String {
+    get
+  }
+  public var subtitle: Swift.String? {
+    get
+  }
+  public var recipes: [mealzcore.Recipe] {
+    get
+  }
+  public typealias ID = Swift.String
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class CatalogVM : mealzcore.CatalogViewModel, Foundation.ObservableObject {
+  @objc override dynamic public init()
+  convenience public init(categoryID: Swift.String, title: Swift.String)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class PreferencesSearchVM : mealzcore.PreferencesSearchViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.PreferencesSearchContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.PreferencesSearchContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($tagsSuggestions) public var tagsSuggestions: [mealzcore.Tag] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $tagsSuggestions: Combine.Published<[mealzcore.Tag]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+public class RecipePageVM : mealzcore.RecipesPageViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.RecipesPageContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.RecipesPageContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($recipes) public var recipes: [mealzcore.Recipe] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $recipes: Combine.Published<[mealzcore.Recipe]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isFetchingNewPage) public var isFetchingNewPage: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isFetchingNewPage: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(filterInstance: mealzcore.FilterInstance, categoriesId: Swift.String? = nil)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class RecipeCardVM : mealzcore.RecipeViewModel, Combine.ObservableObject {
+  @Combine.Published @_projectedValueProperty($recipe) public var recipe: mealzcore.Recipe? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $recipe: Combine.Published<mealzcore.Recipe?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($ingredients) public var ingredients: [mealzcore.Ingredient]? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $ingredients: Combine.Published<[mealzcore.Ingredient]?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.RecipeContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.RecipeContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isInCart) public var isInCart: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isInCart: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($guestUpdating) public var guestUpdating: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $guestUpdating: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($numberOfGuests) public var numberOfGuests: Swift.Int? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $numberOfGuests: Combine.Published<Swift.Int?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public var sortedSteps: [mealzcore.RecipeStep] {
+    get
+  }
+  @objc override dynamic public init()
+  public var isLikeEnabled: Swift.Bool {
+    get
+  }
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+public class LikeButtonVM : Foundation.ObservableObject {
+  final public let instance: mealzcore.LikeButtonViewModel
+  @Combine.Published @_projectedValueProperty($isLiked) public var isLiked: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $isLiked: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.RecipeLikeContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.RecipeLikeContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(recipeId: Swift.String)
+  public func abolishInstance()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+public class FiltersVM : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.FilterContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.FilterContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public var numberOfRecipes: Swift.Int
+  public var difficulty: [mealzcore.CatalogFilterOptions]
+  public var cost: [mealzcore.CatalogFilterOptions]
+  public var time: [mealzcore.CatalogFilterOptions]
+  public init(filterInstance: mealzcore.FilterInstance)
+  public func applyFilter()
+  public func setEvent(event: mealzcore.FilterContractEvent)
+  public func search(searchString: Swift.String)
+  public func clear()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+public class PreferencesVM : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.PreferencesContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.PreferencesContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($guests) public var guests: Swift.Int {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $guests: Combine.Published<Swift.Int>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public var diets: [mealzcore.CheckableTag]
+  public var equipments: [mealzcore.CheckableTag]
+  public var ingredients: [mealzcore.CheckableTag]
+  public init()
+  public func addTag(_ tag: mealzcore.Tag)
+  public func updateGuestsNumber(_ numberOfGuests: Swift.Int)
+  public func togglePreference(_ preference: mealzcore.CheckableTag)
+  public func togglePreferenceWithId(_ tagId: Swift.String)
+  public func resetPreferences()
+  public func applyPreferences()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+public protocol FiltersParametersProtocol {
+  associatedtype Header : MealziOSSDK.FiltersHeaderProtocol
+  associatedtype Section : MealziOSSDK.FiltersSectionProtocol
+  associatedtype CallToAction : MealziOSSDK.FiltersCTAProtocol
+  associatedtype Background : MealziOSSDK.BackgroundProtocol
+  var header: Self.Header { get }
+  var section: Self.Section { get }
+  var callToAction: Self.CallToAction { get }
+  var background: Self.Background { get }
+  var actions: MealziOSSDK.FiltersActions { get set }
+}
+public struct FiltersActions {
+  public init(onClosed: @escaping () -> Swift.Void, onApplied: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct Filters<FiltersParameters> : SwiftUI.View where FiltersParameters : MealziOSSDK.FiltersParametersProtocol {
+  @_Concurrency.MainActor(unsafe) public let difficultyText: Swift.String
+  @_Concurrency.MainActor(unsafe) public let costText: Swift.String
+  @_Concurrency.MainActor(unsafe) public let timeText: Swift.String
+  @_Concurrency.MainActor(unsafe) public init(params: FiltersParameters, filterInstance: mealzcore.FilterInstance, difficultyText: Swift.String = Localization.catalog.difficulty.localised, costText: Swift.String = Localization.catalog.costPerPerson.localised, timeText: Swift.String = Localization.catalog.preparationTime.localised)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK7FiltersV4bodyQrvp", 0) __<FiltersParameters>
+}
+@available(iOS 14, *)
+public protocol FiltersSectionProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.FiltersSectionParameters) -> Self.Content
+}
+public struct FiltersSectionParameters {
+  public let title: Swift.String
+  public let filters: [mealzcore.CatalogFilterOptions]
+  public let onFilterSelected: (mealzcore.CatalogFilterOptions) -> Swift.Void
+  public init(title: Swift.String, filters: [mealzcore.CatalogFilterOptions], onFilterSelected: @escaping (mealzcore.CatalogFilterOptions) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeFiltersSection : MealziOSSDK.FiltersSectionProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.FiltersSectionProtocol
+  public func content(params: MealziOSSDK.FiltersSectionParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK22TypeSafeFiltersSectionV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeFiltersCTA : MealziOSSDK.FiltersCTAProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.FiltersCTAProtocol
+  public func content(params: MealziOSSDK.FiltersCTAParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK18TypeSafeFiltersCTAV7content6paramsQrAA0E13CTAParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol FiltersCTAProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.FiltersCTAParameters) -> Self.Content
+}
+public struct FiltersCTAParameters {
+  public let numberOfRecipes: Swift.Int
+  public let onApply: () -> Swift.Void
+  public let onClear: () -> Swift.Void
+  public init(numberOfRecipes: Swift.Int, onApply: @escaping () -> Swift.Void, onClear: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol FiltersHeaderProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.FiltersHeaderParameters) -> Self.Content
+}
+public struct FiltersHeaderParameters {
+  public let onCloseFilters: () -> Swift.Void
+  public init(onCloseFilters: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeFiltersHeader : MealziOSSDK.FiltersHeaderProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.FiltersHeaderProtocol
+  public func content(params: MealziOSSDK.FiltersHeaderParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK21TypeSafeFiltersHeaderV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MealPlannerRecapParametersProtocol {
+  associatedtype RecapTemplate : MealziOSSDK.MealPlannerRecapProtocol
+  associatedtype Background : MealziOSSDK.BackgroundProtocol
+  var success: Self.RecapTemplate { get }
+  var background: Self.Background { get }
+  var actions: MealziOSSDK.MealPlannerRecapActions { get set }
+}
+public struct MealPlannerRecapActions {
+  public var onNavigateAwayFromMealPlanner: () -> Swift.Void
+  public init(onNavigateAwayFromMealPlanner: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MealPlannerRecap<MealPlannerRecapParameters> : SwiftUI.View where MealPlannerRecapParameters : MealziOSSDK.MealPlannerRecapParametersProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: MealPlannerRecapParameters)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK16MealPlannerRecapV4bodyQrvp", 0) __<MealPlannerRecapParameters>
+}
+@available(iOS 14, *)
+public protocol MealPlannerRecapProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MealPlannerRecapViewParameters) -> Self.Content
+}
+public struct MealPlannerRecapViewParameters {
+  public var numberOfMeals: Swift.Int
+  public var totalPrice: Swift.Double
+  public var onTapGesture: () -> Swift.Void
+  public init(numberOfMeals: Swift.Int, totalPrice: Swift.Double, onTapGesture: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeMealPlannerRecap : MealziOSSDK.MealPlannerRecapProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealPlannerRecapProtocol
+  public func content(params: MealziOSSDK.MealPlannerRecapViewParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK24TypeSafeMealPlannerRecapV7content6paramsQrAA0efG14ViewParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MealPlannerBasketFooterProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MealPlannerBasketFooterParamaters) -> Self.Content
+}
+public struct MealPlannerBasketFooterParamaters {
+  public let footerHeight: CoreFoundation.CGFloat
+  public let totalPrice: Swift.Double
+  public let isLoading: Swift.Bool
+  public let onNavigateToRecap: () -> Swift.Void
+  public let onNavigateToBasket: () -> Swift.Void
+  public init(footerHeight: CoreFoundation.CGFloat, totalPrice: Swift.Double, isLoading: Swift.Bool, onNavigateToRecap: @escaping () -> Swift.Void, onNavigateToBasket: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeMealPlannerBasketFooter : MealziOSSDK.MealPlannerBasketFooterProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealPlannerBasketFooterProtocol
+  public func content(params: MealziOSSDK.MealPlannerBasketFooterParamaters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK31TypeSafeMealPlannerBasketFooterV7content6paramsQrAA0efgH10ParamatersV_tF", 0) __
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MealPlannerBasket<MealPlannerBasketParameters, BasketRecipesParameters, BaseViews> : SwiftUI.View where MealPlannerBasketParameters : MealziOSSDK.MealPlannerBasketParametersProtocol, BasketRecipesParameters : MealziOSSDK.BasketRecipeParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: MealPlannerBasketParameters, basketRecipesParams: BasketRecipesParameters, baseViews: BaseViews, gridConfig: MealziOSSDK.BasketRecipesGridConfig)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK17MealPlannerBasketV4bodyQrvp", 0) __<MealPlannerBasketParameters, BasketRecipesParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol StoreLocatorButtonParametersProtocol {
+  associatedtype CallToAction : MealziOSSDK.BaseButtonProtocol
+  var callToAction: Self.CallToAction { get }
+  var actions: MealziOSSDK.StoreLocatorButtonActions { get set }
+}
+public struct StoreLocatorButtonActions {
+  public init(changeStore: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct BasketRecipesGridConfig {
+  public init(recipeSpacing: CoreFoundation.CGSize = CGSize(width: 4, height: 4), productSpacing: CoreFoundation.CGSize = CGSize(width: 4, height: 4), recipeOverviewDimensions: CoreFoundation.CGSize = CGSize(width: 300, height: 150), heightOfFooter: CoreFoundation.CGFloat = 80, isExpandable: Swift.Bool = true)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct ExpandableBasketRecipe<BasketRecipeParameters> : SwiftUI.View where BasketRecipeParameters : MealziOSSDK.BasketRecipeParametersProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: BasketRecipeParameters, recipeRowViewModel: mealzcore.MealPlannerBasketPreviewRecipeRowViewModel, gridConfig: MealziOSSDK.BasketRecipesGridConfig)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK22ExpandableBasketRecipeV4bodyQrvp", 0) __<BasketRecipeParameters>
+}
+@available(iOS 14, *)
+public protocol BasketRecipeParametersProtocol {
+  associatedtype RecipeOverview : MealziOSSDK.BasketRecipeOverviewProtocol
+  associatedtype RecipeOverviewLoading : MealziOSSDK.RecipeCardLoadingProtocol
+  associatedtype BasketProduct : MealziOSSDK.BasketProductProtocol
+  associatedtype IngredientsAtHomeToggleButton : MealziOSSDK.BaseButtonProtocol
+  associatedtype RemovedIngredientsToggleButton : MealziOSSDK.BaseButtonProtocol
+  associatedtype UnavailableIngredientsToggleButton : MealziOSSDK.BaseButtonProtocol
+  associatedtype IngredientsAtHome : MealziOSSDK.NotInBasketProductProtocol
+  associatedtype RemovedIngredients : MealziOSSDK.NotInBasketProductProtocol
+  associatedtype UnavailableIngredients : MealziOSSDK.NotInBasketProductProtocol
+  var recipeOverview: Self.RecipeOverview { get }
+  var recipeOverviewLoading: Self.RecipeOverviewLoading { get }
+  var basketProduct: Self.BasketProduct { get }
+  var ingredientsAtHomeToggleButton: Self.IngredientsAtHomeToggleButton { get }
+  var removedIngredientsToggleButton: Self.RemovedIngredientsToggleButton { get }
+  var unavailableIngredientsToggleButton: Self.UnavailableIngredientsToggleButton { get }
+  var ingredientsAtHome: Self.IngredientsAtHome { get }
+  var removedIngredients: Self.RemovedIngredients { get }
+  var unavailableIngredients: Self.UnavailableIngredients { get }
+  var actions: MealziOSSDK.BasketRecipeActions { get set }
+}
+public struct BasketRecipeActions {
+  public var onShowRecipeDetails: (Swift.String) -> Swift.Void
+  public var onReplaceProduct: (Swift.String) -> Swift.Void
+  public init(onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onReplaceProduct: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeNotInBasketProduct : MealziOSSDK.NotInBasketProductProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.NotInBasketProductProtocol
+  public func content(params: MealziOSSDK.NotInBasketProductParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK26TypeSafeNotInBasketProductV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol NotInBasketProductProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.NotInBasketProductParameters) -> Self.Content
+}
+public struct NotInBasketProductParameters {
+  public let ingredientName: Swift.String
+  public let ingredientQuantity: Swift.String
+  public let ingredientUnit: Swift.String
+  public let guestsCount: Swift.Int
+  public let defaultRecipeGuest: Swift.Int
+  public var onAddToBasket: (() -> Swift.Void)?
+  public init(ingredientName: Swift.String, ingredientQuantity: Swift.String, ingredientUnit: Swift.String, guestsCount: Swift.Int, defaultRecipeGuest: Swift.Int, onAddToBasket: (() -> Swift.Void)? = nil)
+}
+public struct BasketProductData {
+  public let price: Swift.Double
+  public let name: Swift.String
+  public let description: Swift.String
+  public let pictureURL: Foundation.URL
+  public let sharedRecipeCount: Swift.Int
+  public let unitPrice: Swift.Double
+  public let isReloading: Swift.Bool
+  public let ean: Swift.String
+  public init(price: Swift.Double, name: Swift.String, description: Swift.String, pictureURL: Foundation.URL, sharedRecipeCount: Swift.Int, unitPrice: Swift.Double, isReloading: Swift.Bool, ean: Swift.String)
+}
+public struct FakeBasketProductData {
+  public init()
+  public func generateSingleRandomData() -> MealziOSSDK.BasketProductData
+  public func createListOfRandomDatas() -> [MealziOSSDK.BasketProductData]
+}
+@available(iOS 14, *)
+public protocol BasketProductProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.BasketProductParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct BasketProductParameters {
+  public let data: MealziOSSDK.BasketProductData
+  public var quantity: SwiftUI.Binding<Swift.Int>
+  public let onDeleteProduct: () -> Swift.Void
+  public let onQuantityChanged: (Swift.Int) -> Swift.Void
+  public let onChangeProduct: () -> Swift.Void
+  public init(data: MealziOSSDK.BasketProductData, quantity: SwiftUI.Binding<Swift.Int>, onDeleteProduct: @escaping () -> Swift.Void, onQuantityChanged: @escaping (Swift.Int) -> Swift.Void, onChangeProduct: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeBasketProduct : MealziOSSDK.BasketProductProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.BasketProductProtocol
+  public func content(params: MealziOSSDK.BasketProductParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK21TypeSafeBasketProductV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeBasketRecipeOverview : MealziOSSDK.BasketRecipeOverviewProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.BasketRecipeOverviewProtocol
+  public func content(params: MealziOSSDK.BasketRecipeOverviewParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK28TypeSafeBasketRecipeOverviewV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol BasketRecipeOverviewProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.BasketRecipeOverviewParameters) -> Self.Content
+}
+public struct BasketRecipeOverviewParameters {
+  public let recipeCardDimensions: CoreFoundation.CGSize
+  public let data: MealziOSSDK.BasketRecipeData
+  public let onDeleteRecipe: () -> Swift.Void
+  public let onExpand: () -> Swift.Void
+  public let onUpdateGuests: (Swift.Int) -> Swift.Void
+  public let onShowRecipeDetails: (Swift.String) -> Swift.Void
+  public init(recipeCardDimensions: CoreFoundation.CGSize, data: MealziOSSDK.BasketRecipeData, onDeleteRecipe: @escaping () -> Swift.Void, onExpand: @escaping () -> Swift.Void, onUpdateGuests: @escaping (Swift.Int) -> Swift.Void, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void)
+}
+public struct BasketRecipeData : Swift.Identifiable {
+  public var id: Swift.String
+  public let recipe: mealzcore.Recipe
+  public let price: Swift.Double
+  public let guests: Swift.Int
+  public let isReloading: Swift.Bool
+  public let totalProductCount: Swift.Int
+  public let isExpandable: Swift.Bool
+  public let isExpanded: Swift.Bool
+  public init(recipe: mealzcore.Recipe, price: Swift.Double, guests: Swift.Int, isReloading: Swift.Bool, totalProductCount: Swift.Int, isExpandable: Swift.Bool, isExpanded: Swift.Bool)
+  public typealias ID = Swift.String
+}
+@available(iOS 14, *)
+public protocol MealPlannerBasketParametersProtocol {
+  associatedtype FooterTemplate : MealziOSSDK.MealPlannerBasketFooterProtocol
+  var footer: Self.FooterTemplate { get }
+  var actions: MealziOSSDK.MealPlannerBasketActions { get set }
+}
+public struct MealPlannerBasketActions {
+  public var onNavigateToRecap: () -> Swift.Void
+  public var onNavigateToBasket: () -> Swift.Void
+  public init(onNavigateToRecap: @escaping () -> Swift.Void, onNavigateToBasket: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeMealPlannerForm : MealziOSSDK.MealPlannerFormProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealPlannerFormProtocol
+  public func content(params: MealziOSSDK.MealPlannerFormViewParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK23TypeSafeMealPlannerFormV7content6paramsQrAA0efG14ViewParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MealPlannerFormProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MealPlannerFormViewParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct MealPlannerFormViewParameters {
+  public var mealPlannerCriteria: SwiftUI.Binding<MealziOSSDK.MealPlannerCriteria>
+  public var activelyUpdatingTextField: SwiftUI.Binding<Swift.Bool>
+  public var isFetchingRecipes: Swift.Bool
+  public var onFormValidated: (MealziOSSDK.MealPlannerCriteria) -> Swift.Void
+  public init(mealPlannerCriteria: SwiftUI.Binding<MealziOSSDK.MealPlannerCriteria>, activelyUpdatingTextField: SwiftUI.Binding<Swift.Bool>, isFetchingRecipes: Swift.Bool, onFormValidated: @escaping (MealziOSSDK.MealPlannerCriteria) -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol MealPlannerFormParametersProtocol {
+  associatedtype Form : MealziOSSDK.MealPlannerFormProtocol
+  var form: Self.Form { get }
+  var actions: MealziOSSDK.MealPlannerFormActions { get set }
+}
+public struct MealPlannerFormActions {
+  public var onNavigateToMealPlannerResults: ([Swift.String]) -> Swift.Void
+  public init(onNavigateToMealPlannerResults: @escaping ([Swift.String]) -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MealPlannerForm<MealPlannerFormParameters, BaseViews> : SwiftUI.View where MealPlannerFormParameters : MealziOSSDK.MealPlannerFormParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: MealPlannerFormParameters, baseViews: BaseViews, mealPlannerCriteria: MealziOSSDK.MealPlannerCriteria? = nil)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK15MealPlannerFormV4bodyQrvp", 0) __<MealPlannerFormParameters, BaseViews>
+}
+public struct MealPlannerCriteria {
+  public var availableBudget: Swift.Double
+  public var numberOfGuests: Swift.Int
+  public var numberOfMeals: Swift.Int
+  public var maxRecipesForBudget: Swift.Int
+  public init(availableBudget: Swift.Double, numberOfGuests: Swift.Int, numberOfMeals: Swift.Int, maxRecipesForBudget: Swift.Int = 99)
+}
+extension MealziOSSDK.MealPlannerCriteria : Swift.Equatable {
+  public static func == (lhs: MealziOSSDK.MealPlannerCriteria, rhs: MealziOSSDK.MealPlannerCriteria) -> Swift.Bool
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MealPlannerRecipeCard<CardTemplate, CardLoadingTemplate> : SwiftUI.View where CardTemplate : MealziOSSDK.MealPlannerRecipeCardProtocol, CardLoadingTemplate : MealziOSSDK.RecipeCardLoadingProtocol {
+  @_Concurrency.MainActor(unsafe) public init(recipeId: Swift.String, recipeCard: CardTemplate, recipeCardLoading: CardLoadingTemplate, recipeCardDimensions: CoreFoundation.CGSize, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onRemoveRecipeFromMealPlanner: @escaping () -> Swift.Void, onReplaceRecipeFromMealPlanner: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK21MealPlannerRecipeCardV4bodyQrvp", 0) __<CardTemplate, CardLoadingTemplate>
+}
+@available(iOS 14, *)
+public struct TypeSafeMealPlannerRecipeCard : MealziOSSDK.MealPlannerRecipeCardProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealPlannerRecipeCardProtocol
+  public func content(params: MealziOSSDK.MealPlannerRecipeCardParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK29TypeSafeMealPlannerRecipeCardV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct StoreLocatorButton<StoreLocatorParameters> : SwiftUI.View where StoreLocatorParameters : MealziOSSDK.StoreLocatorButtonParametersProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: StoreLocatorParameters)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK18StoreLocatorButtonV4bodyQrvp", 0) __<StoreLocatorParameters>
+}
+@available(iOS 14, *)
+public protocol MealPlannerRecipeCardProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MealPlannerRecipeCardParameters) -> Self.Content
+}
+public struct MealPlannerRecipeCardParameters {
+  public var recipeCardDimensions: CoreFoundation.CGSize
+  public var recipe: mealzcore.Recipe
+  public var onShowRecipeDetails: (Swift.String) -> Swift.Void
+  public var onRemoveRecipeFromMealPlanner: () -> Swift.Void
+  public var onReplaceRecipeFromMealPlanner: () -> Swift.Void
+  public init(recipeCardDimensions: CoreFoundation.CGSize, recipe: mealzcore.Recipe, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onRemoveRecipeFromMealPlanner: @escaping () -> Swift.Void, onReplaceRecipeFromMealPlanner: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol MealPlannerCTAParametersProtocol {
+  associatedtype CallToAction : MealziOSSDK.MealPlannerCTAProtocol
+  var callToAction: Self.CallToAction { get }
+  var actions: MealziOSSDK.MealPlannerCTAActions { get set }
+}
+public struct MealPlannerCTAActions {
+  public var onNavigateToMealPlannerForm: () -> Swift.Void
+  public init(onNavigateToMealPlannerForm: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct MealPlannerCTA<MealPlannerCTAPageParameters> : SwiftUI.View where MealPlannerCTAPageParameters : MealziOSSDK.MealPlannerCTAParametersProtocol {
+  public init(params: MealPlannerCTAPageParameters)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK14MealPlannerCTAV4bodyQrvp", 0) __<MealPlannerCTAPageParameters>
+}
+@available(iOS 14, *)
+public struct TypeSafeMealPlannerCTA : MealziOSSDK.MealPlannerCTAProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealPlannerCTAProtocol
+  public func content(params: MealziOSSDK.MealPlannerCTAViewParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK22TypeSafeMealPlannerCTAV7content6paramsQrAA0eF17CTAViewParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MealPlannerCTAProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MealPlannerCTAViewParameters) -> Self.Content
+}
+public struct MealPlannerCTAViewParameters {
+  public let onTapGesture: () -> Swift.Void
+  public init(onTapGesture: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MealPlannerResults<MealPlannerResultsParameters, BaseViews> : SwiftUI.View where MealPlannerResultsParameters : MealziOSSDK.MealPlannerResultsParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: MealPlannerResultsParameters, baseViews: BaseViews, gridConfig: MealziOSSDK.MealPlannerRecipesListGridConfig, mealPlannerCriteria: MealziOSSDK.MealPlannerCriteria? = nil)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK18MealPlannerResultsV4bodyQrvp", 0) __<MealPlannerResultsParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol MealPlannerResultsParametersProtocol {
+  associatedtype ToolbarTemplate : MealziOSSDK.MealPlannerResultsToolbarProtocol
+  associatedtype FooterTemplate : MealziOSSDK.MealPlannerResultsFooterProtocol
+  associatedtype CardTemplate : MealziOSSDK.MealPlannerRecipeCardProtocol
+  associatedtype LoadingCardTemplate : MealziOSSDK.RecipeCardLoadingProtocol
+  associatedtype PlaceholderCardTemplate : MealziOSSDK.MealPlannerRecipePlaceholderProtocol
+  associatedtype EmptyMealPlanner : MealziOSSDK.MealPlannerResultsEmptyProtocol
+  var toolbar: Self.ToolbarTemplate { get }
+  var footer: Self.FooterTemplate { get }
+  var recipeCard: Self.CardTemplate { get }
+  var recipeCardLoading: Self.LoadingCardTemplate { get }
+  var placeholder: Self.PlaceholderCardTemplate { get }
+  var emptyResults: Self.EmptyMealPlanner { get }
+  var actions: MealziOSSDK.MealPlannerResultsActions { get set }
+}
+public struct MealPlannerResultsActions {
+  public var onShowRecipeDetails: (Swift.String) -> Swift.Void
+  public var onOpenReplaceRecipe: (Swift.Int) -> Swift.Void
+  public var onNavigateToBasket: () -> Swift.Void
+  public init(onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onOpenReplaceRecipe: @escaping (Swift.Int) -> Swift.Void, onNavigateToBasket: @escaping () -> Swift.Void)
+}
+@available(iOS 13, *)
+public protocol MealPlannerResultsFooterProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MealPlannerResultsFooterParameters) -> Self.Content
+}
+@available(iOS 13, *)
+public struct MealPlannerResultsFooterParameters {
+  public let mealPlannerCriteria: MealziOSSDK.MealPlannerCriteria
+  public let heightOfFooter: CoreFoundation.CGFloat
+  public var budgetSpent: SwiftUI.Binding<Swift.Double>
+  public let onValidateTapped: () -> Swift.Void
+  public init(mealPlannerCriteria: MealziOSSDK.MealPlannerCriteria, heightOfFooter: CoreFoundation.CGFloat, budgetSpent: SwiftUI.Binding<Swift.Double>, onValidateTapped: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeMealPlannerResultsFooter : MealziOSSDK.MealPlannerResultsFooterProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealPlannerResultsFooterProtocol
+  public func content(params: MealziOSSDK.MealPlannerResultsFooterParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK32TypeSafeMealPlannerResultsFooterV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeMealPlannerResultsToolbar : MealziOSSDK.MealPlannerResultsToolbarProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealPlannerResultsToolbarProtocol
+  public func content(params: MealziOSSDK.MealPlannerResultsToolbarParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK33TypeSafeMealPlannerResultsToolbarV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MealPlannerResultsToolbarProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MealPlannerResultsToolbarParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct MealPlannerResultsToolbarParameters {
+  public let mealPlannerCriteria: SwiftUI.Binding<MealziOSSDK.MealPlannerCriteria>
+  public let numberOfResults: Swift.Int
+  @SwiftUI.Binding @_projectedValueProperty($activelyEditingCriteria) public var activelyEditingCriteria: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  public var $activelyEditingCriteria: SwiftUI.Binding<Swift.Bool> {
+    get
+  }
+  @SwiftUI.Binding @_projectedValueProperty($activelyEditingTextField) public var activelyEditingTextField: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  public var $activelyEditingTextField: SwiftUI.Binding<Swift.Bool> {
+    get
+  }
+  @SwiftUI.Binding @_projectedValueProperty($isLoadingRecipes) public var isLoadingRecipes: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  public var $isLoadingRecipes: SwiftUI.Binding<Swift.Bool> {
+    get
+  }
+  public let onValidateTapped: () -> Swift.Void
+  public init(mealPlannerCriteria: SwiftUI.Binding<MealziOSSDK.MealPlannerCriteria>, numberOfResults: Swift.Int, activelyEditingCriteria: SwiftUI.Binding<Swift.Bool>, activelyEditingTextField: SwiftUI.Binding<Swift.Bool>, isLoadingRecipes: SwiftUI.Binding<Swift.Bool>, onValidateTapped: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeMealPlannerResultsEmpty : MealziOSSDK.MealPlannerResultsEmptyProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealPlannerResultsEmptyProtocol
+  public func content(params: MealziOSSDK.MealPlannerResultsEmptyParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK31TypeSafeMealPlannerResultsEmptyV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MealPlannerResultsEmptyProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MealPlannerResultsEmptyParameters) -> Self.Content
+}
+public struct MealPlannerResultsEmptyParameters {
+  public var mealPlannerCriteria: MealziOSSDK.MealPlannerCriteria
+  public var reason: Swift.String
+  public init(mealPlannerCriteria: MealziOSSDK.MealPlannerCriteria, reason: Swift.String)
+}
+@available(iOS 14, *)
+public protocol MealPlannerRecipePlaceholderProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MealPlannerRecipePlaceholderParameters) -> Self.Content
+}
+public struct MealPlannerRecipePlaceholderParameters {
+  public var recipeCardDimensions: CoreFoundation.CGSize
+  public let onTapGesture: () -> Swift.Void
+  public init(recipeCardDimensions: CoreFoundation.CGSize, onTapGesture: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeMealPlannerRecipePlaceholder : MealziOSSDK.MealPlannerRecipePlaceholderProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealPlannerRecipePlaceholderProtocol
+  public func content(params: MealziOSSDK.MealPlannerRecipePlaceholderParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK36TypeSafeMealPlannerRecipePlaceholderV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct MealPlannerRecipesListGridConfig {
+  public init(spacing: CoreFoundation.CGSize = CGSize(width: 4, height: 4), recipeCardDimensions: CoreFoundation.CGSize = CGSize(width: 300, height: 200), heightOfFooter: CoreFoundation.CGFloat = 100)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MealPlannerRecipePicker<MealPlannerRecipePickerParameters, BaseViews> : SwiftUI.View where MealPlannerRecipePickerParameters : MealziOSSDK.MealPlannerRecipePickerParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: MealPlannerRecipePickerParameters, baseViews: BaseViews, gridConfig: MealziOSSDK.CatalogRecipesListGridConfig, indexOfReplacedRecipe: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK23MealPlannerRecipePickerV4bodyQrvp", 0) __<MealPlannerRecipePickerParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol MealPlannerRecipePickerParametersProtocol {
+  associatedtype SearchTemplate : MealziOSSDK.SearchProtocol
+  associatedtype NoResults : MealziOSSDK.CatalogRecipesListNoResultsProtocol
+  associatedtype CardTemplate : MealziOSSDK.CatalogRecipeCardProtocol
+  associatedtype RecipeLoading : MealziOSSDK.RecipeCardLoadingProtocol
+  var search: Self.SearchTemplate { get }
+  var noResults: Self.NoResults { get }
+  var recipeCard: Self.CardTemplate { get }
+  var recipeCardLoading: Self.RecipeLoading { get }
+  var actions: MealziOSSDK.MealPlannerRecipePickerActions { get set }
+}
+public struct MealPlannerRecipePickerActions {
+  public let onShowRecipeDetails: (Swift.String) -> Swift.Void
+  public let onSelectRecipeForMealPlanner: () -> Swift.Void
+  public let onOpenFiltersOptions: (mealzcore.FilterInstance) -> Swift.Void
+  public init(onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onSelectRecipeForMealPlanner: @escaping () -> Swift.Void, onOpenFiltersOptions: @escaping (mealzcore.FilterInstance) -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol PreferencesParametersProtocol {
+  associatedtype GuestSection : MealziOSSDK.PreferencesGuestProtocol
+  associatedtype DietSection : MealziOSSDK.PreferencesDietProtocol
+  associatedtype IngredientsSection : MealziOSSDK.PreferencesIngredientsProtocol
+  associatedtype EquipmentSection : MealziOSSDK.PreferencesEquipmentProtocol
+  associatedtype Footer : MealziOSSDK.PreferencesFooterProtocol
+  var guestSection: Self.GuestSection { get }
+  var dietSection: Self.DietSection { get }
+  var ingredientsSection: Self.IngredientsSection { get }
+  var equipmentSection: Self.EquipmentSection { get }
+  var footer: Self.Footer { get }
+  var actions: MealziOSSDK.PreferencesActions { get set }
+}
+public struct PreferencesActions {
+  public init(onClosed: @escaping () -> Swift.Void, onGoToSearch: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct Preferences<PreferencesParameters, BaseViews> : SwiftUI.View where PreferencesParameters : MealziOSSDK.PreferencesParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: PreferencesParameters, baseViews: BaseViews)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK11PreferencesV4bodyQrvp", 0) __<PreferencesParameters, BaseViews>
+}
+@available(iOS 14, *)
+public struct TypeSafePreferencesFooter : MealziOSSDK.PreferencesFooterProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.PreferencesFooterProtocol
+  public func content(params: MealziOSSDK.PreferencesFooterParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK25TypeSafePreferencesFooterV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol PreferencesFooterProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.PreferencesFooterParameters) -> Self.Content
+}
+public struct PreferencesFooterParameters {
+  public let recipesFound: Swift.Int?
+  public let onApplied: () -> Swift.Void
+  public let onClosed: () -> Swift.Void
+  public init(recipesFound: Swift.Int? = nil, onApplied: @escaping () -> Swift.Void, onClosed: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafePreferencesDiet : MealziOSSDK.PreferencesDietProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.PreferencesDietProtocol
+  public func content(params: MealziOSSDK.PreferencesDietParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK23TypeSafePreferencesDietV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol PreferencesDietProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.PreferencesDietParameters) -> Self.Content
+}
+public struct PreferencesDietParameters {
+  public let dietsTag: [mealzcore.CheckableTag]
+  public let onTogglePreference: (Swift.String) -> Swift.Void
+  public init(dietsTag: [mealzcore.CheckableTag], onTogglePreference: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafePreferencesIngredients : MealziOSSDK.PreferencesIngredientsProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.PreferencesIngredientsProtocol
+  public func content(params: MealziOSSDK.PreferencesIngredientsParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK30TypeSafePreferencesIngredientsV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MyBasketFooterProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MyBasketFooterParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct MyBasketFooterParameters {
+  public let totalPrice: Swift.Double
+  public let heightOfFooter: CoreFoundation.CGFloat
+  public let basketStatus: mealzcore.ComponentUiState
+  public let submitOrder: () -> Swift.Void
+  public init(totalPrice: Swift.Double, heightOfFooter: CoreFoundation.CGFloat, basketStatus: mealzcore.ComponentUiState, submitOrder: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol PreferencesIngredientsProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.PreferencesIngredientsParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct PreferencesIngredientsParameters {
+  public let ingredientsTag: [mealzcore.CheckableTag]
+  public let geometry: SwiftUI.GeometryProxy
+  public let onTogglePreference: (Swift.String) -> Swift.Void
+  public let onGoToSearch: () -> Swift.Void
+  public init(ingredientsTag: [mealzcore.CheckableTag], geometry: SwiftUI.GeometryProxy, onTogglePreference: @escaping (Swift.String) -> Swift.Void, onGoToSearch: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol PreferencesEquipmentProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.PreferencesEquipmentParameters) -> Self.Content
+}
+public struct PreferencesEquipmentParameters {
+  public let equipmentsTag: [mealzcore.CheckableTag]
+  public let onTogglePreference: (Swift.String) -> Swift.Void
+  public init(equipmentsTag: [mealzcore.CheckableTag], onTogglePreference: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafePreferencesEquipment : MealziOSSDK.PreferencesEquipmentProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.PreferencesEquipmentProtocol
+  public func content(params: MealziOSSDK.PreferencesEquipmentParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK28TypeSafePreferencesEquipmentV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafePreferencesGuest : MealziOSSDK.PreferencesGuestProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.PreferencesGuestProtocol
+  public func content(params: MealziOSSDK.PreferencesGuestParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK24TypeSafePreferencesGuestV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol PreferencesGuestProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.PreferencesGuestParameters) -> Self.Content
+}
+public struct PreferencesGuestParameters {
+  public let guests: Swift.Int?
+  public let onGuestChanged: (Swift.Int) -> Swift.Void
+  public init(guests: Swift.Int? = nil, onGuestChanged: @escaping (Swift.Int) -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol PreferencesSearchProtocol {
+  associatedtype Search : MealziOSSDK.SearchProtocol
+  associatedtype TagButton : MealziOSSDK.BaseButtonProtocol
+  var search: Self.Search { get }
+  var tagButton: Self.TagButton { get }
+  var actions: MealziOSSDK.PreferencesSearchActions { get set }
+}
+public struct PreferencesSearchActions {
+  public init(onClosed: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct PreferencesSearch<PreferencesSearchParameters, BaseViews> : SwiftUI.View where PreferencesSearchParameters : MealziOSSDK.PreferencesSearchProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: PreferencesSearchParameters, baseViews: BaseViews)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK17PreferencesSearchV4bodyQrvp", 0) __<PreferencesSearchParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol BasketTagParametersProtocol {
+  associatedtype Title : MealziOSSDK.BaseTitleProtocol
+  var title: Self.Title { get }
+  var actions: MealziOSSDK.BasketTagActions { get set }
+}
+public struct BasketTagActions {
+  public init(onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct BasketTag<BasketTagParameters, BaseViews> : SwiftUI.View where BasketTagParameters : MealziOSSDK.BasketTagParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: BasketTagParameters, baseViews: BaseViews, retailerProductId: Swift.String, scrollAlignment: SwiftUI.Axis.Set = .vertical)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK9BasketTagV4bodyQrvp", 0) __<BasketTagParameters, BaseViews>
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct RecipeDetailsProduct<ProductParameters> : SwiftUI.View where ProductParameters : MealziOSSDK.RecipeDetailsProductProtocol {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK20RecipeDetailsProductV4bodyQrvp", 0) __<ProductParameters>
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsProductProtocol {
+  associatedtype IgnoredProduct : MealziOSSDK.RecipeDetailsIgnoredProductProtocol
+  associatedtype UnaddedProduct : MealziOSSDK.RecipeDetailsUnaddedProductProtocol
+  associatedtype AddedProduct : MealziOSSDK.RecipeDetailsAddedProductProtocol
+  associatedtype LoadingProduct : MealziOSSDK.LoadingProtocol
+  var ignoredProduct: Self.IgnoredProduct { get }
+  var unaddedProduct: Self.UnaddedProduct { get }
+  var addedProduct: Self.AddedProduct { get }
+  var loadingProduct: Self.LoadingProduct { get }
+}
+@available(iOS 14, *)
+public struct RecipeProductData {
+  public let unitPrice: Swift.Double
+  public let name: Swift.String
+  public let brand: Swift.String?
+  public let capacity: Swift.String
+  public let productQuantity: Swift.Int
+  public let productUnit: Swift.String
+  public let formattedProductPrice: Swift.String
+  public let pictureURL: Swift.String
+  public let ingredientName: Swift.String
+  public let ingredientQuantity: Swift.Float
+  public let ingredientUnit: Swift.String?
+  public let numberOfOtherRecipesSharingThisIngredient: Swift.Int
+  public let guestsCount: SwiftUI.Binding<Swift.Int>
+  public let defaultRecipeGuest: Swift.Int
+  public let isSponsored: Swift.Bool
+  public let ean: Swift.String
+  public init(unitPrice: Swift.Double, formattedProductPrice: Swift.String, name: Swift.String, capacity: Swift.String, pictureURL: Swift.String, brand: Swift.String?, productQuantity: Swift.Int, productUnit: Swift.String, ingredientName: Swift.String, ingredientQuantity: Swift.Float, ingredientUnit: Swift.String?, numberOfOtherRecipesSharingThisIngredient: Swift.Int, guestsCount: SwiftUI.Binding<Swift.Int>, defaultRecipeGuest: Swift.Int, isSponsored: Swift.Bool, ean: Swift.String)
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsUnaddedProductProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeDetailsUnaddedProductParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct RecipeDetailsUnaddedProductParameters {
+  public let data: MealziOSSDK.RecipeProductData
+  public let productStatus: mealzcore.ComponentUiState
+  public let onAddProduct: () -> Swift.Void
+  public let onIgnoreProduct: () -> Swift.Void
+  public let onChooseProduct: () -> Swift.Void
+  public init(data: MealziOSSDK.RecipeProductData, productStatus: mealzcore.ComponentUiState, onAddProduct: @escaping () -> Swift.Void, onIgnoreProduct: @escaping () -> Swift.Void, onChooseProduct: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeDetailsUnaddedProduct : MealziOSSDK.RecipeDetailsUnaddedProductProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeDetailsUnaddedProductProtocol
+  public func content(params: MealziOSSDK.RecipeDetailsUnaddedProductParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK35TypeSafeRecipeDetailsUnaddedProductV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeDetailsAddedProduct : MealziOSSDK.RecipeDetailsAddedProductProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeDetailsAddedProductProtocol
+  public func content(params: MealziOSSDK.RecipeDetailsAddedProductParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK33TypeSafeRecipeDetailsAddedProductV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsAddedProductProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeDetailsAddedProductParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct RecipeDetailsAddedProductParameters {
+  public let data: MealziOSSDK.RecipeProductData
+  public let updatingQuantity: Swift.Bool
+  @SwiftUI.Binding @_projectedValueProperty($productQuantityPressed) public var productQuantityPressed: Swift.Bool {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  public var $productQuantityPressed: SwiftUI.Binding<Swift.Bool> {
+    get
+  }
+  public let onDeleteProduct: () -> Swift.Void
+  public let onChangeProduct: () -> Swift.Void
+  public let updateProductQuantity: (Swift.Int) -> Swift.Void
+  public init(data: MealziOSSDK.RecipeProductData, updatingQuantity: Swift.Bool, productQuantityPressed: SwiftUI.Binding<Swift.Bool>, onDeleteProduct: @escaping () -> Swift.Void, onChangeProduct: @escaping () -> Swift.Void, updateProductQuantity: @escaping (Swift.Int) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeDetailsIgnoredProduct : MealziOSSDK.RecipeDetailsIgnoredProductProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeDetailsIgnoredProductProtocol
+  public func content(params: MealziOSSDK.RecipeDetailsIgnoredProductParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK35TypeSafeRecipeDetailsIgnoredProductV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsIgnoredProductProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeDetailsIgnoredProductParameters) -> Self.Content
+}
+@available(iOS 13, *)
+public struct RecipeDetailsIgnoredProductParameters {
+  public let ingredientName: Swift.String
+  public let ingredientQuantity: Swift.String?
+  public let ingredientUnit: Swift.String?
+  public let guestsCount: Swift.Int
+  public let defaultRecipeGuest: Swift.Int
+  public let onChooseProduct: () -> Swift.Void
+  public init(ingredientName: Swift.String, ingredientQuantity: Swift.String? = nil, ingredientUnit: Swift.String? = nil, guestsCount: Swift.Int, defaultRecipeGuest: Swift.Int, onChooseProduct: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct RecipeDetailTags : Swift.Identifiable {
+  public let mealzIcon: SwiftUI.Image?
+  public let iconUrl: Foundation.URL?
+  public let text: Swift.String
+  public let tagName: Swift.String
+  public var id: Foundation.UUID
+  public typealias ID = Foundation.UUID
+}
+public enum SelectedControlPage : Swift.Int {
+  case shopping
+  case cooking
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct RecipeDetails<RecipeDetailsParameters, ProductParameters, BaseViews> : SwiftUI.View where RecipeDetailsParameters : MealziOSSDK.RecipeDetailsParametersProtocol, ProductParameters : MealziOSSDK.RecipeDetailsProductProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public var recipeId: Swift.String
+  @_Concurrency.MainActor(unsafe) public init(params: RecipeDetailsParameters, productParams: ProductParameters, baseViews: BaseViews, recipeId: Swift.String, isForMealPlanner: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK13RecipeDetailsV4bodyQrvp", 0) __<RecipeDetailsParameters, ProductParameters, BaseViews>
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct RecipeDetailsFooter<FooterTemplate, FooterLoadingTemplate> : SwiftUI.View where FooterTemplate : MealziOSSDK.RecipeDetailsFooterProtocol, FooterLoadingTemplate : MealziOSSDK.LoadingProtocol {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK19RecipeDetailsFooterV4bodyQrvp", 0) __<FooterTemplate, FooterLoadingTemplate>
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsParametersProtocol {
+  associatedtype Header : MealziOSSDK.RecipeDetailsHeaderProtocol
+  associatedtype SponsorButton : MealziOSSDK.RecipeDetailsSponsorProtocol
+  associatedtype SelectedControl : MealziOSSDK.RecipeDetailsSelectedControlProtocol
+  associatedtype Title : MealziOSSDK.BaseTitleProtocol
+  associatedtype Ingredients : MealziOSSDK.RecipeDetailsIngredientsProtocol
+  associatedtype Steps : MealziOSSDK.RecipeDetailsStepsProtocol
+  associatedtype Footer : MealziOSSDK.RecipeDetailsFooterProtocol
+  associatedtype IngredientsAtHomeToggleButton : MealziOSSDK.BaseButtonProtocol
+  associatedtype UnavailableIngredientsToggleButton : MealziOSSDK.BaseButtonProtocol
+  associatedtype IngredientsAtHome : MealziOSSDK.NotInBasketProductProtocol
+  associatedtype UnavailableIngredients : MealziOSSDK.NotInBasketProductProtocol
+  var header: Self.Header { get }
+  var sponsor: Self.SponsorButton { get }
+  var selectedControl: Self.SelectedControl { get }
+  var numberOfIngredientsTitle: Self.Title { get }
+  var ingredients: Self.Ingredients { get }
+  var steps: Self.Steps { get }
+  var footer: Self.Footer { get }
+  var ingredientsAtHomeToggleButton: Self.IngredientsAtHomeToggleButton { get }
+  var unavailableIngredientsToggleButton: Self.UnavailableIngredientsToggleButton { get }
+  var ingredientsAtHome: Self.IngredientsAtHome { get }
+  var unavailableIngredients: Self.UnavailableIngredients { get }
+  var actions: MealziOSSDK.RecipeDetailsActions { get set }
+}
+public struct RecipeDetailsActions {
+  public init(onClosed: @escaping () -> Swift.Void, onSponsorDetailsTapped: @escaping (mealzcore.Sponsor) -> Swift.Void, onContinueToBasket: (() -> Swift.Void)? = nil, onReplaceProduct: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeDetailsFooter : MealziOSSDK.RecipeDetailsFooterProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeDetailsFooterProtocol
+  public func content(params: MealziOSSDK.RecipeDetailsFooterParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK27TypeSafeRecipeDetailsFooterV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsFooterProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeDetailsFooterParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct RecipeDetailsFooterParameters {
+  public let totalPriceOfProductsAdded: Swift.Double
+  public let totalPriceOfProductsAddedPerGuest: Swift.Double
+  public let totalPriceOfRemainingProducts: Swift.Double
+  public let recipeStickerPrice: Swift.Double
+  public let numberOfGuests: Swift.Int
+  public let priceStatus: mealzcore.ComponentUiState
+  public let ingredientsStatus: mealzcore.IngredientStatus
+  public let isAddingAllIngredients: Swift.Bool
+  public let cookOnlyMode: Swift.Bool
+  public let currentSelectedTab: MealziOSSDK.SelectedControlPage
+  public let callToAction: () -> Swift.Void
+  public init(totalPriceOfProductsAdded: Swift.Double, totalPriceOfProductsAddedPerGuest: Swift.Double, totalPriceOfRemainingProducts: Swift.Double, recipeStickerPrice: Swift.Double, numberOfGuests: Swift.Int, priceStatus: mealzcore.ComponentUiState, ingredientsStatus: mealzcore.IngredientStatus, isAddingAllIngredients: Swift.Bool, cookOnlyMode: Swift.Bool, currentSelectedTab: MealziOSSDK.SelectedControlPage, callToAction: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsSelectedControlProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeDetailsSelectedControlParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct RecipeDetailsSelectedControlParameters {
+  @SwiftUI.Binding @_projectedValueProperty($selection) public var selection: MealziOSSDK.SelectedControlPage {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  public var $selection: SwiftUI.Binding<MealziOSSDK.SelectedControlPage> {
+    get
+  }
+  public init(selection: SwiftUI.Binding<MealziOSSDK.SelectedControlPage>)
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeDetailsSelectedControl : MealziOSSDK.RecipeDetailsSelectedControlProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeDetailsSelectedControlProtocol
+  public func content(params: MealziOSSDK.RecipeDetailsSelectedControlParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK36TypeSafeRecipeDetailsSelectedControlV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeDetailsSteps : MealziOSSDK.RecipeDetailsStepsProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeDetailsStepsProtocol
+  public func content(params: MealziOSSDK.RecipeDetailsStepsParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK26TypeSafeRecipeDetailsStepsV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsStepsProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeDetailsStepsParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct RecipeDetailsStepsParameters {
+  public let activeStep: SwiftUI.Binding<Swift.Int>
+  public let steps: [mealzcore.RecipeStep]
+  public init(activeStep: SwiftUI.Binding<Swift.Int>, steps: [mealzcore.RecipeStep])
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeDetailsSponsor : MealziOSSDK.RecipeDetailsSponsorProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeDetailsSponsorProtocol
+  public func content(params: MealziOSSDK.RecipeDetailsSponsorParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK28TypeSafeRecipeDetailsSponsorV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsSponsorProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeDetailsSponsorParameters) -> Self.Content
+}
+public struct RecipeDetailsSponsorParameters {
+  public let sponsor: mealzcore.Sponsor
+  public let onSponsorTapped: () -> Swift.Void
+  public init(sponsor: mealzcore.Sponsor, onSponsorTapped: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeDetailsIngredients : MealziOSSDK.RecipeDetailsIngredientsProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeDetailsIngredientsProtocol
+  public func content(params: MealziOSSDK.RecipeDetailsIngredientsParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK32TypeSafeRecipeDetailsIngredientsV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+public struct RecipeDetailsIngredientsParameters {
+  public let ingredients: [mealzcore.Ingredient]
+  public let recipeGuests: Swift.Int
+  public let currentGuests: Swift.Int
+  public init(ingredients: [mealzcore.Ingredient], recipeGuests: Swift.Int, currentGuests: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 14, *)
+public class StoreLocatorButtonVM : mealzcore.StoreLocatorButtonViewModel, Foundation.ObservableObject {
+  @objc override dynamic public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsIngredientsProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeDetailsIngredientsParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public protocol RecipeDetailsHeaderProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeDetailsHeaderParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct RecipeDetailsHeaderParameters {
+  public let mediaURL: Swift.String?
+  public let title: Swift.String
+  public let difficulty: Swift.Int
+  public let totalTime: Swift.String
+  public let preparationTime: Swift.String
+  public let cookingTime: Swift.String
+  public let restingTime: Swift.String
+  public let isLikeEnabled: Swift.Bool
+  public let recipeId: Swift.String
+  public let recipeGuests: Swift.Int
+  public let currentGuests: Swift.Int
+  public let guestUpdating: Swift.Bool
+  public let isForMealPlanner: Swift.Bool
+  public let tags: [MealziOSSDK.RecipeDetailTags]
+  public let onRecipeDetailsClosed: () -> Swift.Void
+  public let onUpdateGuests: (Swift.Int) -> Swift.Void
+  public init(mediaURL: Swift.String?, title: Swift.String, difficulty: Swift.Int, totalTime: Swift.String, preparationTime: Swift.String, cookingTime: Swift.String, restingTime: Swift.String, isLikeEnabled: Swift.Bool, recipeId: Swift.String, recipeGuests: Swift.Int, currentGuests: Swift.Int, guestUpdating: Swift.Bool, isForMealPlanner: Swift.Bool, tags: [MealziOSSDK.RecipeDetailTags], onRecipeDetailsClosed: @escaping () -> Swift.Void, onUpdateGuests: @escaping (Swift.Int) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeDetailsHeader : MealziOSSDK.RecipeDetailsHeaderProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeDetailsHeaderProtocol
+  public func content(params: MealziOSSDK.RecipeDetailsHeaderParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK27TypeSafeRecipeDetailsHeaderV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeMyMealRecipeCard : MealziOSSDK.MyMealRecipeCardProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MyMealRecipeCardProtocol
+  public func content(params: MealziOSSDK.MyMealRecipeCardParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK24TypeSafeMyMealRecipeCardV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol MyMealRecipeCardProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.MyMealRecipeCardParameters) -> Self.Content
+}
+@available(iOS 13, *)
+public struct MyMealRecipeCardParameters {
+  public let recipeCardDimensions: CoreFoundation.CGSize
+  public let recipe: mealzcore.Recipe
+  public let numberOfGuests: Swift.Int
+  public let recipePrice: Swift.Double
+  public let numberOfProductsInRecipe: Swift.Int
+  public let isDeleting: Swift.Bool
+  public let onDeleteRecipe: () -> Swift.Void
+  public let onShowRecipeDetails: (Swift.String) -> Swift.Void
+  public init(recipeCardDimensions: CoreFoundation.CGSize, recipe: mealzcore.Recipe, numberOfGuests: Swift.Int, recipePrice: Swift.Double, numberOfProductsInRecipe: Swift.Int, isDeleting: Swift.Bool, onDeleteRecipe: @escaping () -> Swift.Void, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MyMealRecipe<CardTemplate, LoadingTemplate> : SwiftUI.View where CardTemplate : MealziOSSDK.MyMealRecipeCardProtocol, LoadingTemplate : MealziOSSDK.RecipeCardLoadingProtocol {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK12MyMealRecipeV4bodyQrvp", 0) __<CardTemplate, LoadingTemplate>
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MyMeals<MyMealsParameters, BaseViews> : SwiftUI.View where MyMealsParameters : MealziOSSDK.MyMealsParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: MyMealsParameters, baseViews: BaseViews, gridConfig: MealziOSSDK.CatalogRecipesListGridConfig, myMealsViewModel: MealziOSSDK.MyMealVM)
+  @_Concurrency.MainActor(unsafe) public init(params: MyMealsParameters, baseViews: BaseViews, gridConfig: MealziOSSDK.CatalogRecipesListGridConfig)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK7MyMealsV4bodyQrvp", 0) __<MyMealsParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol MyMealsParametersProtocol {
+  associatedtype Title : MealziOSSDK.BaseTitleProtocol
+  associatedtype OpenItemSelectorCallToAction : MealziOSSDK.BaseButtonProtocol
+  associatedtype RecipeCard : MealziOSSDK.MyMealRecipeCardProtocol
+  associatedtype RecipeCardLoading : MealziOSSDK.RecipeCardLoadingProtocol
+  var title: Self.Title { get }
+  var itemSelectorCTA: Self.OpenItemSelectorCallToAction { get }
+  var recipeCard: Self.RecipeCard { get }
+  var recipeCardLoading: Self.RecipeCardLoading { get }
+  var actions: MealziOSSDK.MyMealsActions { get set }
+}
+public struct MyMealsActions {
+  public init(onNoResultsRedirect: @escaping () -> Swift.Void, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, openItemSelector: ((Swift.String?) -> Swift.Void)? = nil)
+}
+@available(iOS 14, *)
+public protocol FavoritesParametersProtocol {
+  associatedtype Title : MealziOSSDK.BaseTitleProtocol
+  associatedtype RecipeCardContent : MealziOSSDK.CatalogRecipeCardProtocol
+  associatedtype RecipeLoading : MealziOSSDK.RecipeCardLoadingProtocol
+  var title: Self.Title { get }
+  var recipeCard: Self.RecipeCardContent { get }
+  var recipeCardLoading: Self.RecipeLoading { get }
+  var actions: MealziOSSDK.FavoritesActions { get set }
+}
+public struct FavoritesActions {
+  public init(onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onNoResultsRedirect: @escaping () -> Swift.Void, onRecipeCallToActionTapped: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct Favorites<FavoritesParameters, BaseViews> : SwiftUI.View where FavoritesParameters : MealziOSSDK.FavoritesParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public let gridConfig: MealziOSSDK.CatalogRecipesListGridConfig
+  @_Concurrency.MainActor(unsafe) public init(params: FavoritesParameters, baseViews: BaseViews, gridConfig: MealziOSSDK.CatalogRecipesListGridConfig)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK9FavoritesV4bodyQrvp", 0) __<FavoritesParameters, BaseViews>
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct CatalogSearch<CatalogSearchParameters, BaseViews> : SwiftUI.View where CatalogSearchParameters : MealziOSSDK.CatalogSearchParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: CatalogSearchParameters, baseViews: BaseViews, filterInstance: mealzcore.FilterInstance)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK13CatalogSearchV4bodyQrvp", 0) __<CatalogSearchParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol CatalogSearchParametersProtocol {
+  associatedtype Search : MealziOSSDK.SearchProtocol
+  var search: Self.Search { get }
+  var actions: MealziOSSDK.CatalogSearchActions { get set }
+}
+public struct CatalogSearchActions {
+  public init(onApplied: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct CatalogResults<CatalogParameters, RecipesListParameters, BaseViews> : SwiftUI.View where CatalogParameters : MealziOSSDK.CatalogParametersProtocol, RecipesListParameters : MealziOSSDK.CatalogRecipesListParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public let gridConfig: MealziOSSDK.CatalogRecipesListGridConfig
+  @SwiftUI.ObservedObject @_projectedValueProperty($catalogViewModel) @_Concurrency.MainActor(unsafe) public var catalogViewModel: MealziOSSDK.CatalogVM {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $catalogViewModel: SwiftUI.ObservedObject<MealziOSSDK.CatalogVM>.Wrapper {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public init(params: CatalogParameters, recipesListParams: RecipesListParameters, baseViews: BaseViews, categoryId: Swift.String? = nil, title: Swift.String? = nil, usesPreferences: Swift.Bool = false, mealsInBasketButtonAlignment: SwiftUI.Alignment = .bottom, showMealsInBasketButton: Swift.Bool = false, gridConfig: MealziOSSDK.CatalogRecipesListGridConfig, isFavorite: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK14CatalogResultsV4bodyQrvp", 0) __<CatalogParameters, RecipesListParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol CatalogPackageCTAProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.CatalogPackageCTAParameters) -> Self.Content
+}
+public struct CatalogPackageCTAParameters {
+  public let title: Swift.String
+  public let subtitle: Swift.String?
+  public let onSeeAllRecipes: () -> Swift.Void
+  public init(title: Swift.String, subtitle: Swift.String? = nil, onSeeAllRecipes: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeCatalogPackageCTA : MealziOSSDK.CatalogPackageCTAProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.CatalogPackageCTAProtocol
+  public func content(params: MealziOSSDK.CatalogPackageCTAParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK25TypeSafeCatalogPackageCTAV7content6paramsQrAA0eF13CTAParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct CatalogPackageRow<CatalogPackageRowParameters> : SwiftUI.View where CatalogPackageRowParameters : MealziOSSDK.CatalogPackageRowParametersProtocol {
+  public let params: CatalogPackageRowParameters
+  public let gridConfig: MealziOSSDK.CatalogRecipesListGridConfig
+  public let package: MealziOSSDK.CatalogPackage
+  public let setCurrentPackage: () -> Swift.Void
+  public init(params: CatalogPackageRowParameters, gridConfig: MealziOSSDK.CatalogRecipesListGridConfig, package: MealziOSSDK.CatalogPackage, setCurrentPackage: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK17CatalogPackageRowV4bodyQrvp", 0) __<CatalogPackageRowParameters>
+}
+@available(iOS 14, *)
+public protocol CatalogPackageRowParametersProtocol {
+  associatedtype CallToAction : MealziOSSDK.CatalogPackageCTAProtocol
+  associatedtype RecipeCardContent : MealziOSSDK.CatalogRecipeCardProtocol
+  associatedtype RecipeLoading : MealziOSSDK.RecipeCardLoadingProtocol
+  var callToAction: Self.CallToAction { get }
+  var recipeCard: Self.RecipeCardContent { get }
+  var recipeCardLoading: Self.RecipeLoading { get }
+  var actions: MealziOSSDK.CatalogPackageRowActions { get set }
+}
+public struct CatalogPackageRowActions {
+  public init(onSeeAllRecipes: @escaping (Swift.String, Swift.String) -> Swift.Void, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onRecipeCallToActionTapped: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeCatalogToolbar : MealziOSSDK.CatalogToolbarProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.CatalogToolbarProtocol
+  public func content(params: MealziOSSDK.CatalogToolbarParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK22TypeSafeCatalogToolbarV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol CatalogToolbarProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.CatalogToolbarParameters) -> Self.Content
+}
+public struct CatalogToolbarParameters {
+  public let numberOfActiveFilters: Swift.Int
+  public let usesPreferences: Swift.Bool
+  public let isFavorite: Swift.Bool
+  public let onFiltersTapped: () -> Swift.Void
+  public let onSearchTapped: () -> Swift.Void
+  public let onFavoritesTapped: () -> Swift.Void
+  public let onPreferencesTapped: () -> Swift.Void
+  public init(numberOfActiveFilters: Swift.Int, usesPreferences: Swift.Bool, isFavorite: Swift.Bool = false, onFiltersTapped: @escaping () -> Swift.Void, onSearchTapped: @escaping () -> Swift.Void, onFavoritesTapped: @escaping () -> Swift.Void, onPreferencesTapped: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol CatalogParametersProtocol {
+  associatedtype CatalogToolbar : MealziOSSDK.CatalogToolbarProtocol
+  associatedtype ResultsToolbar : MealziOSSDK.CatalogToolbarProtocol
+  associatedtype MealPlannerCTA : MealziOSSDK.MealPlannerCTAProtocol
+  associatedtype MealsInBasketButton : MealziOSSDK.MealsInBasketButtonParametersProtocol
+  var catalogToolbar: Self.CatalogToolbar { get }
+  var resultsToolbar: Self.ResultsToolbar { get }
+  var mealPlannerCTA: Self.MealPlannerCTA { get }
+  var mealsInBasketButton: Self.MealsInBasketButton { get }
+  var actions: MealziOSSDK.CatalogActions { get set }
+}
+public struct CatalogActions {
+  public init(onFiltersTapped: @escaping (mealzcore.FilterInstance) -> Swift.Void, onSearchTapped: @escaping (mealzcore.FilterInstance) -> Swift.Void, onFavoritesTapped: @escaping () -> Swift.Void, onPreferencesTapped: @escaping () -> Swift.Void, onLaunchMealPlanner: (() -> Swift.Void)? = nil, onMealsInBasketButtonTapped: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct CatalogView<CatalogParameters, CatalogPackageRowParameters, BaseViews> : SwiftUI.View where CatalogParameters : MealziOSSDK.CatalogParametersProtocol, CatalogPackageRowParameters : MealziOSSDK.CatalogPackageRowParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @SwiftUI.ObservedObject @_projectedValueProperty($catalogViewModel) @_Concurrency.MainActor(unsafe) public var catalogViewModel: MealziOSSDK.CatalogVM {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  @_Concurrency.MainActor(unsafe) public var $catalogViewModel: SwiftUI.ObservedObject<MealziOSSDK.CatalogVM>.Wrapper {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public init(params: CatalogParameters, catalogPackageRowParams: CatalogPackageRowParameters, baseViews: BaseViews, categoryId: Swift.String? = nil, title: Swift.String? = nil, usesPreferences: Swift.Bool = false, mealsInBasketButtonAlignment: SwiftUI.Alignment = .bottom, gridConfig: MealziOSSDK.CatalogRecipesListGridConfig)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK11CatalogViewV4bodyQrvp", 0) __<CatalogParameters, CatalogPackageRowParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol BackgroundProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.BaseBackgroundParameters) -> Self.Content
+}
+public struct BaseBackgroundParameters {
+  public init()
+}
+@available(iOS 14, *)
+public struct TypeSafeBackground : MealziOSSDK.BackgroundProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.BackgroundProtocol
+  public func content(params: MealziOSSDK.BaseBackgroundParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK18TypeSafeBackgroundV7content6paramsQrAA04BaseE10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeLoading : MealziOSSDK.LoadingProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.LoadingProtocol
+  public func content(params: MealziOSSDK.BaseLoadingParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK15TypeSafeLoadingV7content6paramsQrAA04BaseE10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol LoadingProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.BaseLoadingParameters) -> Self.Content
+}
+public struct BaseLoadingParameters {
+  public init()
+}
+@available(iOS 14, *)
+public struct TypeSafeEmpty : MealziOSSDK.EmptyProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.EmptyProtocol
+  public func content(params: MealziOSSDK.BaseEmptyParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK13TypeSafeEmptyV7content6paramsQrAA04BaseE10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol EmptyProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.BaseEmptyParameters) -> Self.Content
+}
+public struct BaseEmptyParameters {
+  public let onOptionalCallback: (() -> Swift.Void)?
+  public init(onOptionalCallback: (() -> Swift.Void)? = nil)
+}
+@available(iOS 14, *)
+public protocol BaseTitleProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.TitleParameters) -> Self.Content
+}
+public struct TitleParameters {
+  public let title: Swift.String
+  public let subtitle: Swift.String?
+  public init(title: Swift.String, subtitle: Swift.String?)
+}
+@available(iOS 14, *)
+public struct TypeSafeBaseTitle : MealziOSSDK.BaseTitleProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.BaseTitleProtocol
+  public func content(params: MealziOSSDK.TitleParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK17TypeSafeBaseTitleV7content6paramsQrAA0F10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeRecipeCardLoading : MealziOSSDK.RecipeCardLoadingProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.RecipeCardLoadingProtocol
+  public func content(params: MealziOSSDK.RecipeCardLoadingParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK25TypeSafeRecipeCardLoadingV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol RecipeCardLoadingProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.RecipeCardLoadingParameters) -> Self.Content
+}
+public struct RecipeCardLoadingParameters {
+  public let recipeCardDimensions: CoreFoundation.CGSize
+  public init(recipeCardDimensions: CoreFoundation.CGSize)
+}
+@available(iOS 14, *)
+public protocol SearchProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.SearchParameters) -> Self.Content
+}
+@available(iOS 14, *)
+public struct SearchParameters {
+  public let searchText: SwiftUI.Binding<Swift.String>
+  public let onApply: () -> Swift.Void
+  public init(searchText: SwiftUI.Binding<Swift.String>, onApply: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeSearch : MealziOSSDK.SearchProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.SearchProtocol
+  public func content(params: MealziOSSDK.SearchParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK14TypeSafeSearchV7content6paramsQrAA0E10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeBaseButton : MealziOSSDK.BaseButtonProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.BaseButtonProtocol
+  public func content(params: MealziOSSDK.BaseButtonParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK18TypeSafeBaseButtonV7content6paramsQrAA0eF10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol BaseButtonProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.BaseButtonParameters) -> Self.Content
+}
+public struct BaseButtonParameters {
+  public let buttonText: Swift.String
+  public let buttonPressed: Swift.Bool
+  public let onButtonAction: () -> Swift.Void
+  public init(buttonText: Swift.String, buttonPressed: Swift.Bool, onButtonAction: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol ErrorProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.BaseErrorParameters) -> Self.Content
+}
+public struct BaseErrorParameters {
+  public let onOptionalCallback: (() -> Swift.Void)?
+  public init(onOptionalCallback: (() -> Swift.Void)?)
+}
+@available(iOS 14, *)
+public struct TypeSafeError : MealziOSSDK.ErrorProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.ErrorProtocol
+  public func content(params: MealziOSSDK.BaseErrorParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK13TypeSafeErrorV7content6paramsQrAA04BaseE10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol BaseViewsProtocol {
+  associatedtype Loading : MealziOSSDK.LoadingProtocol
+  associatedtype Empty : MealziOSSDK.EmptyProtocol
+  associatedtype Background : MealziOSSDK.BackgroundProtocol
+  var loading: Self.Loading { get }
+  var empty: Self.Empty { get }
+  var background: Self.Background { get }
+}
+@_inheritsConvenienceInitializers @available(iOS 14, *)
+public class MyProductsVM : mealzcore.MyProductsViewModel, Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($entries) public var entries: [mealzcore.BasketEntryViewModel] {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $entries: Combine.Published<[mealzcore.BasketEntryViewModel]>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($state) public var state: mealzcore.MyProductsContractState? {
+    get
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 14, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $state: Combine.Published<mealzcore.MyProductsContractState?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @objc override dynamic public init(openItemSelector: @escaping (Swift.String?) -> Swift.Void)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@available(iOS 14, *)
+public protocol RecipeCarouselParametersProtocol {
+  associatedtype RecipeCardContent : MealziOSSDK.CatalogRecipeCardProtocol
+  associatedtype RecipeLoading : MealziOSSDK.RecipeCardLoadingProtocol
+  var recipeCard: Self.RecipeCardContent { get }
+  var recipeCardLoading: Self.RecipeLoading { get }
+  var actions: MealziOSSDK.RecipeCarouselActions { get set }
+}
+public struct RecipeCarouselActions {
+  public init(onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onRecipeCallToActionTapped: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct RecipeCarousel<RecipeCarouselParameters, BaseViews> : SwiftUI.View where RecipeCarouselParameters : MealziOSSDK.RecipeCarouselParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public let gridConfig: MealziOSSDK.RecipesCarouselGridConfig
+  @_Concurrency.MainActor(unsafe) public init(params: RecipeCarouselParameters, baseViews: BaseViews, gridConfig: MealziOSSDK.RecipesCarouselGridConfig, numberOfResults: Swift.Int, productId: Swift.String)
+  @_Concurrency.MainActor(unsafe) public init(params: RecipeCarouselParameters, baseViews: BaseViews, gridConfig: MealziOSSDK.RecipesCarouselGridConfig, numberOfResults: Swift.Int, criteria: mealzcore.SuggestionsCriteria)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK14RecipeCarouselV4bodyQrvp", 0) __<RecipeCarouselParameters, BaseViews>
+}
+@available(iOS 14, *)
+public struct RecipesCarouselGridConfig {
+  public init(numberOfRows: Swift.Int = 1, spacing: CoreFoundation.CGSize = CGSize(width: 6, height: 6), recipeCardDimensions: CoreFoundation.CGSize = CGSize(width: 200, height: 320), recipeCardFillMaxWidth: Swift.Bool = false, showsIndicators: Swift.Bool = true)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct CatalogRecipeCard<CardTemplate, LoadingTemplate> : SwiftUI.View where CardTemplate : MealziOSSDK.CatalogRecipeCardProtocol, LoadingTemplate : MealziOSSDK.RecipeCardLoadingProtocol {
+  @_Concurrency.MainActor(unsafe) public var recipe: mealzcore.Recipe?
+  @_Concurrency.MainActor(unsafe) public init(_ recipeId: Swift.String, numberOfGuests: Swift.Int? = nil, recipeCardDimensions: CoreFoundation.CGSize, cardTemplate: CardTemplate, loadingTemplate: LoadingTemplate, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onCallToAction: @escaping (Swift.String) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public init(_ recipe: mealzcore.Recipe, numberOfGuests: Swift.Int? = nil, recipeCardDimensions: CoreFoundation.CGSize, cardTemplate: CardTemplate, loadingTemplate: LoadingTemplate, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onCallToAction: @escaping (Swift.String) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public init(criteria: mealzcore.SuggestionsCriteria, numberOfGuests: Swift.Int? = nil, recipeCardDimensions: CoreFoundation.CGSize, cardTemplate: CardTemplate, loadingTemplate: LoadingTemplate, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onCallToAction: @escaping (Swift.String) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK17CatalogRecipeCardV4bodyQrvp", 0) __<CardTemplate, LoadingTemplate>
+}
+@available(iOS 14, *)
+public struct TypeSafeCatalogRecipeCard : MealziOSSDK.CatalogRecipeCardProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.CatalogRecipeCardProtocol
+  public func content(params: MealziOSSDK.CatalogRecipeCardParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK25TypeSafeCatalogRecipeCardV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol CatalogRecipeCardProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.CatalogRecipeCardParameters) -> Self.Content
+}
+public struct CatalogRecipeCardParameters {
+  public var recipeCardDimensions: CoreFoundation.CGSize
+  public var recipe: mealzcore.Recipe
+  public var recipePrice: Swift.Double
+  public var numberOfGuests: Swift.Int
+  public var isCurrentlyInBasket: Swift.Bool
+  public var onAddToBasket: (Swift.String) -> Swift.Void
+  public var onShowRecipeDetails: (Swift.String) -> Swift.Void
+  public init(recipeCardDimensions: CoreFoundation.CGSize, recipe: mealzcore.Recipe, recipePrice: Swift.Double, numberOfGuests: Swift.Int, isCurrentlyInBasket: Swift.Bool, onAddToBasket: @escaping (Swift.String) -> Swift.Void, onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public protocol CatalogRecipesListParametersProtocol {
+  associatedtype Title : MealziOSSDK.BaseTitleProtocol
+  associatedtype RecipeCardContent : MealziOSSDK.CatalogRecipeCardProtocol
+  associatedtype RecipeLoading : MealziOSSDK.RecipeCardLoadingProtocol
+  associatedtype NoResults : MealziOSSDK.CatalogRecipesListNoResultsProtocol
+  associatedtype Loading : MealziOSSDK.LoadingProtocol
+  var title: Self.Title { get }
+  var recipeCard: Self.RecipeCardContent { get }
+  var recipeCardLoading: Self.RecipeLoading { get }
+  var noResults: Self.NoResults { get }
+  var loading: Self.Loading { get }
+  var actions: MealziOSSDK.CatalogRecipesListActions { get set }
+}
+public struct CatalogRecipesListActions {
+  public init(onShowRecipeDetails: @escaping (Swift.String) -> Swift.Void, onNoResultsRedirect: @escaping () -> Swift.Void, onRecipeCallToActionTapped: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeCatalogRecipesListNoResults : MealziOSSDK.CatalogRecipesListNoResultsProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.CatalogRecipesListNoResultsProtocol
+  public func content(params: MealziOSSDK.CatalogRecipesListNoResultsParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK35TypeSafeCatalogRecipesListNoResultsV7content6paramsQrAA0efghI10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol CatalogRecipesListNoResultsProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.CatalogRecipesListNoResultsParameters) -> Self.Content
+}
+public struct CatalogRecipesListNoResultsParameters {
+  public let catalogContent: mealzcore.CatalogContent
+  public let searchText: Swift.String
+  public let onNoResultsRedirect: () -> Swift.Void
+  public init(catalogContent: mealzcore.CatalogContent, searchText: Swift.String, onNoResultsRedirect: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct CatalogRecipesListGridConfig {
+  public init(numberOfColumns: Swift.Int = 2, spacing: CoreFoundation.CGSize = CGSize(width: 4, height: 4), recipeCardDimensions: CoreFoundation.CGSize = CGSize(width: 300, height: 380), recipeCardFillMaxWidth: Swift.Bool = true)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct Price<PriceParameters> : SwiftUI.View where PriceParameters : MealziOSSDK.PriceParametersProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: PriceParameters, recipeId: Swift.String, guestNumber: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK5PriceV4bodyQrvp", 0) __<PriceParameters>
+}
+@available(iOS 14, *)
+public protocol PriceParametersProtocol {
+  associatedtype PriceSuccess : MealziOSSDK.PriceSuccessProtocol
+  associatedtype Loading : MealziOSSDK.LoadingProtocol
+  associatedtype Empty : MealziOSSDK.EmptyProtocol
+  var priceSuccess: Self.PriceSuccess { get }
+  var loading: Self.Loading { get }
+  var empty: Self.Empty { get }
+}
+@available(iOS 14, *)
+public protocol PriceSuccessProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(price: Swift.Double, guests: Swift.Int, currency: Swift.String) -> Self.Content
+}
+@available(iOS 14, *)
+public struct TypeSafePriceSuccess : MealziOSSDK.PriceSuccessProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.PriceSuccessProtocol
+  public func content(price: Swift.Double, guests: Swift.Int, currency: Swift.String) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK20TypeSafePriceSuccessV7content5price6guests8currencyQrSd_SiSStF", 0) __
+}
+extension mealzcore.Sponsor {
+  public var name: Swift.String {
+    get
+  }
+  public var logoURL: Foundation.URL? {
+    get
+  }
+}
+@available(iOS 14, *)
+public struct TypeSafeMyBasketFooter : MealziOSSDK.MyBasketFooterProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MyBasketFooterProtocol
+  public func content(params: MealziOSSDK.MyBasketFooterParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK22TypeSafeMyBasketFooterV7content6paramsQrAA0efG10ParametersV_tF", 0) __
+}
+public enum SponsorTextImageArrangement {
+  case textLeftImageRight
+  case textRightImageLeft
+  case textOverlappingImage
+  public static func == (a: MealziOSSDK.SponsorTextImageArrangement, b: MealziOSSDK.SponsorTextImageArrangement) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct SponsorDetails<BaseViews> : SwiftUI.View where BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public let sponsor: mealzcore.Sponsor
+  @_Concurrency.MainActor(unsafe) public init(baseViews: BaseViews, sponsor: mealzcore.Sponsor)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK14SponsorDetailsV4bodyQrvp", 0) __<BaseViews>
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct LikeButton : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(likeButtonInfo: MealziOSSDK.LikeButtonInfo)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK10LikeButtonV4bodyQrvp", 0) __
+}
+@available(iOS 14, *)
+public struct LikeButtonInfo {
+  public let recipeId: Swift.String
+  public let likedIcon: SwiftUI.Image
+  public let unlikedIcon: SwiftUI.Image
+  public let iconSize: CoreFoundation.CGSize
+  public let backgroundSize: CoreFoundation.CGSize
+  public let iconColor: SwiftUI.Color?
+  public let backgroundColor: SwiftUI.Color
+  public let backgroundShape: MealziOSSDK.AnyShape
+  public init(recipeId: Swift.String, likedIcon: SwiftUI.Image = Image.mealzIcon(icon: .heartFilled), unlikedIcon: SwiftUI.Image = Image.mealzIcon(icon: .heart), iconSize: CoreFoundation.CGSize = CGSize(width: 26.0, height: 26.0), backgroundSize: CoreFoundation.CGSize = CGSize(width: 40.0, height: 40.0), iconColor: SwiftUI.Color? = nil, backgroundColor: SwiftUI.Color = Color.mealzColor(.white), backgroundShape: MealziOSSDK.AnyShape = AnyShape(Circle()))
+}
+@available(iOS 14, *)
+public struct AnyShape : SwiftUI.Shape {
+  public init<S>(_ wrapped: S) where S : SwiftUI.Shape
+  public func path(in rect: CoreFoundation.CGRect) -> SwiftUI.Path
+  public typealias AnimatableData = SwiftUI.EmptyAnimatableData
+  public typealias Body = SwiftUI._ShapeView<MealziOSSDK.AnyShape, SwiftUI.ForegroundStyle>
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct MealsInBasketButton<MealsInBasketButtonParameters> : SwiftUI.View where MealsInBasketButtonParameters : MealziOSSDK.MealsInBasketButtonParametersProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: MealsInBasketButtonParameters, onNavigateToMyMeals: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK19MealsInBasketButtonV4bodyQrvp", 0) __<MealsInBasketButtonParameters>
+}
+@available(iOS 14, *)
+public protocol MealsInBasketButtonParametersProtocol {
+  associatedtype Success : MealziOSSDK.MealsInBasketButtonSuccessProtocol
+  associatedtype Empty : MealziOSSDK.EmptyProtocol
+  var success: Self.Success { get }
+  var empty: Self.Empty { get }
+}
+@available(iOS 14, *)
+public protocol MealsInBasketButtonSuccessProtocol {
+  associatedtype Content : SwiftUI.View
+  func content(params: MealziOSSDK.MealsInBasketButtonSuccessParameters) -> Self.Content
+}
+public struct MealsInBasketButtonSuccessParameters {
+  public let mealsCount: Swift.Int
+  public let onNavigateToMyMeals: () -> Swift.Void
+  public init(mealsCount: Swift.Int, onNavigateToMyMeals: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeMealsInBasketButtonSuccess : MealziOSSDK.MealsInBasketButtonSuccessProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.MealsInBasketButtonSuccessProtocol
+  public func content(params: MealziOSSDK.MealsInBasketButtonSuccessParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK34TypeSafeMealsInBasketButtonSuccessV7content6paramsQrAA0efghI10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol ItemSelectorParametersProtocol {
+  associatedtype SearchBar : MealziOSSDK.SearchProtocol
+  associatedtype ProductTitle : MealziOSSDK.BaseTitleProtocol
+  associatedtype SelectedProduct : MealziOSSDK.ItemSelectorSelectedProductProtocol
+  associatedtype ProductOptions : MealziOSSDK.ItemSelectorOptionProductsProtocol
+  associatedtype NoResults : MealziOSSDK.ItemSelectorNoResultsProtocol
+  var searchBar: Self.SearchBar { get }
+  var title: Self.ProductTitle { get }
+  var selectedProduct: Self.SelectedProduct { get }
+  var productOptions: Self.ProductOptions { get }
+  var noResults: Self.NoResults { get }
+  var actions: MealziOSSDK.ItemSelectorActions { get set }
+}
+public struct ItemSelectorActions {
+  public init(onItemSelected: @escaping () -> Swift.Void, onSeeProductDetails: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct ItemSelector<ItemSelectorParameters, BaseViews> : SwiftUI.View where ItemSelectorParameters : MealziOSSDK.ItemSelectorParametersProtocol, BaseViews : MealziOSSDK.BaseViewsProtocol {
+  @_Concurrency.MainActor(unsafe) public init(params: ItemSelectorParameters, baseViews: BaseViews, ingredientId: Swift.String? = nil, basketEntryId: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK12ItemSelectorV4bodyQrvp", 0) __<ItemSelectorParameters, BaseViews>
+}
+@available(iOS 14, *)
+public protocol ItemSelectorNoResultsProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.ItemSelectorNoResultsParameters) -> Self.Content
+}
+public struct ItemSelectorNoResultsParameters {
+  public let title: Swift.String
+  public let subtitle: Swift.String?
+  public let hasNoSubstitutes: Swift.Bool
+  public let goBack: () -> Swift.Void
+  public init(title: Swift.String, subtitle: Swift.String? = nil, hasNoSubstitutes: Swift.Bool, goBack: @escaping () -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeItemSelectorNoResults : MealziOSSDK.ItemSelectorNoResultsProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.ItemSelectorNoResultsProtocol
+  public func content(params: MealziOSSDK.ItemSelectorNoResultsParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK29TypeSafeItemSelectorNoResultsV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct TypeSafeItemSelectorOptionProducts : MealziOSSDK.ItemSelectorOptionProductsProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.ItemSelectorOptionProductsProtocol
+  public func content(params: MealziOSSDK.ItemSelectorOptionProductsParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK34TypeSafeItemSelectorOptionProductsV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol ItemSelectorOptionProductsProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.ItemSelectorOptionProductsParameters) -> Self.Content
+}
+public struct ItemSelectorOptionProductsParameters {
+  public let products: [mealzcore.Item]
+  public let onItemSelected: (mealzcore.Item) -> Swift.Void
+  public let onSeeItemDetails: (Swift.String) -> Swift.Void
+  public init(products: [mealzcore.Item], onItemSelected: @escaping (mealzcore.Item) -> Swift.Void, onSeeItemDetails: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct TypeSafeItemSelectorSelectedProduct : MealziOSSDK.ItemSelectorSelectedProductProtocol {
+  public init<T>(_ wrapped: T) where T : MealziOSSDK.ItemSelectorSelectedProductProtocol
+  public func content(params: MealziOSSDK.ItemSelectorSelectedProductParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s11MealziOSSDK35TypeSafeItemSelectorSelectedProductV7content6paramsQrAA0efgH10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public protocol ItemSelectorSelectedProductProtocol {
+  associatedtype Content : SwiftUI.View
+  @SwiftUI.ViewBuilder func content(params: MealziOSSDK.ItemSelectorSelectedProductParameters) -> Self.Content
+}
+public struct ItemSelectorSelectedProductParameters {
+  public let product: mealzcore.Item
+  public let onSeeItemDetails: (Swift.String) -> Swift.Void
+  public init(product: mealzcore.Item, onSeeItemDetails: @escaping (Swift.String) -> Swift.Void)
+}
+@available(iOS 14, *)
+public struct ProgressLoader : SwiftUI.View {
+  public init(color: SwiftUI.Color)
+  public init(color: SwiftUI.Color, size: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK14ProgressLoaderV4bodyQrvp", 0) __
+}
+@available(iOS 14, *)
+@_Concurrency.MainActor(unsafe) public struct AsyncImage<Content> : SwiftUI.View where Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public let url: Foundation.URL
+  @_Concurrency.MainActor(unsafe) public let contentProvider: (SwiftUI.Image) -> Content
+  @_Concurrency.MainActor(unsafe) public init(url: Foundation.URL, contentProvider: @escaping (SwiftUI.Image) -> Content)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK10AsyncImageV4bodyQrvp", 0) __<Content>
+}
+extension mealzcore.Analytics {
+  public static func setProps(recipeId: Swift.String? = nil, categoryId: Swift.String? = nil, entryName: Swift.String? = nil, basketId: Swift.String? = nil, miamAmount: mealzcore.KotlinFloat? = nil, totalAmount: Swift.String? = nil, posId: Swift.String? = nil, posTotalAmount: Swift.String? = nil, posName: Swift.String? = nil, searchTerm: Swift.String? = nil, usesCount: Swift.String? = nil, timePassed: Swift.String? = nil, budgetUser: Swift.String? = nil, budgetPlanner: Swift.String? = nil, recipeCount: Swift.String? = nil, query: Swift.String? = nil, guests: Swift.String? = nil, userPreference: Swift.String? = nil, itemId: Swift.String? = nil, itemEan: Swift.String? = nil, oldItemId: Swift.String? = nil, oldItemEan: Swift.String? = nil, newItemId: Swift.String? = nil, newItemEan: Swift.String? = nil, recipeItemId: Swift.String? = nil, diff: Swift.String? = nil, fromMiam: Swift.Bool? = nil) -> mealzcore.Analytics.PlausibleProps
+}
+@available(iOS 14, *)
+extension SwiftUI.Image {
+  @available(*, deprecated, message: "Use .mealzIcon instead")
+  public static func miamImage(icon: MealziOSSDK.MiamIcon) -> SwiftUI.Image
+  public static func mealzIcon(icon: MealziOSSDK.MealzIcons) -> SwiftUI.Image
+}
+@available(iOS 14, *)
+extension SwiftUI.Image {
+  @available(*, deprecated, message: "Use .mealzIcon instead")
+  public static func miamNeutralImage(icon: MealziOSSDK.MiamNeutralIcons) -> SwiftUI.Image
+}
+public struct FakeRecipe {
+  public init()
+  public func createRandomFakeRecipe() -> mealzcore.Recipe
+}
+extension mealzcore.BasketEntry {
+  public var pictureURL: Foundation.URL {
+    get
+  }
+  public var detailedDescription: Swift.String {
+    get
+  }
+}
+extension mealzcore.BasketEntry : Swift.Identifiable {
+  public typealias ID = Swift.String
+}
+extension mealzcore.Recipe {
+  public var title: Swift.String {
+    get
+  }
+  public var difficulty: Swift.Int {
+    get
+  }
+  public var pictureURL: Foundation.URL {
+    get
+  }
+}
+extension mealzcore.Recipe : Swift.Identifiable {
+  public typealias ID = Swift.String
+}
+extension Swift.String {
+  public func capitalizingFirstLetter() -> Swift.String
+  public mutating func capitalizeFirstLetter()
+  public func spellOutTimeUnit() -> Swift.String
+}
+extension Swift.Double {
+  public var currencyFormatted: Swift.String {
+    get
+  }
+  public var currencyFormattedWholeNumber: Swift.String {
+    get
+  }
+  public func pricePerPerson(numberOfGuests: Swift.Int) -> Swift.String
+  public func pricePerPersonWithText(numberOfGuests: Swift.Int) -> Swift.String
+}
+extension Foundation.Bundle {
+  public static let miamBundle: Foundation.Bundle
+}
+@available(iOS 14, *)
+extension SwiftUI.Color {
+  @available(*, deprecated, message: "Use .mealzColor instead")
+  public static func miamColor(_ from: MealziOSSDK.MiamColor) -> SwiftUI.Color
+  @available(*, deprecated, message: "Use .mealzColor instead")
+  public static func miamNeutralColor(_ from: MealziOSSDK.MiamNeutralColor) -> SwiftUI.Color
+  public static func mealzColor(_ from: MealziOSSDK.MealzColor) -> SwiftUI.Color
+}
+@available(*, deprecated, message: "Use MealzIcons instead")
+public enum MiamNeutralIcons : Swift.String {
+  case alert
+  case bin
+  case carret
+  case cart
+  case chefHat
+  case collections
+  case filters
+  case fork
+  case guests
+  case heart
+  case help
+  case home
+  case search
+  case time
+  case minus
+  case plus
+  case check
+  case refresh
+  case success
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 14, *)
+public protocol MiamFontStyle {
+  var font: SwiftUI.Font { get }
+  var color: SwiftUI.Color? { get }
+}
+@available(iOS 14, *)
+public struct MiamFontStyleModifier : SwiftUI.ViewModifier {
+  @_Concurrency.MainActor(unsafe) public func body(content: MealziOSSDK.MiamFontStyleModifier.Content) -> some SwiftUI.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s11MealziOSSDK21MiamFontStyleModifierV4body7contentQr7SwiftUI05_ViewF8_ContentVyACG_tF", 0) __
+}
+@available(iOS 14, *)
+extension SwiftUI.View {
+  public func miamFontStyle(style: any MealziOSSDK.MiamFontStyle) -> some SwiftUI.View
+  
+}
+@available(*, deprecated, message: "Use MealzIcons instead")
+public enum MiamIcon : Swift.String {
+  case arrow
+  case back
+  case bin
+  case bucket
+  case caret
+  case greyCarey
+  case cart
+  case check
+  case greyChevronDown
+  case chevronDown
+  case clock
+  case cookHat
+  case cross
+  case easy
+  case filters
+  case hard
+  case heart
+  case help
+  case ideeRepas
+  case like
+  case likeFilled
+  case mid
+  case minus
+  case noResults
+  case people
+  case plus
+  case plusGreen
+  case print
+  case rightArrow
+  case search
+  case sync
+  case whisk
+  case difficultyLow
+  case difficultyMedium
+  case difficultyHigh
+  case yellowUnderline
+  case look
+  case preferences
+  case empty
+  case budgetBackground
+  case knife
+  case pan
+  case chefHat
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum MealzIcons : Swift.String {
+  case alert
+  case arrow
+  case basket
+  case basketCheck
+  case caret
+  case check
+  case chefHat
+  case cutlery
+  case edit
+  case eye
+  case feelingBlue
+  case filters
+  case guests
+  case heart
+  case heartFilled
+  case home
+  case knife
+  case mealPlannerCTA
+  case menu
+  case minus
+  case pan
+  case plus
+  case reset
+  case search
+  case shop
+  case swap
+  case time
+  case trash
+  case user
+  case userAdd
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(*, deprecated, message: "Use MealzColor instead")
+public enum MiamNeutralColor : Swift.String {
+  case lightBackground
+  case lightBorder
+  case primary
+  case primaryInverse
+  case textNegative
+  case textPrimary
+  case textPrimaryInverse
+  case textDisabled
+  case errorBackground
+  case textSuccess
+  case lightBackgroundSuccess
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @available(iOS 14, *)
+public class Dimension {
+  public static let sharedInstance: MealziOSSDK.Dimension
+  public var borderWidth: CoreFoundation.CGFloat
+  public var sPadding: CoreFoundation.CGFloat
+  public var mPadding: CoreFoundation.CGFloat
+  public var lPadding: CoreFoundation.CGFloat
+  public var xlPadding: CoreFoundation.CGFloat
+  public var mlPadding: CoreFoundation.CGFloat
+  public var sButtonHeight: CoreFoundation.CGFloat
+  public var mButtonHeight: CoreFoundation.CGFloat
+  public var mlButtonHeight: CoreFoundation.CGFloat
+  public var lButtonHeight: CoreFoundation.CGFloat
+  public var xlButtonHeight: CoreFoundation.CGFloat
+  public var sCornerRadius: CoreFoundation.CGFloat
+  public var mCornerRadius: CoreFoundation.CGFloat
+  public var lCornerRadius: CoreFoundation.CGFloat
+  public var xlCornerRadius: CoreFoundation.CGFloat
+  public var buttonCornerRadius: CoreFoundation.CGFloat
+  @objc deinit
+}
+@available(iOS 14, *)
+public struct TitleBigFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct TitleFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct TitleMediumFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct TitleSmallFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct TitleExtraSmallFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct TitleExtraSmallMediumFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct SubtitleFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodyBigFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodyBigBoldFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodyBigLightFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodyFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodyBoldFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodyMediumFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodyMediumBoldFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodySmallFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodySmallBoldFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@available(iOS 14, *)
+public struct BodyExtraSmallFontStyle : MealziOSSDK.MiamFontStyle {
+  public var font: SwiftUI.Font
+  public var color: SwiftUI.Color?
+}
+@_hasMissingDesignatedInitializers @available(iOS 14, *)
+public class MiamFontStyleProvider {
+  public static let sharedInstance: MealziOSSDK.MiamFontStyleProvider
+  public var titleStyle: any MealziOSSDK.MiamFontStyle
+  public var titleBigStyle: any MealziOSSDK.MiamFontStyle
+  public var titleMediumStyle: any MealziOSSDK.MiamFontStyle
+  public var titleSmallStyle: any MealziOSSDK.MiamFontStyle
+  public var titleExtraSmallStyle: any MealziOSSDK.MiamFontStyle
+  public var titleExtraSmallMediumStyle: any MealziOSSDK.MiamFontStyle
+  public var subtitleStyle: any MealziOSSDK.MiamFontStyle
+  public var bodyStyle: any MealziOSSDK.MiamFontStyle
+  public var bodyBigStyle: any MealziOSSDK.MiamFontStyle
+  public var bodyBigLightStyle: any MealziOSSDK.MiamFontStyle
+  public var bodyBigBoldStyle: any MealziOSSDK.MiamFontStyle
+  public var bodyBoldStyle: any MealziOSSDK.MiamFontStyle
+  public var bodyMediumStyle: any MealziOSSDK.MiamFontStyle
+  public var bodyMediumBoldStyle: any MealziOSSDK.MiamFontStyle
+  public var bodySmallStyle: any MealziOSSDK.MiamFontStyle
+  public var bodySmallBoldStyle: any MealziOSSDK.MiamFontStyle
+  public var bodyExtraSmallStyle: any MealziOSSDK.MiamFontStyle
+  @objc deinit
+}
+@available(iOS 14, *)
+public enum MealzColor : Swift.String {
+  case darkBlue
+  case darkerBlue
+  case darkestBlue
+  case lightBlue
+  case lighterBlue
+  case lightestBlue
+  case darkGray
+  case darkerGray
+  case darkestGray
+  case lightGray
+  case lighterGray
+  case lightestGray
+  case white
+  case unpureWhite
+  case itemSelectedBackground
+  case red
+  case burgundy
+  case pinkishRed
+  case salmon
+  case mustard
+  case brownishYellow
+  case green
+  case danger
+  case success
+  case warning
+  case primaryText
+  case standardLightText
+  case standardDarkText
+  case grayText
+  case primary
+  case primaryBackground
+  case border
+  case auxiliary
+  case lightBackground
+  case errorBackground
+  case backButton
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 14, *)
+@available(*, deprecated, message: "Use MealzColor instead")
+public enum MiamColor : Swift.String {
+  case black
+  case black20
+  case border
+  case borderLight
+  case danger
+  case grey
+  case greySurface
+  case info
+  case lightGrey
+  case musterd
+  case neutralGrey
+  case primary
+  case primaryDark
+  case primaryLight
+  case primaryLighter
+  case primaryText
+  case secondary
+  case secondaryText
+  case success
+  case ternary
+  case unpureWhite
+  case warning
+  case white
+  case greyLighter
+  case lightGreyBackground
+  case backgroundSecondary
+  case textDisabled
+  case textPrimarySubdued
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Localization {
+  public static let recipe: mealzcore.Localisation.Recipe
+  public static let basket: mealzcore.Localisation.Basket
+  public static let itemSelector: mealzcore.Localisation.ItemSelector
+  public static let catalog: mealzcore.Localisation.Catalog
+  public static let favorites: mealzcore.Localisation.Favorites
+  public static let preferences: mealzcore.Localisation.Preferences
+  public static let price: mealzcore.Localisation.Price
+  public static let error: mealzcore.Localisation.Error
+  public static let counter: mealzcore.Localisation.Counter
+  public static let myBasket: mealzcore.Localisation.MyBasket
+  public static let myMeals: mealzcore.Localisation.MyMeals
+  public static let sponsorBanner: mealzcore.Localisation.SponsorBanner
+  public static let myBudget: mealzcore.Localisation.Budget
+  public static let tag: mealzcore.Localisation.Tag
+  public static let ingredient: mealzcore.Localisation.Ingredient
+  public static let recipeDetails: mealzcore.Localisation.RecipeDetails
+  public static let filter: mealzcore.Localisation.Filters
+  public static let storeLocatorButton: mealzcore.Localisation.StoreLocatorButton
+}
+extension MealziOSSDK.SelectedMyBasketPage : Swift.Equatable {}
+extension MealziOSSDK.SelectedMyBasketPage : Swift.Hashable {}
+extension MealziOSSDK.SelectedMyBasketPage : Swift.RawRepresentable {}
+extension MealziOSSDK.SelectedControlPage : Swift.Equatable {}
+extension MealziOSSDK.SelectedControlPage : Swift.Hashable {}
+extension MealziOSSDK.SelectedControlPage : Swift.RawRepresentable {}
+extension MealziOSSDK.SponsorTextImageArrangement : Swift.Equatable {}
+extension MealziOSSDK.SponsorTextImageArrangement : Swift.Hashable {}
+@available(*, deprecated, message: "Use MealzIcons instead")
+extension MealziOSSDK.MiamNeutralIcons : Swift.Equatable {}
+@available(*, deprecated, message: "Use MealzIcons instead")
+extension MealziOSSDK.MiamNeutralIcons : Swift.Hashable {}
+@available(*, deprecated, message: "Use MealzIcons instead")
+extension MealziOSSDK.MiamNeutralIcons : Swift.RawRepresentable {}
+@available(*, deprecated, message: "Use MealzIcons instead")
+extension MealziOSSDK.MiamIcon : Swift.Equatable {}
+@available(*, deprecated, message: "Use MealzIcons instead")
+extension MealziOSSDK.MiamIcon : Swift.Hashable {}
+@available(*, deprecated, message: "Use MealzIcons instead")
+extension MealziOSSDK.MiamIcon : Swift.RawRepresentable {}
+extension MealziOSSDK.MealzIcons : Swift.Equatable {}
+extension MealziOSSDK.MealzIcons : Swift.Hashable {}
+extension MealziOSSDK.MealzIcons : Swift.RawRepresentable {}
+@available(*, deprecated, message: "Use MealzColor instead")
+extension MealziOSSDK.MiamNeutralColor : Swift.Equatable {}
+@available(*, deprecated, message: "Use MealzColor instead")
+extension MealziOSSDK.MiamNeutralColor : Swift.Hashable {}
+@available(*, deprecated, message: "Use MealzColor instead")
+extension MealziOSSDK.MiamNeutralColor : Swift.RawRepresentable {}
+@available(iOS 14, *)
+extension MealziOSSDK.MealzColor : Swift.Equatable {}
+@available(iOS 14, *)
+extension MealziOSSDK.MealzColor : Swift.Hashable {}
+@available(iOS 14, *)
+extension MealziOSSDK.MealzColor : Swift.RawRepresentable {}
+@available(iOS 14, *)
+@available(*, deprecated, message: "Use MealzColor instead")
+extension MealziOSSDK.MiamColor : Swift.Equatable {}
+@available(iOS 14, *)
+@available(*, deprecated, message: "Use MealzColor instead")
+extension MealziOSSDK.MiamColor : Swift.Hashable {}
+@available(iOS 14, *)
+@available(*, deprecated, message: "Use MealzColor instead")
+extension MealziOSSDK.MiamColor : Swift.RawRepresentable {}

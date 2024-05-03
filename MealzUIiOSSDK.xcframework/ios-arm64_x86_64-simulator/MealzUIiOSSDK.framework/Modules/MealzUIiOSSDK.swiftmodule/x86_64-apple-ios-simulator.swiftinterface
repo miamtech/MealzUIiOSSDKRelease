@@ -750,7 +750,7 @@ public class FiltersParameters : MealziOSSDK.FiltersParametersProtocol {
   public var callToAction: MealziOSSDK.TypeSafeFiltersCTA
   public var section: MealziOSSDK.TypeSafeFiltersSection
   public var background: MealziOSSDK.TypeSafeBackground
-  public init(actions: MealziOSSDK.FiltersActions, viewOptions: MealzUIiOSSDK.FiltersViewOptions = FiltersViewOptions())
+  public init(actions: MealziOSSDK.FiltersActions, viewOptions: FiltersViewOptions = FiltersViewOptions())
   public typealias Background = MealziOSSDK.TypeSafeBackground
   public typealias CallToAction = MealziOSSDK.TypeSafeFiltersCTA
   public typealias Header = MealziOSSDK.TypeSafeFiltersHeader
@@ -768,7 +768,7 @@ public class MealPlannerRecapParameters : MealziOSSDK.MealPlannerRecapParameters
   public var actions: MealziOSSDK.MealPlannerRecapActions
   public var success: MealziOSSDK.TypeSafeMealPlannerRecap
   public var background: MealziOSSDK.TypeSafeBackground
-  public init(actions: MealziOSSDK.MealPlannerRecapActions, viewOptions: MealzUIiOSSDK.MealPlannerRecapViewOptions = MealPlannerRecapViewOptions())
+  public init(actions: MealziOSSDK.MealPlannerRecapActions, viewOptions: MealPlannerRecapViewOptions = MealPlannerRecapViewOptions())
   public typealias Background = MealziOSSDK.TypeSafeBackground
   public typealias RecapTemplate = MealziOSSDK.TypeSafeMealPlannerRecap
   @objc deinit
@@ -785,7 +785,7 @@ public class BasketRecipeParameters : MealziOSSDK.BasketRecipeParametersProtocol
   public var ingredientsAtHome: MealziOSSDK.TypeSafeNotInBasketProduct
   public var removedIngredients: MealziOSSDK.TypeSafeNotInBasketProduct
   public var unavailableIngredients: MealziOSSDK.TypeSafeNotInBasketProduct
-  public init(actions: MealziOSSDK.BasketRecipeActions, viewOptions: MealzUIiOSSDK.BasketRecipeViewOptions = BasketRecipeViewOptions())
+  public init(actions: MealziOSSDK.BasketRecipeActions, viewOptions: BasketRecipeViewOptions = BasketRecipeViewOptions())
   public typealias BasketProduct = MealziOSSDK.TypeSafeBasketProduct
   public typealias IngredientsAtHome = MealziOSSDK.TypeSafeNotInBasketProduct
   public typealias IngredientsAtHomeToggleButton = MealziOSSDK.TypeSafeBaseButton
@@ -819,7 +819,7 @@ public struct MealPlannerBasketViewOptions {
 public class MealPlannerBasketParameters : MealziOSSDK.MealPlannerBasketParametersProtocol {
   public var actions: MealziOSSDK.MealPlannerBasketActions
   public var footer: MealziOSSDK.TypeSafeMealPlannerBasketFooter
-  public init(actions: MealziOSSDK.MealPlannerBasketActions, viewOptions: MealzUIiOSSDK.MealPlannerBasketViewOptions = MealPlannerBasketViewOptions())
+  public init(actions: MealziOSSDK.MealPlannerBasketActions, viewOptions: MealPlannerBasketViewOptions = MealPlannerBasketViewOptions())
   public typealias FooterTemplate = MealziOSSDK.TypeSafeMealPlannerBasketFooter
   @objc deinit
 }
@@ -832,7 +832,7 @@ public struct MealPlannerFormViewOptions {
 public class MealPlannerFormParameters : MealziOSSDK.MealPlannerFormParametersProtocol {
   public var actions: MealziOSSDK.MealPlannerFormActions
   public var form: MealziOSSDK.TypeSafeMealPlannerForm
-  public init(actions: MealziOSSDK.MealPlannerFormActions, viewOptions: MealzUIiOSSDK.MealPlannerFormViewOptions = MealPlannerFormViewOptions())
+  public init(actions: MealziOSSDK.MealPlannerFormActions, viewOptions: MealPlannerFormViewOptions = MealPlannerFormViewOptions())
   public typealias Form = MealziOSSDK.TypeSafeMealPlannerForm
   @objc deinit
 }
@@ -845,7 +845,7 @@ public struct MealPlannerCTAViewOptions {
 public class MealPlannerCTAParameters : MealziOSSDK.MealPlannerCTAParametersProtocol {
   public var actions: MealziOSSDK.MealPlannerCTAActions
   public var callToAction: MealziOSSDK.TypeSafeMealPlannerCTA
-  public init(actions: MealziOSSDK.MealPlannerCTAActions, viewOptions: MealzUIiOSSDK.MealPlannerCTAViewOptions = MealPlannerCTAViewOptions())
+  public init(actions: MealziOSSDK.MealPlannerCTAActions, viewOptions: MealPlannerCTAViewOptions = MealPlannerCTAViewOptions())
   public typealias CallToAction = MealziOSSDK.TypeSafeMealPlannerCTA
   @objc deinit
 }
@@ -856,7 +856,7 @@ public class MealPlannerRecipePickerParameters : MealziOSSDK.MealPlannerRecipePi
   public var noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults
   public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
   public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
-  public init(actions: MealziOSSDK.MealPlannerRecipePickerActions, viewOptions: MealzUIiOSSDK.MealPlannerRecipePickerViewOptions = MealPlannerRecipePickerViewOptions())
+  public init(actions: MealziOSSDK.MealPlannerRecipePickerActions, viewOptions: MealPlannerRecipePickerViewOptions = MealPlannerRecipePickerViewOptions())
   public typealias CardTemplate = MealziOSSDK.TypeSafeCatalogRecipeCard
   public typealias NoResults = MealziOSSDK.TypeSafeCatalogRecipesListNoResults
   public typealias RecipeLoading = MealziOSSDK.TypeSafeRecipeCardLoading
@@ -880,7 +880,7 @@ public class MealPlannerResultsParameters : MealziOSSDK.MealPlannerResultsParame
   public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
   public var placeholder: MealziOSSDK.TypeSafeMealPlannerRecipePlaceholder
   public var emptyResults: MealziOSSDK.TypeSafeMealPlannerResultsEmpty
-  public init(actions: MealziOSSDK.MealPlannerResultsActions, viewOptions: MealzUIiOSSDK.MealPlannerResultsViewOptions = MealPlannerResultsViewOptions())
+  public init(actions: MealziOSSDK.MealPlannerResultsActions, viewOptions: MealPlannerResultsViewOptions = MealPlannerResultsViewOptions())
   public typealias CardTemplate = MealziOSSDK.TypeSafeMealPlannerRecipeCard
   public typealias EmptyMealPlanner = MealziOSSDK.TypeSafeMealPlannerResultsEmpty
   public typealias FooterTemplate = MealziOSSDK.TypeSafeMealPlannerResultsFooter
@@ -916,7 +916,7 @@ public class PreferencesParameters : MealziOSSDK.PreferencesParametersProtocol {
   public var ingredientsSection: MealziOSSDK.TypeSafePreferencesIngredients
   public var equipmentSection: MealziOSSDK.TypeSafePreferencesEquipment
   public var footer: MealziOSSDK.TypeSafePreferencesFooter
-  public init(actions: MealziOSSDK.PreferencesActions, viewOptions: MealzUIiOSSDK.PreferencesViewOptions = PreferencesViewOptions())
+  public init(actions: MealziOSSDK.PreferencesActions, viewOptions: PreferencesViewOptions = PreferencesViewOptions())
   public typealias DietSection = MealziOSSDK.TypeSafePreferencesDiet
   public typealias EquipmentSection = MealziOSSDK.TypeSafePreferencesEquipment
   public typealias Footer = MealziOSSDK.TypeSafePreferencesFooter
@@ -928,7 +928,7 @@ public class PreferencesParameters : MealziOSSDK.PreferencesParametersProtocol {
 public class BasketTagParameters : MealziOSSDK.BasketTagParametersProtocol {
   public var actions: MealziOSSDK.BasketTagActions
   public var title: MealziOSSDK.TypeSafeBaseTitle
-  public init(actions: MealziOSSDK.BasketTagActions, viewOptions: MealzUIiOSSDK.BasketTagViewOptions = BasketTagViewOptions())
+  public init(actions: MealziOSSDK.BasketTagActions, viewOptions: BasketTagViewOptions = BasketTagViewOptions())
   public typealias Title = MealziOSSDK.TypeSafeBaseTitle
   @objc deinit
 }
@@ -943,7 +943,7 @@ public class MyBasketParameters : MealziOSSDK.MyBasketParametersProtocol {
   public var swapper: MealziOSSDK.TypeSafeMyBasketSwapper
   public var footer: MealziOSSDK.TypeSafeMyBasketFooter
   public var actions: MealziOSSDK.MyBasketActions
-  public init(actions: MealziOSSDK.MyBasketActions, viewOptions: MealzUIiOSSDK.MyBasketViewOptions = MyBasketViewOptions())
+  public init(actions: MealziOSSDK.MyBasketActions, viewOptions: MyBasketViewOptions = MyBasketViewOptions())
   public typealias Footer = MealziOSSDK.TypeSafeMyBasketFooter
   public typealias Swapper = MealziOSSDK.TypeSafeMyBasketSwapper
   public typealias Title = MealziOSSDK.TypeSafeBaseTitle
@@ -970,7 +970,7 @@ public class RecipeDetailParameters : MealziOSSDK.RecipeDetailsParametersProtoco
   public var unavailableIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton
   public var ingredientsAtHome: MealziOSSDK.TypeSafeNotInBasketProduct
   public var unavailableIngredients: MealziOSSDK.TypeSafeNotInBasketProduct
-  public init(actions: MealziOSSDK.RecipeDetailsActions, viewOptions: MealzUIiOSSDK.RecipeDetailsViewOptions = RecipeDetailsViewOptions())
+  public init(actions: MealziOSSDK.RecipeDetailsActions, viewOptions: RecipeDetailsViewOptions = RecipeDetailsViewOptions())
   public typealias Footer = MealziOSSDK.TypeSafeRecipeDetailsFooter
   public typealias Header = MealziOSSDK.TypeSafeRecipeDetailsHeader
   public typealias Ingredients = MealziOSSDK.TypeSafeRecipeDetailsIngredients
@@ -998,7 +998,7 @@ public class RecipeDetailsProductParameters : MealziOSSDK.RecipeDetailsProductPr
   public var unaddedProduct: MealziOSSDK.TypeSafeRecipeDetailsUnaddedProduct
   public var addedProduct: MealziOSSDK.TypeSafeRecipeDetailsAddedProduct
   public var loadingProduct: MealziOSSDK.TypeSafeLoading
-  public init(viewOption: MealzUIiOSSDK.RecipeDetailsProductViewOptions = RecipeDetailsProductViewOptions())
+  public init(viewOption: RecipeDetailsProductViewOptions = RecipeDetailsProductViewOptions())
   public typealias AddedProduct = MealziOSSDK.TypeSafeRecipeDetailsAddedProduct
   public typealias IgnoredProduct = MealziOSSDK.TypeSafeRecipeDetailsIgnoredProduct
   public typealias LoadingProduct = MealziOSSDK.TypeSafeLoading
@@ -1029,8 +1029,8 @@ public struct MyMealsViewOptions {
   public init(title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzMyMealsTitle()), itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(EmptyButtonView()), recipeCard: MealziOSSDK.TypeSafeMyMealRecipeCard = TypeSafeMyMealRecipeCard(MealzMyMealRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
 }
 @available(iOS 14, *)
-extension MealzUIiOSSDK.MyMealsViewOptions {
-  public init(nestedOptions: MealzUIiOSSDK.NestedMyMealsViewOptions)
+extension MyMealsViewOptions {
+  public init(nestedOptions: NestedMyMealsViewOptions)
 }
 @available(iOS 14, *)
 public struct NestedMyMealsViewOptions {
@@ -1047,7 +1047,7 @@ public class MyMealsParameters : MealziOSSDK.MyMealsParametersProtocol {
   public var itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton
   public var recipeCard: MealziOSSDK.TypeSafeMyMealRecipeCard
   public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
-  public init(actions: MealziOSSDK.MyMealsActions, viewOptions: MealzUIiOSSDK.MyMealsViewOptions = MyMealsViewOptions())
+  public init(actions: MealziOSSDK.MyMealsActions, viewOptions: MyMealsViewOptions = MyMealsViewOptions())
   public typealias OpenItemSelectorCallToAction = MealziOSSDK.TypeSafeBaseButton
   public typealias RecipeCard = MealziOSSDK.TypeSafeMyMealRecipeCard
   public typealias RecipeCardLoading = MealziOSSDK.TypeSafeRecipeCardLoading
@@ -1060,7 +1060,7 @@ public class FavoritesParameters : MealziOSSDK.FavoritesParametersProtocol {
   public var title: MealziOSSDK.TypeSafeBaseTitle
   public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
   public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
-  public init(actions: MealziOSSDK.FavoritesActions, viewOptions: MealzUIiOSSDK.FavoritesViewOptions = FavoritesViewOptions())
+  public init(actions: MealziOSSDK.FavoritesActions, viewOptions: FavoritesViewOptions = FavoritesViewOptions())
   public typealias RecipeCardContent = MealziOSSDK.TypeSafeCatalogRecipeCard
   public typealias RecipeLoading = MealziOSSDK.TypeSafeRecipeCardLoading
   public typealias Title = MealziOSSDK.TypeSafeBaseTitle
@@ -1079,7 +1079,7 @@ public class CatalogPackageRowParameters : MealziOSSDK.CatalogPackageRowParamete
   public var callToAction: MealziOSSDK.TypeSafeCatalogPackageCTA
   public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
   public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
-  public init(actions: MealziOSSDK.CatalogPackageRowActions, viewOptions: MealzUIiOSSDK.CatalogPackageRowViewOptions = CatalogPackageRowViewOptions())
+  public init(actions: MealziOSSDK.CatalogPackageRowActions, viewOptions: CatalogPackageRowViewOptions = CatalogPackageRowViewOptions())
   public typealias CallToAction = MealziOSSDK.TypeSafeCatalogPackageCTA
   public typealias RecipeCardContent = MealziOSSDK.TypeSafeCatalogRecipeCard
   public typealias RecipeLoading = MealziOSSDK.TypeSafeRecipeCardLoading
@@ -1097,7 +1097,7 @@ public class CatalogPackageRowViewOptions {
 public class CatalogSearchParameters : MealziOSSDK.CatalogSearchParametersProtocol {
   public var actions: MealziOSSDK.CatalogSearchActions
   public var search: MealziOSSDK.TypeSafeSearch
-  public init(actions: MealziOSSDK.CatalogSearchActions, viewOptions: MealzUIiOSSDK.CatalogSearchViewOptions = CatalogSearchViewOptions())
+  public init(actions: MealziOSSDK.CatalogSearchActions, viewOptions: CatalogSearchViewOptions = CatalogSearchViewOptions())
   public typealias Search = MealziOSSDK.TypeSafeSearch
   @objc deinit
 }
@@ -1112,7 +1112,7 @@ public struct CatalogViewOptions {
   public var catalogToolbar: MealziOSSDK.TypeSafeCatalogToolbar
   public var resultsToolbar: MealziOSSDK.TypeSafeCatalogToolbar
   public var mealPlannerCTA: MealziOSSDK.TypeSafeMealPlannerCTA
-  public var mealsInBasketButton: MealzUIiOSSDK.MealsInBasketButtonParameters
+  public var mealsInBasketButton: MealsInBasketButtonParameters
   public init(catalogToolbar: MealziOSSDK.TypeSafeCatalogToolbar = TypeSafeCatalogToolbar(MealzCatalogToolbar()), resultsToolbar: MealziOSSDK.TypeSafeCatalogToolbar = TypeSafeCatalogToolbar(MealzCatalogResultsToolbar()), mealPlannerCTA: MealziOSSDK.TypeSafeMealPlannerCTA = TypeSafeMealPlannerCTA( MealzMealPlannerCallToAction()), mealsInBasketButtonSuccess: MealziOSSDK.TypeSafeMealsInBasketButtonSuccess = TypeSafeMealsInBasketButtonSuccess(MealzMealsInBasketButtonSuccess()), mealsInBasketButtonEmpty: MealziOSSDK.TypeSafeEmpty = TypeSafeEmpty(DefaultEmptyView()))
 }
 @available(iOS 14, *)
@@ -1121,11 +1121,11 @@ public struct CatalogParameters : MealziOSSDK.CatalogParametersProtocol {
   public var catalogToolbar: MealziOSSDK.TypeSafeCatalogToolbar
   public var resultsToolbar: MealziOSSDK.TypeSafeCatalogToolbar
   public var mealPlannerCTA: MealziOSSDK.TypeSafeMealPlannerCTA
-  public var mealsInBasketButton: MealzUIiOSSDK.MealsInBasketButtonParameters
-  public init(actions: MealziOSSDK.CatalogActions, viewOptions: MealzUIiOSSDK.CatalogViewOptions = CatalogViewOptions())
+  public var mealsInBasketButton: MealsInBasketButtonParameters
+  public init(actions: MealziOSSDK.CatalogActions, viewOptions: CatalogViewOptions = CatalogViewOptions())
   public typealias CatalogToolbar = MealziOSSDK.TypeSafeCatalogToolbar
   public typealias MealPlannerCTA = MealziOSSDK.TypeSafeMealPlannerCTA
-  public typealias MealsInBasketButton = MealzUIiOSSDK.MealsInBasketButtonParameters
+  public typealias MealsInBasketButton = MealsInBasketButtonParameters
   public typealias ResultsToolbar = MealziOSSDK.TypeSafeCatalogToolbar
 }
 @available(iOS 14, *)
@@ -1139,7 +1139,7 @@ public class RecipeCarouselParameters : MealziOSSDK.RecipeCarouselParametersProt
   public var actions: MealziOSSDK.RecipeCarouselActions
   public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
   public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
-  public init(actions: MealziOSSDK.RecipeCarouselActions, viewOptions: MealzUIiOSSDK.RecipeCarouselViewOptions = RecipeCarouselViewOptions())
+  public init(actions: MealziOSSDK.RecipeCarouselActions, viewOptions: RecipeCarouselViewOptions = RecipeCarouselViewOptions())
   public typealias RecipeCardContent = MealziOSSDK.TypeSafeCatalogRecipeCard
   public typealias RecipeLoading = MealziOSSDK.TypeSafeRecipeCardLoading
   @objc deinit
@@ -1156,7 +1156,7 @@ public struct PriceParameters : MealziOSSDK.PriceParametersProtocol {
   public var priceSuccess: MealziOSSDK.TypeSafePriceSuccess
   public var empty: MealziOSSDK.TypeSafeEmpty
   public var loading: MealziOSSDK.TypeSafeLoading
-  public init(viewOptions: MealzUIiOSSDK.PriceViewOptions = PriceViewOptions())
+  public init(viewOptions: PriceViewOptions = PriceViewOptions())
   public typealias Empty = MealziOSSDK.TypeSafeEmpty
   public typealias Loading = MealziOSSDK.TypeSafeLoading
   public typealias PriceSuccess = MealziOSSDK.TypeSafePriceSuccess
@@ -1170,7 +1170,7 @@ public struct StoreLocatorButtonViewOptions {
 public class StoreLocatorButtonParameters : MealziOSSDK.StoreLocatorButtonParametersProtocol {
   public var callToAction: MealziOSSDK.TypeSafeBaseButton
   public var actions: MealziOSSDK.StoreLocatorButtonActions
-  public init(viewOptions: MealzUIiOSSDK.StoreLocatorButtonViewOptions = StoreLocatorButtonViewOptions(), actions: MealziOSSDK.StoreLocatorButtonActions)
+  public init(viewOptions: StoreLocatorButtonViewOptions = StoreLocatorButtonViewOptions(), actions: MealziOSSDK.StoreLocatorButtonActions)
   public typealias CallToAction = MealziOSSDK.TypeSafeBaseButton
   @objc deinit
 }
@@ -1185,7 +1185,7 @@ public class PreferencesSearchParameters : MealziOSSDK.PreferencesSearchProtocol
   public var actions: MealziOSSDK.PreferencesSearchActions
   public var search: MealziOSSDK.TypeSafeSearch
   public var tagButton: MealziOSSDK.TypeSafeBaseButton
-  public init(actions: MealziOSSDK.PreferencesSearchActions, viewOptions: MealzUIiOSSDK.PreferencesSearchViewOptions = PreferencesSearchViewOptions())
+  public init(actions: MealziOSSDK.PreferencesSearchActions, viewOptions: PreferencesSearchViewOptions = PreferencesSearchViewOptions())
   public typealias Search = MealziOSSDK.TypeSafeSearch
   public typealias TagButton = MealziOSSDK.TypeSafeBaseButton
   @objc deinit
@@ -1218,7 +1218,7 @@ public class CatalogRecipesListParameters : MealziOSSDK.CatalogRecipesListParame
   public var title: MealziOSSDK.TypeSafeBaseTitle
   public var noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults
   public var loading: MealziOSSDK.TypeSafeLoading
-  public init(actions: MealziOSSDK.CatalogRecipesListActions, viewOptions: MealzUIiOSSDK.CatalogRecipesListViewOptions = CatalogRecipesListViewOptions())
+  public init(actions: MealziOSSDK.CatalogRecipesListActions, viewOptions: CatalogRecipesListViewOptions = CatalogRecipesListViewOptions())
   public typealias Loading = MealziOSSDK.TypeSafeLoading
   public typealias NoResults = MealziOSSDK.TypeSafeCatalogRecipesListNoResults
   public typealias RecipeCardContent = MealziOSSDK.TypeSafeCatalogRecipeCard
@@ -1257,7 +1257,7 @@ public class MyProductsParameters : MealziOSSDK.MyProductsParametersProtocol {
   public var productCard: MealziOSSDK.TypeSafeMyProductsProductCard
   public var loadingProduct: MealziOSSDK.TypeSafeLoading
   public var actions: MealziOSSDK.MyProductsActions
-  public init(viewOptions: MealzUIiOSSDK.MyProductsViewOptions = MyProductsViewOptions(), actions: MealziOSSDK.MyProductsActions)
+  public init(viewOptions: MyProductsViewOptions = MyProductsViewOptions(), actions: MealziOSSDK.MyProductsActions)
   public typealias LoadingProduct = MealziOSSDK.TypeSafeLoading
   public typealias OpenItemSelectorCallToAction = MealziOSSDK.TypeSafeBaseButton
   public typealias ProductCard = MealziOSSDK.TypeSafeMyProductsProductCard
@@ -1280,7 +1280,7 @@ public struct ItemSelectorParameters : MealziOSSDK.ItemSelectorParametersProtoco
   public var productOptions: MealziOSSDK.TypeSafeItemSelectorOptionProducts
   public var noResults: MealziOSSDK.TypeSafeItemSelectorNoResults
   public var actions: MealziOSSDK.ItemSelectorActions
-  public init(actions: MealziOSSDK.ItemSelectorActions, viewOptions: MealzUIiOSSDK.ItemSelectorViewOptions = ItemSelectorViewOptions())
+  public init(actions: MealziOSSDK.ItemSelectorActions, viewOptions: ItemSelectorViewOptions = ItemSelectorViewOptions())
   public typealias NoResults = MealziOSSDK.TypeSafeItemSelectorNoResults
   public typealias ProductOptions = MealziOSSDK.TypeSafeItemSelectorOptionProducts
   public typealias ProductTitle = MealziOSSDK.TypeSafeBaseTitle
