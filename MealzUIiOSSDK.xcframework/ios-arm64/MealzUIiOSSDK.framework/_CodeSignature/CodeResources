@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		4b3MPaoVwlZbNfx46LglwwPgaHs=
+		KJbNKcWZxyu/55UpPSRvFDvxaas=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		91Sc61a8CFWCwG5z4MUhpn0iILE=
+		y/Am0W0/v0bljvt+AEdRKGpamI4=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		91Sc61a8CFWCwG5z4MUhpn0iILE=
+		y/Am0W0/v0bljvt+AEdRKGpamI4=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		idlie36Okjj8H3A6NDXGPPsQhSk=
+		sLgrcrFdG6J+oPPsHBfbeQ9Km5E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ldpw9hA77/0q3iKmI7aTj9u6lyVQVdrrxd2b60g2GKg=
+			Zg4JpIIb44F7Lh9TnoW+UHN9McShM9EVzzXGwHFq5QI=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PiIfq4/9wNrzEQABeH8x39zs6ZE/cVxdEbiP0blSo5g=
+			ZmdqcLFbqSKsmBHoNgbI/0DWWWIEUcvEHp+XqqMdqOE=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -119,14 +119,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PiIfq4/9wNrzEQABeH8x39zs6ZE/cVxdEbiP0blSo5g=
+			ZmdqcLFbqSKsmBHoNgbI/0DWWWIEUcvEHp+XqqMdqOE=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aeXDc14SejL0Hp8kD/udTQe9Rtb96lAxiy8PUjnSybY=
+			ele4Fmt2T/KhGjMQFmL1Fbxdq6nQo0+42MlMtGYsfi8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
