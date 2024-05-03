@@ -6,3 +6,4 @@ You can import this repository either with Swift Package Manager (SPM) or Cocoap
 
 In your application, you will `import MealzUIiOSSDK` as that is the name of the attached XCFramework that you are importing.
 # MealzUIiOSSDKRelease
+# MealzNaviOSSDKRelease
