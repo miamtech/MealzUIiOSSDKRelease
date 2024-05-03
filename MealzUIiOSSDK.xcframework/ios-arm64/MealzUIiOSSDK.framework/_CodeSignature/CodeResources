@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		I674REv7O3aTRrujDsbEwiTPpy0=
+		4b3MPaoVwlZbNfx46LglwwPgaHs=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		LHYZrcpPXKyNXP4ECfh2Gkm/HBw=
+		91Sc61a8CFWCwG5z4MUhpn0iILE=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		LHYZrcpPXKyNXP4ECfh2Gkm/HBw=
+		91Sc61a8CFWCwG5z4MUhpn0iILE=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		UCUyCio8/gnfOtC7OtbpENmUGa8=
+		idlie36Okjj8H3A6NDXGPPsQhSk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>build_xcframework.sh</key>
 		<data>
-		8CgFa19FVZQLA6g7rO/k6sAFUow=
+		VbrRrZ+mkpQ1POv9PKLZS0Thw+g=
 		</data>
 		<key>changelog.md</key>
 		<data>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yo/YQC/eBQQUuaji2qsk4yTq2gC2bf4nVMSPL9TuP1I=
+			ldpw9hA77/0q3iKmI7aTj9u6lyVQVdrrxd2b60g2GKg=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z7a+5y1b4cqQwwTPoR0gPb3ef7lOPjWys2vlmuUi8XQ=
+			PiIfq4/9wNrzEQABeH8x39zs6ZE/cVxdEbiP0blSo5g=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -119,14 +119,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z7a+5y1b4cqQwwTPoR0gPb3ef7lOPjWys2vlmuUi8XQ=
+			PiIfq4/9wNrzEQABeH8x39zs6ZE/cVxdEbiP0blSo5g=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DIhh4U+K556wNZueZklm3FQyFiC3oRN2dtlICxx86MA=
+			aeXDc14SejL0Hp8kD/udTQe9Rtb96lAxiy8PUjnSybY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -147,7 +147,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QPbhdPq+hV9DXI7fM8XfYH7LxyTGTT2DMymnhN8IlIc=
+			gVQqO6dlXmD1qEcrkSkH0iRXrdwW6Nb+OmQZKr2n2J8=
 			</data>
 		</dict>
 		<key>changelog.md</key>

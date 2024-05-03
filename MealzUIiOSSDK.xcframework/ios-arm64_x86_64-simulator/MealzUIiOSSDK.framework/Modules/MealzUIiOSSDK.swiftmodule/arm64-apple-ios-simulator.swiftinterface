@@ -3,7 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios17.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MealzUIiOSSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
-import MealzIOSFramework
+import MealziOSSDK
 import Swift
 import SwiftUI
 import UIKit
@@ -12,152 +12,152 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import mealzcore
 @available(iOS 14, *)
-public struct MealzMealPlannerRecap : MealzIOSFramework.MealPlannerRecapProtocol {
+public struct MealzMealPlannerRecap : MealziOSSDK.MealPlannerRecapProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerRecapViewParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerRecapViewParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A16MealPlannerRecapV7content6paramsQr0A12IOSFramework0deF14ViewParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A16MealPlannerRecapV7content6paramsQr06MealziC00deF14ViewParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerForm : MealzIOSFramework.MealPlannerFormProtocol {
+public struct MealzMealPlannerForm : MealziOSSDK.MealPlannerFormProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerFormViewParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerFormViewParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A15MealPlannerFormV7content6paramsQr0A12IOSFramework0deF14ViewParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A15MealPlannerFormV7content6paramsQr06MealziC00deF14ViewParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerRecipeCard : MealzIOSFramework.MealPlannerRecipeCardProtocol {
+public struct MealzMealPlannerRecipeCard : MealziOSSDK.MealPlannerRecipeCardProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerRecipeCardParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerRecipeCardParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A21MealPlannerRecipeCardV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A21MealPlannerRecipeCardV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerRecipePlaceholder : MealzIOSFramework.MealPlannerRecipePlaceholderProtocol {
+public struct MealzMealPlannerRecipePlaceholder : MealziOSSDK.MealPlannerRecipePlaceholderProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerRecipePlaceholderParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerRecipePlaceholderParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A28MealPlannerRecipePlaceholderV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A28MealPlannerRecipePlaceholderV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerRecipeCardLoading : MealzIOSFramework.RecipeCardLoadingProtocol {
+public struct MealzMealPlannerRecipeCardLoading : MealziOSSDK.RecipeCardLoadingProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeCardLoadingParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeCardLoadingParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A28MealPlannerRecipeCardLoadingV7content6paramsQr0A12IOSFramework0fgH10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A28MealPlannerRecipeCardLoadingV7content6paramsQr06MealziC00fgH10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerCallToAction : MealzIOSFramework.MealPlannerCTAProtocol {
+public struct MealzMealPlannerCallToAction : MealziOSSDK.MealPlannerCTAProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerCTAViewParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerCTAViewParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23MealPlannerCallToActionV7content6paramsQr0A12IOSFramework0dE17CTAViewParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23MealPlannerCallToActionV7content6paramsQr06MealziC00dE17CTAViewParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerSearch : MealzIOSFramework.SearchProtocol {
+public struct MealzMealPlannerSearch : MealziOSSDK.SearchProtocol {
   public init()
-  public func content(params: MealzIOSFramework.SearchParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.SearchParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17MealPlannerSearchV7content6paramsQr0A12IOSFramework0F10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17MealPlannerSearchV7content6paramsQr06MealziC00F10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerRecipePickerEmpty : MealzIOSFramework.EmptyProtocol {
-  public func content(params: MealzIOSFramework.BaseEmptyParameters) -> some SwiftUI.View
+public struct MealzMealPlannerRecipePickerEmpty : MealziOSSDK.EmptyProtocol {
+  public func content(params: MealziOSSDK.BaseEmptyParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A28MealPlannerRecipePickerEmptyV7content6paramsQr0A12IOSFramework04BaseH10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A28MealPlannerRecipePickerEmptyV7content6paramsQr06MealziC004BaseH10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerResultsEmpty : MealzIOSFramework.MealPlannerResultsEmptyProtocol {
+public struct MealzMealPlannerResultsEmpty : MealziOSSDK.MealPlannerResultsEmptyProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerResultsEmptyParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerResultsEmptyParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23MealPlannerResultsEmptyV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23MealPlannerResultsEmptyV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerStickyFooter : MealzIOSFramework.MealPlannerResultsFooterProtocol {
+public struct MealzMealPlannerStickyFooter : MealziOSSDK.MealPlannerResultsFooterProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerResultsFooterParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerResultsFooterParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23MealPlannerStickyFooterV7content6paramsQr0A12IOSFramework0de7ResultsG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23MealPlannerStickyFooterV7content6paramsQr06MealziC00de7ResultsG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerLoading : MealzIOSFramework.LoadingProtocol {
+public struct MealzMealPlannerLoading : MealziOSSDK.LoadingProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseLoadingParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseLoadingParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A18MealPlannerLoadingV7content6paramsQr0A12IOSFramework04BaseF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A18MealPlannerLoadingV7content6paramsQr06MealziC004BaseF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerResultsToolbar : MealzIOSFramework.MealPlannerResultsToolbarProtocol {
+public struct MealzMealPlannerResultsToolbar : MealziOSSDK.MealPlannerResultsToolbarProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerResultsToolbarParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerResultsToolbarParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A25MealPlannerResultsToolbarV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A25MealPlannerResultsToolbarV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzNotInBasketProduct : MealzIOSFramework.NotInBasketProductProtocol {
+public struct MealzNotInBasketProduct : MealziOSSDK.NotInBasketProductProtocol {
   public init()
-  public func content(params: MealzIOSFramework.NotInBasketProductParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.NotInBasketProductParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A18NotInBasketProductV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A18NotInBasketProductV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public class MealzNotInBasketTitle : MealzIOSFramework.BaseButtonProtocol {
+public class MealzNotInBasketTitle : MealziOSSDK.BaseButtonProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseButtonParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseButtonParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A16NotInBasketTitleC7content6paramsQr0A12IOSFramework20BaseButtonParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A16NotInBasketTitleC7content6paramsQr06MealziC020BaseButtonParametersV_tF", 0) __
   @objc deinit
 }
 @available(iOS 14, *)
-public struct MealzBasketRecipeOverview : MealzIOSFramework.BasketRecipeOverviewProtocol {
+public struct MealzBasketRecipeOverview : MealziOSSDK.BasketRecipeOverviewProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BasketRecipeOverviewParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BasketRecipeOverviewParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20BasketRecipeOverviewV7content6paramsQr0A12IOSFramework0deF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20BasketRecipeOverviewV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 
 @available(iOS 14, *)
-public struct MealzBasketProduct : MealzIOSFramework.BasketProductProtocol {
+public struct MealzBasketProduct : MealziOSSDK.BasketProductProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BasketProductParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BasketProductParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A13BasketProductV7content6paramsQr0A12IOSFramework0dE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A13BasketProductV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealPlannerBasketPreviewFooter : MealzIOSFramework.MealPlannerBasketFooterProtocol {
+public struct MealzMealPlannerBasketPreviewFooter : MealziOSSDK.MealPlannerBasketFooterProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerBasketFooterParamaters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerBasketFooterParamaters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A30MealPlannerBasketPreviewFooterV7content6paramsQr0A12IOSFramework0defH10ParamatersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A30MealPlannerBasketPreviewFooterV7content6paramsQr06MealziC00defH10ParamatersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzPreferencesGuest : MealzIOSFramework.PreferencesGuestProtocol {
+public struct MealzPreferencesGuest : MealziOSSDK.PreferencesGuestProtocol {
   public init()
-  public func content(params: MealzIOSFramework.PreferencesGuestParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.PreferencesGuestParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A16PreferencesGuestV7content6paramsQr0A12IOSFramework0dE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A16PreferencesGuestV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzPreferencesSearchTag : MealzIOSFramework.BaseButtonProtocol {
+public struct MealzPreferencesSearchTag : MealziOSSDK.BaseButtonProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseButtonParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseButtonParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20PreferencesSearchTagV7content6paramsQr0A12IOSFramework20BaseButtonParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20PreferencesSearchTagV7content6paramsQr06MealziC020BaseButtonParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzPreferencesFooter : MealzIOSFramework.PreferencesFooterProtocol {
+public struct MealzPreferencesFooter : MealziOSSDK.PreferencesFooterProtocol {
   public init()
-  public func content(params: MealzIOSFramework.PreferencesFooterParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.PreferencesFooterParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17PreferencesFooterV7content6paramsQr0A12IOSFramework0dE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17PreferencesFooterV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzPreferencesDiet : MealzIOSFramework.PreferencesDietProtocol {
+public struct MealzPreferencesDiet : MealziOSSDK.PreferencesDietProtocol {
   public init()
-  public func content(params: MealzIOSFramework.PreferencesDietParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.PreferencesDietParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A15PreferencesDietV7content6paramsQr0A12IOSFramework0dE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A15PreferencesDietV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
 public struct MealzPreferencesListView : SwiftUI.View {
@@ -216,96 +216,96 @@ public struct MealzAddTagView : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A10AddTagViewV4bodyQrvp", 0) __
 }
 @available(iOS 14, *)
-public struct MealzPreferencesIngredients : MealzIOSFramework.PreferencesIngredientsProtocol {
+public struct MealzPreferencesIngredients : MealziOSSDK.PreferencesIngredientsProtocol {
   public init()
-  public func content(params: MealzIOSFramework.PreferencesIngredientsParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.PreferencesIngredientsParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A22PreferencesIngredientsV7content6paramsQr0A12IOSFramework0dE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A22PreferencesIngredientsV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzPreferencesEquipment : MealzIOSFramework.PreferencesEquipmentProtocol {
+public struct MealzPreferencesEquipment : MealziOSSDK.PreferencesEquipmentProtocol {
   public init()
-  public func content(params: MealzIOSFramework.PreferencesEquipmentParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.PreferencesEquipmentParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20PreferencesEquipmentV7content6paramsQr0A12IOSFramework0dE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20PreferencesEquipmentV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzBasketTagItem : MealzIOSFramework.BaseTitleProtocol {
+public struct MealzBasketTagItem : MealziOSSDK.BaseTitleProtocol {
   public init()
-  public func content(params: MealzIOSFramework.TitleParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.TitleParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A13BasketTagItemV7content6paramsQr0A12IOSFramework15TitleParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A13BasketTagItemV7content6paramsQr06MealziC015TitleParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzBasketTagItemLoading : MealzIOSFramework.LoadingProtocol {
+public struct MealzBasketTagItemLoading : MealziOSSDK.LoadingProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseLoadingParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseLoadingParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20BasketTagItemLoadingV7content6paramsQr0A12IOSFramework04BaseG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20BasketTagItemLoadingV7content6paramsQr06MealziC004BaseG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMyBasketSwapper : MealzIOSFramework.MyBasketSwapperProtocol {
+public struct MealzMyBasketSwapper : MealziOSSDK.MyBasketSwapperProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MyBasketSwapperParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MyBasketSwapperParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A15MyBasketSwapperV7content6paramsQr0A12IOSFramework0deF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A15MyBasketSwapperV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMyBasketOpenItemSelectorCTA : MealzIOSFramework.BaseButtonProtocol {
+public struct MealzMyBasketOpenItemSelectorCTA : MealziOSSDK.BaseButtonProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseButtonParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseButtonParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A27MyBasketOpenItemSelectorCTAV7content6paramsQr0A12IOSFramework20BaseButtonParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A27MyBasketOpenItemSelectorCTAV7content6paramsQr06MealziC020BaseButtonParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMyBasketFooter : MealzIOSFramework.MyBasketFooterProtocol {
+public struct MealzMyBasketFooter : MealziOSSDK.MyBasketFooterProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MyBasketFooterParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MyBasketFooterParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14MyBasketFooterV7content6paramsQr0A12IOSFramework0deF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14MyBasketFooterV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 @available(iOS 14.0, *)
-public struct MealzRecipeDetailsIngredientsView : MealzIOSFramework.RecipeDetailsIngredientsProtocol {
+public struct MealzRecipeDetailsIngredientsView : MealziOSSDK.RecipeDetailsIngredientsProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeDetailsIngredientsParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeDetailsIngredientsParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A28RecipeDetailsIngredientsViewV7content6paramsQr0A12IOSFramework0deF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A28RecipeDetailsIngredientsViewV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeDetailsFooterView : MealzIOSFramework.RecipeDetailsFooterProtocol {
+public struct MealzRecipeDetailsFooterView : MealziOSSDK.RecipeDetailsFooterProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeDetailsFooterParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeDetailsFooterParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23RecipeDetailsFooterViewV7content6paramsQr0A12IOSFramework0deF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23RecipeDetailsFooterViewV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeDetailsNumberOfIngredientsTitleView : MealzIOSFramework.BaseTitleProtocol {
+public struct MealzRecipeDetailsNumberOfIngredientsTitleView : MealziOSSDK.BaseTitleProtocol {
   public init()
-  public func content(params: MealzIOSFramework.TitleParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.TitleParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A41RecipeDetailsNumberOfIngredientsTitleViewV7content6paramsQr0A12IOSFramework0I10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A41RecipeDetailsNumberOfIngredientsTitleViewV7content6paramsQr06MealziC00I10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeDetailsSponsor : MealzIOSFramework.RecipeDetailsSponsorProtocol {
+public struct MealzRecipeDetailsSponsor : MealziOSSDK.RecipeDetailsSponsorProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeDetailsSponsorParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeDetailsSponsorParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20RecipeDetailsSponsorV7content6paramsQr0A12IOSFramework0deF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20RecipeDetailsSponsorV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 public let mealzProductHeight: CoreFoundation.CGFloat
 @available(iOS 14, *)
-public struct MealzRecipeDetailsAddedProductView : MealzIOSFramework.RecipeDetailsAddedProductProtocol {
+public struct MealzRecipeDetailsAddedProductView : MealziOSSDK.RecipeDetailsAddedProductProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeDetailsAddedProductParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeDetailsAddedProductParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A29RecipeDetailsAddedProductViewV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A29RecipeDetailsAddedProductViewV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeDetailsIgnoredProductView : MealzIOSFramework.RecipeDetailsIgnoredProductProtocol {
+public struct MealzRecipeDetailsIgnoredProductView : MealziOSSDK.RecipeDetailsIgnoredProductProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeDetailsIgnoredProductParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeDetailsIgnoredProductParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A31RecipeDetailsIgnoredProductViewV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A31RecipeDetailsIgnoredProductViewV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
 public struct MealzSponsoredTag : SwiftUI.View {
@@ -324,18 +324,18 @@ public struct IngredientUnitBubble : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK20IngredientUnitBubbleV4bodyQrvp", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeDetailsUnaddedProductView : MealzIOSFramework.RecipeDetailsUnaddedProductProtocol {
+public struct MealzRecipeDetailsUnaddedProductView : MealziOSSDK.RecipeDetailsUnaddedProductProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeDetailsUnaddedProductParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeDetailsUnaddedProductParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A31RecipeDetailsUnaddedProductViewV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A31RecipeDetailsUnaddedProductViewV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeDetailsLoadingProductView : MealzIOSFramework.LoadingProtocol {
+public struct MealzRecipeDetailsLoadingProductView : MealziOSSDK.LoadingProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseLoadingParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseLoadingParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A31RecipeDetailsLoadingProductViewV7content6paramsQr0A12IOSFramework04BaseF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A31RecipeDetailsLoadingProductViewV7content6paramsQr06MealziC004BaseF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
 public struct MealzRecipeDetailsIngredientRow : SwiftUI.View {
@@ -347,7 +347,7 @@ public struct MealzRecipeDetailsIngredientRow : SwiftUI.View {
 }
 @available(iOS 14, *)
 public struct MealzRecipeDetailsTagsView : SwiftUI.View {
-  public init(tags: [MealzIOSFramework.RecipeDetailTags])
+  public init(tags: [MealziOSSDK.RecipeDetailTags])
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -369,124 +369,124 @@ public struct MealzRecipeDetailsStepRow : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20RecipeDetailsStepRowV4bodyQrvp", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeDetailsHeaderView : MealzIOSFramework.RecipeDetailsHeaderProtocol {
+public struct MealzRecipeDetailsHeaderView : MealziOSSDK.RecipeDetailsHeaderProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeDetailsHeaderParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeDetailsHeaderParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23RecipeDetailsHeaderViewV7content6paramsQr0A12IOSFramework0deF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23RecipeDetailsHeaderViewV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeDetailsSelectedControlView : MealzIOSFramework.RecipeDetailsSelectedControlProtocol {
+public struct MealzRecipeDetailsSelectedControlView : MealziOSSDK.RecipeDetailsSelectedControlProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeDetailsSelectedControlParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeDetailsSelectedControlParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A32RecipeDetailsSelectedControlViewV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A32RecipeDetailsSelectedControlViewV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeDetailsStepsView : MealzIOSFramework.RecipeDetailsStepsProtocol {
+public struct MealzRecipeDetailsStepsView : MealziOSSDK.RecipeDetailsStepsProtocol {
   public init(addLinesUnderneath: Swift.Bool = false)
-  public func content(params: MealzIOSFramework.RecipeDetailsStepsParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeDetailsStepsParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A22RecipeDetailsStepsViewV7content6paramsQr0A12IOSFramework0deF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A22RecipeDetailsStepsViewV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMyMealRecipeCard : MealzIOSFramework.MyMealRecipeCardProtocol {
+public struct MealzMyMealRecipeCard : MealziOSSDK.MyMealRecipeCardProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MyMealRecipeCardParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MyMealRecipeCardParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A16MyMealRecipeCardV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A16MyMealRecipeCardV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 
 @available(iOS 14, *)
-public struct MealzMyMealsTitle : MealzIOSFramework.BaseTitleProtocol {
+public struct MealzMyMealsTitle : MealziOSSDK.BaseTitleProtocol {
   public init()
-  public func content(params: MealzIOSFramework.TitleParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.TitleParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A12MyMealsTitleV7content6paramsQr0A12IOSFramework0F10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A12MyMealsTitleV7content6paramsQr06MealziC00F10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMyMealsEmpty : MealzIOSFramework.EmptyProtocol {
+public struct MealzMyMealsEmpty : MealziOSSDK.EmptyProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseEmptyParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseEmptyParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A12MyMealsEmptyV7content6paramsQr0A12IOSFramework04BaseF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A12MyMealsEmptyV7content6paramsQr06MealziC004BaseF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzFavoritesTitle : MealzIOSFramework.BaseTitleProtocol {
+public struct MealzFavoritesTitle : MealziOSSDK.BaseTitleProtocol {
   public init()
-  public func content(params: MealzIOSFramework.TitleParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.TitleParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14FavoritesTitleV7content6paramsQr0A12IOSFramework0E10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14FavoritesTitleV7content6paramsQr06MealziC00E10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzFiltersHeader : MealzIOSFramework.FiltersHeaderProtocol {
+public struct MealzFiltersHeader : MealziOSSDK.FiltersHeaderProtocol {
   public init()
-  public func content(params: MealzIOSFramework.FiltersHeaderParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.FiltersHeaderParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A13FiltersHeaderV7content6paramsQr0A12IOSFramework0dE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A13FiltersHeaderV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzFiltersCTA : MealzIOSFramework.FiltersCTAProtocol {
+public struct MealzFiltersCTA : MealziOSSDK.FiltersCTAProtocol {
   public init()
-  public func content(params: MealzIOSFramework.FiltersCTAParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.FiltersCTAParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A10FiltersCTAV7content6paramsQr0A12IOSFramework0D13CTAParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A10FiltersCTAV7content6paramsQr06MealziC00D13CTAParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzFiltersSection : MealzIOSFramework.FiltersSectionProtocol {
+public struct MealzFiltersSection : MealziOSSDK.FiltersSectionProtocol {
   public init()
-  public func content(params: MealzIOSFramework.FiltersSectionParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.FiltersSectionParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14FiltersSectionV7content6paramsQr0A12IOSFramework0dE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14FiltersSectionV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzCatalogToolbar : MealzIOSFramework.CatalogToolbarProtocol {
+public struct MealzCatalogToolbar : MealziOSSDK.CatalogToolbarProtocol {
   public init()
-  public func content(params: MealzIOSFramework.CatalogToolbarParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.CatalogToolbarParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14CatalogToolbarV7content6paramsQr0A12IOSFramework0dE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14CatalogToolbarV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzCatalogResultsToolbar : MealzIOSFramework.CatalogToolbarProtocol {
+public struct MealzCatalogResultsToolbar : MealziOSSDK.CatalogToolbarProtocol {
   public init()
-  public func content(params: MealzIOSFramework.CatalogToolbarParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.CatalogToolbarParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A21CatalogResultsToolbarV7content6paramsQr0A12IOSFramework0dF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A21CatalogResultsToolbarV7content6paramsQr06MealziC00dF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzCatalogEmpty : MealzIOSFramework.EmptyProtocol {
+public struct MealzCatalogEmpty : MealziOSSDK.EmptyProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseEmptyParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseEmptyParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A12CatalogEmptyV7content6paramsQr0A12IOSFramework04BaseE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A12CatalogEmptyV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzCatalogPackageTitle : MealzIOSFramework.BaseTitleProtocol {
+public struct MealzCatalogPackageTitle : MealziOSSDK.BaseTitleProtocol {
   public init()
-  public func content(params: MealzIOSFramework.TitleParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.TitleParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A19CatalogPackageTitleV7content6paramsQr0A12IOSFramework0F10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A19CatalogPackageTitleV7content6paramsQr06MealziC00F10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzCatalogPackageCTA : MealzIOSFramework.CatalogPackageCTAProtocol {
+public struct MealzCatalogPackageCTA : MealziOSSDK.CatalogPackageCTAProtocol {
   public init()
-  public func content(params: MealzIOSFramework.CatalogPackageCTAParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.CatalogPackageCTAParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17CatalogPackageCTAV7content6paramsQr0A12IOSFramework0dE13CTAParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17CatalogPackageCTAV7content6paramsQr06MealziC00dE13CTAParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzPriceView : MealzIOSFramework.PriceSuccessProtocol {
+public struct MealzPriceView : MealziOSSDK.PriceSuccessProtocol {
   public init(pricePerPerson: Swift.Bool = true)
   public func content(price: Swift.Double, guests: Swift.Int, currency: Swift.String) -> some SwiftUI.View
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A9PriceViewV7content5price6guests8currencyQrSd_SiSStF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeCardLoading : MealzIOSFramework.RecipeCardLoadingProtocol {
+public struct MealzRecipeCardLoading : MealziOSSDK.RecipeCardLoadingProtocol {
   public init()
-  public func content(params: MealzIOSFramework.RecipeCardLoadingParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.RecipeCardLoadingParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17RecipeCardLoadingV7content6paramsQr0A12IOSFramework0deF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17RecipeCardLoadingV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
 public struct MealzRecipeDifficulty : SwiftUI.View {
@@ -529,109 +529,109 @@ public struct MealzPricePerPerson : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14PricePerPersonV4bodyQrvp", 0) __
 }
 @available(iOS 14, *)
-public struct MealzRecipeCard : MealzIOSFramework.CatalogRecipeCardProtocol {
+public struct MealzRecipeCard : MealziOSSDK.CatalogRecipeCardProtocol {
   public init()
-  public func content(params: MealzIOSFramework.CatalogRecipeCardParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.CatalogRecipeCardParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A10RecipeCardV7content6paramsQr0A12IOSFramework07CatalogdE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A10RecipeCardV7content6paramsQr06MealziC007CatalogdE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct DemoCatalogRecipeCardView : MealzIOSFramework.CatalogRecipeCardProtocol {
+public struct DemoCatalogRecipeCardView : MealziOSSDK.CatalogRecipeCardProtocol {
   public init()
-  public func content(params: MealzIOSFramework.CatalogRecipeCardParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.CatalogRecipeCardParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK25DemoCatalogRecipeCardViewV7content6paramsQr0A12IOSFramework0efG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK25DemoCatalogRecipeCardViewV7content6paramsQr06MealziC00efG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzStoreLocatorButton : MealzIOSFramework.BaseButtonProtocol {
+public struct MealzStoreLocatorButton : MealziOSSDK.BaseButtonProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseButtonParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseButtonParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A18StoreLocatorButtonV7content6paramsQr0A12IOSFramework04BaseF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A18StoreLocatorButtonV7content6paramsQr06MealziC004BaseF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzCatalogRecipesListNoResults : MealzIOSFramework.CatalogRecipesListNoResultsProtocol {
+public struct MealzCatalogRecipesListNoResults : MealziOSSDK.CatalogRecipesListNoResultsProtocol {
   public init()
-  public func content(params: MealzIOSFramework.CatalogRecipesListNoResultsParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.CatalogRecipesListNoResultsParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A27CatalogRecipesListNoResultsV7content6paramsQr0A12IOSFramework0defgH10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A27CatalogRecipesListNoResultsV7content6paramsQr06MealziC00defgH10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct DefaultEmptyView : MealzIOSFramework.EmptyProtocol {
+public struct DefaultEmptyView : MealziOSSDK.EmptyProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseEmptyParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseEmptyParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK16DefaultEmptyViewV7content6paramsQr0A12IOSFramework04BaseE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK16DefaultEmptyViewV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzGeneralEmpty : MealzIOSFramework.EmptyProtocol {
+public struct MealzGeneralEmpty : MealziOSSDK.EmptyProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseEmptyParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseEmptyParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A12GeneralEmptyV7content6paramsQr0A12IOSFramework04BaseE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A12GeneralEmptyV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct EmptyTitleView : MealzIOSFramework.BaseTitleProtocol {
+public struct EmptyTitleView : MealziOSSDK.BaseTitleProtocol {
   public init()
-  public func content(params: MealzIOSFramework.TitleParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.TitleParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK14EmptyTitleViewV7content6paramsQr0A12IOSFramework0E10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK14EmptyTitleViewV7content6paramsQr06MealziC00E10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct EmptyButtonView : MealzIOSFramework.BaseButtonProtocol {
+public struct EmptyButtonView : MealziOSSDK.BaseButtonProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseButtonParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseButtonParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK15EmptyButtonViewV7content6paramsQr0A12IOSFramework04BaseE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK15EmptyButtonViewV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct DefaultBackgroundView : MealzIOSFramework.BackgroundProtocol {
+public struct DefaultBackgroundView : MealziOSSDK.BackgroundProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseBackgroundParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseBackgroundParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK21DefaultBackgroundViewV7content6paramsQr0A12IOSFramework04BaseE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK21DefaultBackgroundViewV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzGeneralLoading : MealzIOSFramework.LoadingProtocol {
+public struct MealzGeneralLoading : MealziOSSDK.LoadingProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseLoadingParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseLoadingParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14GeneralLoadingV7content6paramsQr0A12IOSFramework04BaseE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14GeneralLoadingV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzGeneralComponentLoading : MealzIOSFramework.LoadingProtocol {
+public struct MealzGeneralComponentLoading : MealziOSSDK.LoadingProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseLoadingParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseLoadingParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23GeneralComponentLoadingV7content6paramsQr0A12IOSFramework04BaseF10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A23GeneralComponentLoadingV7content6paramsQr06MealziC004BaseF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct DefaultTitleView : MealzIOSFramework.BaseTitleProtocol {
+public struct DefaultTitleView : MealziOSSDK.BaseTitleProtocol {
   public init()
-  public func content(params: MealzIOSFramework.TitleParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.TitleParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK16DefaultTitleViewV7content6paramsQr0A12IOSFramework0E10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK16DefaultTitleViewV7content6paramsQr06MealziC00E10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct DefaultLoadingView : MealzIOSFramework.LoadingProtocol {
+public struct DefaultLoadingView : MealziOSSDK.LoadingProtocol {
   public init(size: CoreFoundation.CGFloat = 60)
-  public func content(params: MealzIOSFramework.BaseLoadingParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseLoadingParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK18DefaultLoadingViewV7content6paramsQr0A12IOSFramework04BaseE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK18DefaultLoadingViewV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzGeneralSearch : MealzIOSFramework.SearchProtocol {
+public struct MealzGeneralSearch : MealziOSSDK.SearchProtocol {
   public init(hasButton: Swift.Bool = true)
-  public func content(params: MealzIOSFramework.SearchParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.SearchParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A13GeneralSearchV7content6paramsQr0A12IOSFramework0E10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A13GeneralSearchV7content6paramsQr06MealziC00E10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzGeneralBackground : MealzIOSFramework.BackgroundProtocol {
+public struct MealzGeneralBackground : MealziOSSDK.BackgroundProtocol {
   public init()
-  public func content(params: MealzIOSFramework.BaseBackgroundParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.BaseBackgroundParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17GeneralBackgroundV7content6paramsQr0A12IOSFramework04BaseE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17GeneralBackgroundV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
 public struct MealzNoSearchResults : SwiftUI.View {
@@ -665,66 +665,66 @@ public struct MealzCounterView : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A11CounterViewV4bodyQrvp", 0) __
 }
 @available(iOS 14.0, *)
-public struct DefaultErrorView : MealzIOSFramework.ErrorProtocol {
-  public func content(params: MealzIOSFramework.BaseErrorParameters) -> some SwiftUI.View
+public struct DefaultErrorView : MealziOSSDK.ErrorProtocol {
+  public func content(params: MealziOSSDK.BaseErrorParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK16DefaultErrorViewV7content6paramsQr0A12IOSFramework04BaseE10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK16DefaultErrorViewV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct DefaultMealPlannerCTA : MealzIOSFramework.MealPlannerCTAProtocol {
+public struct DefaultMealPlannerCTA : MealziOSSDK.MealPlannerCTAProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealPlannerCTAViewParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealPlannerCTAViewParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK21DefaultMealPlannerCTAV7content6paramsQr0A12IOSFramework0eF17CTAViewParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK21DefaultMealPlannerCTAV7content6paramsQr06MealziC00eF17CTAViewParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMealsInBasketButtonSuccess : MealzIOSFramework.MealsInBasketButtonSuccessProtocol {
+public struct MealzMealsInBasketButtonSuccess : MealziOSSDK.MealsInBasketButtonSuccessProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MealsInBasketButtonSuccessParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MealsInBasketButtonSuccessParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A26MealsInBasketButtonSuccessV7content6paramsQr0A12IOSFramework0defgH10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A26MealsInBasketButtonSuccessV7content6paramsQr06MealziC00defgH10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzMyProductsProductCard : MealzIOSFramework.MyProductsProductCardProtocol {
+public struct MealzMyProductsProductCard : MealziOSSDK.MyProductsProductCardProtocol {
   public init()
-  public func content(params: MealzIOSFramework.MyProductsProductCardParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.MyProductsProductCardParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A21MyProductsProductCardV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A21MyProductsProductCardV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzItemSelectorSearch : MealzIOSFramework.SearchProtocol {
+public struct MealzItemSelectorSearch : MealziOSSDK.SearchProtocol {
   public init()
-  public func content(params: MealzIOSFramework.SearchParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.SearchParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A18ItemSelectorSearchV7content6paramsQr0A12IOSFramework0F10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A18ItemSelectorSearchV7content6paramsQr06MealziC00F10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzItemSelectorSelectedProduct : MealzIOSFramework.ItemSelectorSelectedProductProtocol {
+public struct MealzItemSelectorSelectedProduct : MealziOSSDK.ItemSelectorSelectedProductProtocol {
   public init()
-  public func content(params: MealzIOSFramework.ItemSelectorSelectedProductParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.ItemSelectorSelectedProductParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A27ItemSelectorSelectedProductV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A27ItemSelectorSelectedProductV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzItemSelectorNoResultsView : MealzIOSFramework.ItemSelectorNoResultsProtocol {
+public struct MealzItemSelectorNoResultsView : MealziOSSDK.ItemSelectorNoResultsProtocol {
   public init()
-  public func content(params: MealzIOSFramework.ItemSelectorNoResultsParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.ItemSelectorNoResultsParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A25ItemSelectorNoResultsViewV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A25ItemSelectorNoResultsViewV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzItemSelectorOptionProducts : MealzIOSFramework.ItemSelectorOptionProductsProtocol {
+public struct MealzItemSelectorOptionProducts : MealziOSSDK.ItemSelectorOptionProductsProtocol {
   public init()
-  public func content(params: MealzIOSFramework.ItemSelectorOptionProductsParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.ItemSelectorOptionProductsParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A26ItemSelectorOptionProductsV7content6paramsQr0A12IOSFramework0defG10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A26ItemSelectorOptionProductsV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
-public struct MealzItemSelectorTitle : MealzIOSFramework.BaseTitleProtocol {
+public struct MealzItemSelectorTitle : MealziOSSDK.BaseTitleProtocol {
   public init()
-  public func content(params: MealzIOSFramework.TitleParameters) -> some SwiftUI.View
+  public func content(params: MealziOSSDK.TitleParameters) -> some SwiftUI.View
   
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17ItemSelectorTitleV7content6paramsQr0A12IOSFramework0F10ParametersV_tF", 0) __
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A17ItemSelectorTitleV7content6paramsQr06MealziC00F10ParametersV_tF", 0) __
 }
 public struct MealzUIiOSSDK {
   public var text: Swift.String {
@@ -737,296 +737,296 @@ public struct MealzUIiOSSDK {
 }
 @available(iOS 14, *)
 public struct FiltersViewOptions {
-  public var header: MealzIOSFramework.TypeSafeFiltersHeader
-  public var callToAction: MealzIOSFramework.TypeSafeFiltersCTA
-  public var section: MealzIOSFramework.TypeSafeFiltersSection
-  public var background: MealzIOSFramework.TypeSafeBackground
-  public init(header: MealzIOSFramework.TypeSafeFiltersHeader = TypeSafeFiltersHeader(MealzFiltersHeader()), callToAction: MealzIOSFramework.TypeSafeFiltersCTA = TypeSafeFiltersCTA(MealzFiltersCTA()), section: MealzIOSFramework.TypeSafeFiltersSection = TypeSafeFiltersSection(MealzFiltersSection()), background: MealzIOSFramework.TypeSafeBackground = TypeSafeBackground(DefaultBackgroundView()))
+  public var header: MealziOSSDK.TypeSafeFiltersHeader
+  public var callToAction: MealziOSSDK.TypeSafeFiltersCTA
+  public var section: MealziOSSDK.TypeSafeFiltersSection
+  public var background: MealziOSSDK.TypeSafeBackground
+  public init(header: MealziOSSDK.TypeSafeFiltersHeader = TypeSafeFiltersHeader(MealzFiltersHeader()), callToAction: MealziOSSDK.TypeSafeFiltersCTA = TypeSafeFiltersCTA(MealzFiltersCTA()), section: MealziOSSDK.TypeSafeFiltersSection = TypeSafeFiltersSection(MealzFiltersSection()), background: MealziOSSDK.TypeSafeBackground = TypeSafeBackground(DefaultBackgroundView()))
 }
 @available(iOS 14, *)
-public class FiltersParameters : MealzIOSFramework.FiltersParametersProtocol {
-  public var actions: MealzIOSFramework.FiltersActions
-  public var header: MealzIOSFramework.TypeSafeFiltersHeader
-  public var callToAction: MealzIOSFramework.TypeSafeFiltersCTA
-  public var section: MealzIOSFramework.TypeSafeFiltersSection
-  public var background: MealzIOSFramework.TypeSafeBackground
-  public init(actions: MealzIOSFramework.FiltersActions, viewOptions: MealzUIiOSSDK.FiltersViewOptions = FiltersViewOptions())
-  public typealias Background = MealzIOSFramework.TypeSafeBackground
-  public typealias CallToAction = MealzIOSFramework.TypeSafeFiltersCTA
-  public typealias Header = MealzIOSFramework.TypeSafeFiltersHeader
-  public typealias Section = MealzIOSFramework.TypeSafeFiltersSection
+public class FiltersParameters : MealziOSSDK.FiltersParametersProtocol {
+  public var actions: MealziOSSDK.FiltersActions
+  public var header: MealziOSSDK.TypeSafeFiltersHeader
+  public var callToAction: MealziOSSDK.TypeSafeFiltersCTA
+  public var section: MealziOSSDK.TypeSafeFiltersSection
+  public var background: MealziOSSDK.TypeSafeBackground
+  public init(actions: MealziOSSDK.FiltersActions, viewOptions: MealzUIiOSSDK.FiltersViewOptions = FiltersViewOptions())
+  public typealias Background = MealziOSSDK.TypeSafeBackground
+  public typealias CallToAction = MealziOSSDK.TypeSafeFiltersCTA
+  public typealias Header = MealziOSSDK.TypeSafeFiltersHeader
+  public typealias Section = MealziOSSDK.TypeSafeFiltersSection
   @objc deinit
 }
 @available(iOS 14, *)
 public struct MealPlannerRecapViewOptions {
-  public var success: MealzIOSFramework.TypeSafeMealPlannerRecap
-  public var background: MealzIOSFramework.TypeSafeBackground
-  public init(success: MealzIOSFramework.TypeSafeMealPlannerRecap = TypeSafeMealPlannerRecap(MealzMealPlannerRecap()), background: MealzIOSFramework.TypeSafeBackground = TypeSafeBackground(DefaultBackgroundView()))
+  public var success: MealziOSSDK.TypeSafeMealPlannerRecap
+  public var background: MealziOSSDK.TypeSafeBackground
+  public init(success: MealziOSSDK.TypeSafeMealPlannerRecap = TypeSafeMealPlannerRecap(MealzMealPlannerRecap()), background: MealziOSSDK.TypeSafeBackground = TypeSafeBackground(DefaultBackgroundView()))
 }
 @available(iOS 14, *)
-public class MealPlannerRecapParameters : MealzIOSFramework.MealPlannerRecapParametersProtocol {
-  public var actions: MealzIOSFramework.MealPlannerRecapActions
-  public var success: MealzIOSFramework.TypeSafeMealPlannerRecap
-  public var background: MealzIOSFramework.TypeSafeBackground
-  public init(actions: MealzIOSFramework.MealPlannerRecapActions, viewOptions: MealzUIiOSSDK.MealPlannerRecapViewOptions = MealPlannerRecapViewOptions())
-  public typealias Background = MealzIOSFramework.TypeSafeBackground
-  public typealias RecapTemplate = MealzIOSFramework.TypeSafeMealPlannerRecap
+public class MealPlannerRecapParameters : MealziOSSDK.MealPlannerRecapParametersProtocol {
+  public var actions: MealziOSSDK.MealPlannerRecapActions
+  public var success: MealziOSSDK.TypeSafeMealPlannerRecap
+  public var background: MealziOSSDK.TypeSafeBackground
+  public init(actions: MealziOSSDK.MealPlannerRecapActions, viewOptions: MealzUIiOSSDK.MealPlannerRecapViewOptions = MealPlannerRecapViewOptions())
+  public typealias Background = MealziOSSDK.TypeSafeBackground
+  public typealias RecapTemplate = MealziOSSDK.TypeSafeMealPlannerRecap
   @objc deinit
 }
 @available(iOS 14, *)
-public class BasketRecipeParameters : MealzIOSFramework.BasketRecipeParametersProtocol {
-  public var actions: MealzIOSFramework.BasketRecipeActions
-  public var recipeOverview: MealzIOSFramework.TypeSafeBasketRecipeOverview
-  public var recipeOverviewLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public var basketProduct: MealzIOSFramework.TypeSafeBasketProduct
-  public var ingredientsAtHomeToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var removedIngredientsToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var unavailableIngredientsToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var ingredientsAtHome: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public var removedIngredients: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public var unavailableIngredients: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public init(actions: MealzIOSFramework.BasketRecipeActions, viewOptions: MealzUIiOSSDK.BasketRecipeViewOptions = BasketRecipeViewOptions())
-  public typealias BasketProduct = MealzIOSFramework.TypeSafeBasketProduct
-  public typealias IngredientsAtHome = MealzIOSFramework.TypeSafeNotInBasketProduct
-  public typealias IngredientsAtHomeToggleButton = MealzIOSFramework.TypeSafeBaseButton
-  public typealias RecipeOverview = MealzIOSFramework.TypeSafeBasketRecipeOverview
-  public typealias RecipeOverviewLoading = MealzIOSFramework.TypeSafeRecipeCardLoading
-  public typealias RemovedIngredients = MealzIOSFramework.TypeSafeNotInBasketProduct
-  public typealias RemovedIngredientsToggleButton = MealzIOSFramework.TypeSafeBaseButton
-  public typealias UnavailableIngredients = MealzIOSFramework.TypeSafeNotInBasketProduct
-  public typealias UnavailableIngredientsToggleButton = MealzIOSFramework.TypeSafeBaseButton
+public class BasketRecipeParameters : MealziOSSDK.BasketRecipeParametersProtocol {
+  public var actions: MealziOSSDK.BasketRecipeActions
+  public var recipeOverview: MealziOSSDK.TypeSafeBasketRecipeOverview
+  public var recipeOverviewLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public var basketProduct: MealziOSSDK.TypeSafeBasketProduct
+  public var ingredientsAtHomeToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var removedIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var unavailableIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var ingredientsAtHome: MealziOSSDK.TypeSafeNotInBasketProduct
+  public var removedIngredients: MealziOSSDK.TypeSafeNotInBasketProduct
+  public var unavailableIngredients: MealziOSSDK.TypeSafeNotInBasketProduct
+  public init(actions: MealziOSSDK.BasketRecipeActions, viewOptions: MealzUIiOSSDK.BasketRecipeViewOptions = BasketRecipeViewOptions())
+  public typealias BasketProduct = MealziOSSDK.TypeSafeBasketProduct
+  public typealias IngredientsAtHome = MealziOSSDK.TypeSafeNotInBasketProduct
+  public typealias IngredientsAtHomeToggleButton = MealziOSSDK.TypeSafeBaseButton
+  public typealias RecipeOverview = MealziOSSDK.TypeSafeBasketRecipeOverview
+  public typealias RecipeOverviewLoading = MealziOSSDK.TypeSafeRecipeCardLoading
+  public typealias RemovedIngredients = MealziOSSDK.TypeSafeNotInBasketProduct
+  public typealias RemovedIngredientsToggleButton = MealziOSSDK.TypeSafeBaseButton
+  public typealias UnavailableIngredients = MealziOSSDK.TypeSafeNotInBasketProduct
+  public typealias UnavailableIngredientsToggleButton = MealziOSSDK.TypeSafeBaseButton
   @objc deinit
 }
 @available(iOS 14, *)
 public struct BasketRecipeViewOptions {
-  public var recipeOverview: MealzIOSFramework.TypeSafeBasketRecipeOverview
-  public var recipeOverviewLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public var basketProduct: MealzIOSFramework.TypeSafeBasketProduct
-  public var ingredientsAtHomeToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var removedIngredientsToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var unavailableIngredientsToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var ingredientsAtHome: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public var removedIngredients: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public var unavailableIngredients: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public init(recipeOverview: MealzIOSFramework.TypeSafeBasketRecipeOverview = TypeSafeBasketRecipeOverview(MealzBasketRecipeOverview()), recipeOverviewLoading: MealzIOSFramework.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()), basketProduct: MealzIOSFramework.TypeSafeBasketProduct = TypeSafeBasketProduct(MealzBasketProduct()), ingredientsAtHomeToggleButton: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), removedIngredientsToggleButton: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), unavailableIngredientsToggleButton: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), ingredientsAtHome: MealzIOSFramework.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()), removedIngredients: MealzIOSFramework.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()), unavailableIngredients: MealzIOSFramework.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()))
+  public var recipeOverview: MealziOSSDK.TypeSafeBasketRecipeOverview
+  public var recipeOverviewLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public var basketProduct: MealziOSSDK.TypeSafeBasketProduct
+  public var ingredientsAtHomeToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var removedIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var unavailableIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var ingredientsAtHome: MealziOSSDK.TypeSafeNotInBasketProduct
+  public var removedIngredients: MealziOSSDK.TypeSafeNotInBasketProduct
+  public var unavailableIngredients: MealziOSSDK.TypeSafeNotInBasketProduct
+  public init(recipeOverview: MealziOSSDK.TypeSafeBasketRecipeOverview = TypeSafeBasketRecipeOverview(MealzBasketRecipeOverview()), recipeOverviewLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()), basketProduct: MealziOSSDK.TypeSafeBasketProduct = TypeSafeBasketProduct(MealzBasketProduct()), ingredientsAtHomeToggleButton: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), removedIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), unavailableIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), ingredientsAtHome: MealziOSSDK.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()), removedIngredients: MealziOSSDK.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()), unavailableIngredients: MealziOSSDK.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()))
 }
 @available(iOS 14, *)
 public struct MealPlannerBasketViewOptions {
-  public var footer: MealzIOSFramework.TypeSafeMealPlannerBasketFooter
-  public init(footer: MealzIOSFramework.TypeSafeMealPlannerBasketFooter = TypeSafeMealPlannerBasketFooter(MealzMealPlannerBasketPreviewFooter()))
+  public var footer: MealziOSSDK.TypeSafeMealPlannerBasketFooter
+  public init(footer: MealziOSSDK.TypeSafeMealPlannerBasketFooter = TypeSafeMealPlannerBasketFooter(MealzMealPlannerBasketPreviewFooter()))
 }
 @available(iOS 14, *)
-public class MealPlannerBasketParameters : MealzIOSFramework.MealPlannerBasketParametersProtocol {
-  public var actions: MealzIOSFramework.MealPlannerBasketActions
-  public var footer: MealzIOSFramework.TypeSafeMealPlannerBasketFooter
-  public init(actions: MealzIOSFramework.MealPlannerBasketActions, viewOptions: MealzUIiOSSDK.MealPlannerBasketViewOptions = MealPlannerBasketViewOptions())
-  public typealias FooterTemplate = MealzIOSFramework.TypeSafeMealPlannerBasketFooter
+public class MealPlannerBasketParameters : MealziOSSDK.MealPlannerBasketParametersProtocol {
+  public var actions: MealziOSSDK.MealPlannerBasketActions
+  public var footer: MealziOSSDK.TypeSafeMealPlannerBasketFooter
+  public init(actions: MealziOSSDK.MealPlannerBasketActions, viewOptions: MealzUIiOSSDK.MealPlannerBasketViewOptions = MealPlannerBasketViewOptions())
+  public typealias FooterTemplate = MealziOSSDK.TypeSafeMealPlannerBasketFooter
   @objc deinit
 }
 @available(iOS 14, *)
 public struct MealPlannerFormViewOptions {
-  public var form: MealzIOSFramework.TypeSafeMealPlannerForm
-  public init(form: MealzIOSFramework.TypeSafeMealPlannerForm = TypeSafeMealPlannerForm(MealzMealPlannerForm()))
+  public var form: MealziOSSDK.TypeSafeMealPlannerForm
+  public init(form: MealziOSSDK.TypeSafeMealPlannerForm = TypeSafeMealPlannerForm(MealzMealPlannerForm()))
 }
 @available(iOS 14, *)
-public class MealPlannerFormParameters : MealzIOSFramework.MealPlannerFormParametersProtocol {
-  public var actions: MealzIOSFramework.MealPlannerFormActions
-  public var form: MealzIOSFramework.TypeSafeMealPlannerForm
-  public init(actions: MealzIOSFramework.MealPlannerFormActions, viewOptions: MealzUIiOSSDK.MealPlannerFormViewOptions = MealPlannerFormViewOptions())
-  public typealias Form = MealzIOSFramework.TypeSafeMealPlannerForm
+public class MealPlannerFormParameters : MealziOSSDK.MealPlannerFormParametersProtocol {
+  public var actions: MealziOSSDK.MealPlannerFormActions
+  public var form: MealziOSSDK.TypeSafeMealPlannerForm
+  public init(actions: MealziOSSDK.MealPlannerFormActions, viewOptions: MealzUIiOSSDK.MealPlannerFormViewOptions = MealPlannerFormViewOptions())
+  public typealias Form = MealziOSSDK.TypeSafeMealPlannerForm
   @objc deinit
 }
 @available(iOS 14, *)
 public struct MealPlannerCTAViewOptions {
-  public var callToAction: MealzIOSFramework.TypeSafeMealPlannerCTA
-  public init(callToAction: MealzIOSFramework.TypeSafeMealPlannerCTA = TypeSafeMealPlannerCTA(MealzMealPlannerCallToAction()))
+  public var callToAction: MealziOSSDK.TypeSafeMealPlannerCTA
+  public init(callToAction: MealziOSSDK.TypeSafeMealPlannerCTA = TypeSafeMealPlannerCTA(MealzMealPlannerCallToAction()))
 }
 @available(iOS 14, *)
-public class MealPlannerCTAParameters : MealzIOSFramework.MealPlannerCTAParametersProtocol {
-  public var actions: MealzIOSFramework.MealPlannerCTAActions
-  public var callToAction: MealzIOSFramework.TypeSafeMealPlannerCTA
-  public init(actions: MealzIOSFramework.MealPlannerCTAActions, viewOptions: MealzUIiOSSDK.MealPlannerCTAViewOptions = MealPlannerCTAViewOptions())
-  public typealias CallToAction = MealzIOSFramework.TypeSafeMealPlannerCTA
+public class MealPlannerCTAParameters : MealziOSSDK.MealPlannerCTAParametersProtocol {
+  public var actions: MealziOSSDK.MealPlannerCTAActions
+  public var callToAction: MealziOSSDK.TypeSafeMealPlannerCTA
+  public init(actions: MealziOSSDK.MealPlannerCTAActions, viewOptions: MealzUIiOSSDK.MealPlannerCTAViewOptions = MealPlannerCTAViewOptions())
+  public typealias CallToAction = MealziOSSDK.TypeSafeMealPlannerCTA
   @objc deinit
 }
 @available(iOS 14, *)
-public class MealPlannerRecipePickerParameters : MealzIOSFramework.MealPlannerRecipePickerParametersProtocol {
-  public var actions: MealzIOSFramework.MealPlannerRecipePickerActions
-  public var search: MealzIOSFramework.TypeSafeSearch
-  public var noResults: MealzIOSFramework.TypeSafeCatalogRecipesListNoResults
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(actions: MealzIOSFramework.MealPlannerRecipePickerActions, viewOptions: MealzUIiOSSDK.MealPlannerRecipePickerViewOptions = MealPlannerRecipePickerViewOptions())
-  public typealias CardTemplate = MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public typealias NoResults = MealzIOSFramework.TypeSafeCatalogRecipesListNoResults
-  public typealias RecipeLoading = MealzIOSFramework.TypeSafeRecipeCardLoading
-  public typealias SearchTemplate = MealzIOSFramework.TypeSafeSearch
+public class MealPlannerRecipePickerParameters : MealziOSSDK.MealPlannerRecipePickerParametersProtocol {
+  public var actions: MealziOSSDK.MealPlannerRecipePickerActions
+  public var search: MealziOSSDK.TypeSafeSearch
+  public var noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(actions: MealziOSSDK.MealPlannerRecipePickerActions, viewOptions: MealzUIiOSSDK.MealPlannerRecipePickerViewOptions = MealPlannerRecipePickerViewOptions())
+  public typealias CardTemplate = MealziOSSDK.TypeSafeCatalogRecipeCard
+  public typealias NoResults = MealziOSSDK.TypeSafeCatalogRecipesListNoResults
+  public typealias RecipeLoading = MealziOSSDK.TypeSafeRecipeCardLoading
+  public typealias SearchTemplate = MealziOSSDK.TypeSafeSearch
   @objc deinit
 }
 @available(iOS 14, *)
 public struct MealPlannerRecipePickerViewOptions {
-  public var search: MealzIOSFramework.TypeSafeSearch
-  public var noResults: MealzIOSFramework.TypeSafeCatalogRecipesListNoResults
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(search: MealzIOSFramework.TypeSafeSearch = TypeSafeSearch(MealzMealPlannerSearch()), noResults: MealzIOSFramework.TypeSafeCatalogRecipesListNoResults = TypeSafeCatalogRecipesListNoResults(MealzCatalogRecipesListNoResults()), recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
+  public var search: MealziOSSDK.TypeSafeSearch
+  public var noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(search: MealziOSSDK.TypeSafeSearch = TypeSafeSearch(MealzMealPlannerSearch()), noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults = TypeSafeCatalogRecipesListNoResults(MealzCatalogRecipesListNoResults()), recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
 }
 @available(iOS 14, *)
-public class MealPlannerResultsParameters : MealzIOSFramework.MealPlannerResultsParametersProtocol {
-  public var actions: MealzIOSFramework.MealPlannerResultsActions
-  public var toolbar: MealzIOSFramework.TypeSafeMealPlannerResultsToolbar
-  public var footer: MealzIOSFramework.TypeSafeMealPlannerResultsFooter
-  public var recipeCard: MealzIOSFramework.TypeSafeMealPlannerRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public var placeholder: MealzIOSFramework.TypeSafeMealPlannerRecipePlaceholder
-  public var emptyResults: MealzIOSFramework.TypeSafeMealPlannerResultsEmpty
-  public init(actions: MealzIOSFramework.MealPlannerResultsActions, viewOptions: MealzUIiOSSDK.MealPlannerResultsViewOptions = MealPlannerResultsViewOptions())
-  public typealias CardTemplate = MealzIOSFramework.TypeSafeMealPlannerRecipeCard
-  public typealias EmptyMealPlanner = MealzIOSFramework.TypeSafeMealPlannerResultsEmpty
-  public typealias FooterTemplate = MealzIOSFramework.TypeSafeMealPlannerResultsFooter
-  public typealias LoadingCardTemplate = MealzIOSFramework.TypeSafeRecipeCardLoading
-  public typealias PlaceholderCardTemplate = MealzIOSFramework.TypeSafeMealPlannerRecipePlaceholder
-  public typealias ToolbarTemplate = MealzIOSFramework.TypeSafeMealPlannerResultsToolbar
+public class MealPlannerResultsParameters : MealziOSSDK.MealPlannerResultsParametersProtocol {
+  public var actions: MealziOSSDK.MealPlannerResultsActions
+  public var toolbar: MealziOSSDK.TypeSafeMealPlannerResultsToolbar
+  public var footer: MealziOSSDK.TypeSafeMealPlannerResultsFooter
+  public var recipeCard: MealziOSSDK.TypeSafeMealPlannerRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public var placeholder: MealziOSSDK.TypeSafeMealPlannerRecipePlaceholder
+  public var emptyResults: MealziOSSDK.TypeSafeMealPlannerResultsEmpty
+  public init(actions: MealziOSSDK.MealPlannerResultsActions, viewOptions: MealzUIiOSSDK.MealPlannerResultsViewOptions = MealPlannerResultsViewOptions())
+  public typealias CardTemplate = MealziOSSDK.TypeSafeMealPlannerRecipeCard
+  public typealias EmptyMealPlanner = MealziOSSDK.TypeSafeMealPlannerResultsEmpty
+  public typealias FooterTemplate = MealziOSSDK.TypeSafeMealPlannerResultsFooter
+  public typealias LoadingCardTemplate = MealziOSSDK.TypeSafeRecipeCardLoading
+  public typealias PlaceholderCardTemplate = MealziOSSDK.TypeSafeMealPlannerRecipePlaceholder
+  public typealias ToolbarTemplate = MealziOSSDK.TypeSafeMealPlannerResultsToolbar
   @objc deinit
 }
 @available(iOS 14, *)
 public struct MealPlannerResultsViewOptions {
-  public var toolbar: MealzIOSFramework.TypeSafeMealPlannerResultsToolbar
-  public var footer: MealzIOSFramework.TypeSafeMealPlannerResultsFooter
-  public var recipeCard: MealzIOSFramework.TypeSafeMealPlannerRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public var placeholder: MealzIOSFramework.TypeSafeMealPlannerRecipePlaceholder
-  public var emptyResults: MealzIOSFramework.TypeSafeMealPlannerResultsEmpty
-  public init(toolbar: MealzIOSFramework.TypeSafeMealPlannerResultsToolbar = TypeSafeMealPlannerResultsToolbar(MealzMealPlannerResultsToolbar()), footer: MealzIOSFramework.TypeSafeMealPlannerResultsFooter = TypeSafeMealPlannerResultsFooter(MealzMealPlannerStickyFooter()), recipeCard: MealzIOSFramework.TypeSafeMealPlannerRecipeCard = TypeSafeMealPlannerRecipeCard(MealzMealPlannerRecipeCard()), recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzMealPlannerRecipeCardLoading()), placeholder: MealzIOSFramework.TypeSafeMealPlannerRecipePlaceholder = TypeSafeMealPlannerRecipePlaceholder(MealzMealPlannerRecipePlaceholder()), emptyResults: MealzIOSFramework.TypeSafeMealPlannerResultsEmpty = TypeSafeMealPlannerResultsEmpty(MealzMealPlannerResultsEmpty()))
+  public var toolbar: MealziOSSDK.TypeSafeMealPlannerResultsToolbar
+  public var footer: MealziOSSDK.TypeSafeMealPlannerResultsFooter
+  public var recipeCard: MealziOSSDK.TypeSafeMealPlannerRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public var placeholder: MealziOSSDK.TypeSafeMealPlannerRecipePlaceholder
+  public var emptyResults: MealziOSSDK.TypeSafeMealPlannerResultsEmpty
+  public init(toolbar: MealziOSSDK.TypeSafeMealPlannerResultsToolbar = TypeSafeMealPlannerResultsToolbar(MealzMealPlannerResultsToolbar()), footer: MealziOSSDK.TypeSafeMealPlannerResultsFooter = TypeSafeMealPlannerResultsFooter(MealzMealPlannerStickyFooter()), recipeCard: MealziOSSDK.TypeSafeMealPlannerRecipeCard = TypeSafeMealPlannerRecipeCard(MealzMealPlannerRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzMealPlannerRecipeCardLoading()), placeholder: MealziOSSDK.TypeSafeMealPlannerRecipePlaceholder = TypeSafeMealPlannerRecipePlaceholder(MealzMealPlannerRecipePlaceholder()), emptyResults: MealziOSSDK.TypeSafeMealPlannerResultsEmpty = TypeSafeMealPlannerResultsEmpty(MealzMealPlannerResultsEmpty()))
 }
 @available(iOS 14, *)
 public struct PreferencesViewOptions {
-  public var guestSection: MealzIOSFramework.TypeSafePreferencesGuest
-  public var dietSection: MealzIOSFramework.TypeSafePreferencesDiet
-  public var ingredientsSection: MealzIOSFramework.TypeSafePreferencesIngredients
-  public var equipmentSection: MealzIOSFramework.TypeSafePreferencesEquipment
-  public var footer: MealzIOSFramework.TypeSafePreferencesFooter
-  public init(guestSection: MealzIOSFramework.TypeSafePreferencesGuest = TypeSafePreferencesGuest(MealzPreferencesGuest()), dietSection: MealzIOSFramework.TypeSafePreferencesDiet = TypeSafePreferencesDiet(MealzPreferencesDiet()), ingredientsSection: MealzIOSFramework.TypeSafePreferencesIngredients = TypeSafePreferencesIngredients(MealzPreferencesIngredients()), equipmentSection: MealzIOSFramework.TypeSafePreferencesEquipment = TypeSafePreferencesEquipment(MealzPreferencesEquipment()), footer: MealzIOSFramework.TypeSafePreferencesFooter = TypeSafePreferencesFooter(MealzPreferencesFooter()))
+  public var guestSection: MealziOSSDK.TypeSafePreferencesGuest
+  public var dietSection: MealziOSSDK.TypeSafePreferencesDiet
+  public var ingredientsSection: MealziOSSDK.TypeSafePreferencesIngredients
+  public var equipmentSection: MealziOSSDK.TypeSafePreferencesEquipment
+  public var footer: MealziOSSDK.TypeSafePreferencesFooter
+  public init(guestSection: MealziOSSDK.TypeSafePreferencesGuest = TypeSafePreferencesGuest(MealzPreferencesGuest()), dietSection: MealziOSSDK.TypeSafePreferencesDiet = TypeSafePreferencesDiet(MealzPreferencesDiet()), ingredientsSection: MealziOSSDK.TypeSafePreferencesIngredients = TypeSafePreferencesIngredients(MealzPreferencesIngredients()), equipmentSection: MealziOSSDK.TypeSafePreferencesEquipment = TypeSafePreferencesEquipment(MealzPreferencesEquipment()), footer: MealziOSSDK.TypeSafePreferencesFooter = TypeSafePreferencesFooter(MealzPreferencesFooter()))
 }
 @available(iOS 14, *)
-public class PreferencesParameters : MealzIOSFramework.PreferencesParametersProtocol {
-  public var actions: MealzIOSFramework.PreferencesActions
-  public var guestSection: MealzIOSFramework.TypeSafePreferencesGuest
-  public var dietSection: MealzIOSFramework.TypeSafePreferencesDiet
-  public var ingredientsSection: MealzIOSFramework.TypeSafePreferencesIngredients
-  public var equipmentSection: MealzIOSFramework.TypeSafePreferencesEquipment
-  public var footer: MealzIOSFramework.TypeSafePreferencesFooter
-  public init(actions: MealzIOSFramework.PreferencesActions, viewOptions: MealzUIiOSSDK.PreferencesViewOptions = PreferencesViewOptions())
-  public typealias DietSection = MealzIOSFramework.TypeSafePreferencesDiet
-  public typealias EquipmentSection = MealzIOSFramework.TypeSafePreferencesEquipment
-  public typealias Footer = MealzIOSFramework.TypeSafePreferencesFooter
-  public typealias GuestSection = MealzIOSFramework.TypeSafePreferencesGuest
-  public typealias IngredientsSection = MealzIOSFramework.TypeSafePreferencesIngredients
+public class PreferencesParameters : MealziOSSDK.PreferencesParametersProtocol {
+  public var actions: MealziOSSDK.PreferencesActions
+  public var guestSection: MealziOSSDK.TypeSafePreferencesGuest
+  public var dietSection: MealziOSSDK.TypeSafePreferencesDiet
+  public var ingredientsSection: MealziOSSDK.TypeSafePreferencesIngredients
+  public var equipmentSection: MealziOSSDK.TypeSafePreferencesEquipment
+  public var footer: MealziOSSDK.TypeSafePreferencesFooter
+  public init(actions: MealziOSSDK.PreferencesActions, viewOptions: MealzUIiOSSDK.PreferencesViewOptions = PreferencesViewOptions())
+  public typealias DietSection = MealziOSSDK.TypeSafePreferencesDiet
+  public typealias EquipmentSection = MealziOSSDK.TypeSafePreferencesEquipment
+  public typealias Footer = MealziOSSDK.TypeSafePreferencesFooter
+  public typealias GuestSection = MealziOSSDK.TypeSafePreferencesGuest
+  public typealias IngredientsSection = MealziOSSDK.TypeSafePreferencesIngredients
   @objc deinit
 }
 @available(iOS 14, *)
-public class BasketTagParameters : MealzIOSFramework.BasketTagParametersProtocol {
-  public var actions: MealzIOSFramework.BasketTagActions
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public init(actions: MealzIOSFramework.BasketTagActions, viewOptions: MealzUIiOSSDK.BasketTagViewOptions = BasketTagViewOptions())
-  public typealias Title = MealzIOSFramework.TypeSafeBaseTitle
+public class BasketTagParameters : MealziOSSDK.BasketTagParametersProtocol {
+  public var actions: MealziOSSDK.BasketTagActions
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public init(actions: MealziOSSDK.BasketTagActions, viewOptions: MealzUIiOSSDK.BasketTagViewOptions = BasketTagViewOptions())
+  public typealias Title = MealziOSSDK.TypeSafeBaseTitle
   @objc deinit
 }
 @available(iOS 14, *)
 public struct BasketTagViewOptions {
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public init(title: MealzIOSFramework.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzBasketTagItem()))
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public init(title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzBasketTagItem()))
 }
 @available(iOS 14, *)
-public class MyBasketParameters : MealzIOSFramework.MyBasketParametersProtocol {
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var swapper: MealzIOSFramework.TypeSafeMyBasketSwapper
-  public var footer: MealzIOSFramework.TypeSafeMyBasketFooter
-  public var actions: MealzIOSFramework.MyBasketActions
-  public init(actions: MealzIOSFramework.MyBasketActions, viewOptions: MealzUIiOSSDK.MyBasketViewOptions = MyBasketViewOptions())
-  public typealias Footer = MealzIOSFramework.TypeSafeMyBasketFooter
-  public typealias Swapper = MealzIOSFramework.TypeSafeMyBasketSwapper
-  public typealias Title = MealzIOSFramework.TypeSafeBaseTitle
+public class MyBasketParameters : MealziOSSDK.MyBasketParametersProtocol {
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var swapper: MealziOSSDK.TypeSafeMyBasketSwapper
+  public var footer: MealziOSSDK.TypeSafeMyBasketFooter
+  public var actions: MealziOSSDK.MyBasketActions
+  public init(actions: MealziOSSDK.MyBasketActions, viewOptions: MealzUIiOSSDK.MyBasketViewOptions = MyBasketViewOptions())
+  public typealias Footer = MealziOSSDK.TypeSafeMyBasketFooter
+  public typealias Swapper = MealziOSSDK.TypeSafeMyBasketSwapper
+  public typealias Title = MealziOSSDK.TypeSafeBaseTitle
   @objc deinit
 }
 @available(iOS 14, *)
 public struct MyBasketViewOptions {
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var swapper: MealzIOSFramework.TypeSafeMyBasketSwapper
-  public var footer: MealzIOSFramework.TypeSafeMyBasketFooter
-  public init(title: MealzIOSFramework.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzMyMealsTitle()), swapper: MealzIOSFramework.TypeSafeMyBasketSwapper = TypeSafeMyBasketSwapper(MealzMyBasketSwapper()), footer: MealzIOSFramework.TypeSafeMyBasketFooter = TypeSafeMyBasketFooter(MealzMyBasketFooter()))
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var swapper: MealziOSSDK.TypeSafeMyBasketSwapper
+  public var footer: MealziOSSDK.TypeSafeMyBasketFooter
+  public init(title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzMyMealsTitle()), swapper: MealziOSSDK.TypeSafeMyBasketSwapper = TypeSafeMyBasketSwapper(MealzMyBasketSwapper()), footer: MealziOSSDK.TypeSafeMyBasketFooter = TypeSafeMyBasketFooter(MealzMyBasketFooter()))
 }
 @available(iOS 14, *)
-public class RecipeDetailParameters : MealzIOSFramework.RecipeDetailsParametersProtocol {
-  public var actions: MealzIOSFramework.RecipeDetailsActions
-  public var header: MealzIOSFramework.TypeSafeRecipeDetailsHeader
-  public var sponsor: MealzIOSFramework.TypeSafeRecipeDetailsSponsor
-  public var selectedControl: MealzIOSFramework.TypeSafeRecipeDetailsSelectedControl
-  public var numberOfIngredientsTitle: MealzIOSFramework.TypeSafeBaseTitle
-  public var ingredients: MealzIOSFramework.TypeSafeRecipeDetailsIngredients
-  public var steps: MealzIOSFramework.TypeSafeRecipeDetailsSteps
-  public var footer: MealzIOSFramework.TypeSafeRecipeDetailsFooter
-  public var ingredientsAtHomeToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var unavailableIngredientsToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var ingredientsAtHome: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public var unavailableIngredients: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public init(actions: MealzIOSFramework.RecipeDetailsActions, viewOptions: MealzUIiOSSDK.RecipeDetailsViewOptions = RecipeDetailsViewOptions())
-  public typealias Footer = MealzIOSFramework.TypeSafeRecipeDetailsFooter
-  public typealias Header = MealzIOSFramework.TypeSafeRecipeDetailsHeader
-  public typealias Ingredients = MealzIOSFramework.TypeSafeRecipeDetailsIngredients
-  public typealias IngredientsAtHome = MealzIOSFramework.TypeSafeNotInBasketProduct
-  public typealias IngredientsAtHomeToggleButton = MealzIOSFramework.TypeSafeBaseButton
-  public typealias SelectedControl = MealzIOSFramework.TypeSafeRecipeDetailsSelectedControl
-  public typealias SponsorButton = MealzIOSFramework.TypeSafeRecipeDetailsSponsor
-  public typealias Steps = MealzIOSFramework.TypeSafeRecipeDetailsSteps
-  public typealias Title = MealzIOSFramework.TypeSafeBaseTitle
-  public typealias UnavailableIngredients = MealzIOSFramework.TypeSafeNotInBasketProduct
-  public typealias UnavailableIngredientsToggleButton = MealzIOSFramework.TypeSafeBaseButton
+public class RecipeDetailParameters : MealziOSSDK.RecipeDetailsParametersProtocol {
+  public var actions: MealziOSSDK.RecipeDetailsActions
+  public var header: MealziOSSDK.TypeSafeRecipeDetailsHeader
+  public var sponsor: MealziOSSDK.TypeSafeRecipeDetailsSponsor
+  public var selectedControl: MealziOSSDK.TypeSafeRecipeDetailsSelectedControl
+  public var numberOfIngredientsTitle: MealziOSSDK.TypeSafeBaseTitle
+  public var ingredients: MealziOSSDK.TypeSafeRecipeDetailsIngredients
+  public var steps: MealziOSSDK.TypeSafeRecipeDetailsSteps
+  public var footer: MealziOSSDK.TypeSafeRecipeDetailsFooter
+  public var ingredientsAtHomeToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var unavailableIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var ingredientsAtHome: MealziOSSDK.TypeSafeNotInBasketProduct
+  public var unavailableIngredients: MealziOSSDK.TypeSafeNotInBasketProduct
+  public init(actions: MealziOSSDK.RecipeDetailsActions, viewOptions: MealzUIiOSSDK.RecipeDetailsViewOptions = RecipeDetailsViewOptions())
+  public typealias Footer = MealziOSSDK.TypeSafeRecipeDetailsFooter
+  public typealias Header = MealziOSSDK.TypeSafeRecipeDetailsHeader
+  public typealias Ingredients = MealziOSSDK.TypeSafeRecipeDetailsIngredients
+  public typealias IngredientsAtHome = MealziOSSDK.TypeSafeNotInBasketProduct
+  public typealias IngredientsAtHomeToggleButton = MealziOSSDK.TypeSafeBaseButton
+  public typealias SelectedControl = MealziOSSDK.TypeSafeRecipeDetailsSelectedControl
+  public typealias SponsorButton = MealziOSSDK.TypeSafeRecipeDetailsSponsor
+  public typealias Steps = MealziOSSDK.TypeSafeRecipeDetailsSteps
+  public typealias Title = MealziOSSDK.TypeSafeBaseTitle
+  public typealias UnavailableIngredients = MealziOSSDK.TypeSafeNotInBasketProduct
+  public typealias UnavailableIngredientsToggleButton = MealziOSSDK.TypeSafeBaseButton
   @objc deinit
 }
 @available(iOS 14, *)
 public struct RecipeDetailsProductViewOptions {
-  public var ignoredProduct: MealzIOSFramework.TypeSafeRecipeDetailsIgnoredProduct
-  public var unaddedProduct: MealzIOSFramework.TypeSafeRecipeDetailsUnaddedProduct
-  public var addedProduct: MealzIOSFramework.TypeSafeRecipeDetailsAddedProduct
-  public var loadingProduct: MealzIOSFramework.TypeSafeLoading
-  public init(ignoredProduct: MealzIOSFramework.TypeSafeRecipeDetailsIgnoredProduct = TypeSafeRecipeDetailsIgnoredProduct(MealzRecipeDetailsIgnoredProductView()), unaddedProduct: MealzIOSFramework.TypeSafeRecipeDetailsUnaddedProduct = TypeSafeRecipeDetailsUnaddedProduct(MealzRecipeDetailsUnaddedProductView()), addedProduct: MealzIOSFramework.TypeSafeRecipeDetailsAddedProduct = TypeSafeRecipeDetailsAddedProduct(MealzRecipeDetailsAddedProductView()), loadingProduct: MealzIOSFramework.TypeSafeLoading = TypeSafeLoading(MealzRecipeDetailsLoadingProductView()))
+  public var ignoredProduct: MealziOSSDK.TypeSafeRecipeDetailsIgnoredProduct
+  public var unaddedProduct: MealziOSSDK.TypeSafeRecipeDetailsUnaddedProduct
+  public var addedProduct: MealziOSSDK.TypeSafeRecipeDetailsAddedProduct
+  public var loadingProduct: MealziOSSDK.TypeSafeLoading
+  public init(ignoredProduct: MealziOSSDK.TypeSafeRecipeDetailsIgnoredProduct = TypeSafeRecipeDetailsIgnoredProduct(MealzRecipeDetailsIgnoredProductView()), unaddedProduct: MealziOSSDK.TypeSafeRecipeDetailsUnaddedProduct = TypeSafeRecipeDetailsUnaddedProduct(MealzRecipeDetailsUnaddedProductView()), addedProduct: MealziOSSDK.TypeSafeRecipeDetailsAddedProduct = TypeSafeRecipeDetailsAddedProduct(MealzRecipeDetailsAddedProductView()), loadingProduct: MealziOSSDK.TypeSafeLoading = TypeSafeLoading(MealzRecipeDetailsLoadingProductView()))
 }
 @available(iOS 14, *)
-public class RecipeDetailsProductParameters : MealzIOSFramework.RecipeDetailsProductProtocol {
-  public var ignoredProduct: MealzIOSFramework.TypeSafeRecipeDetailsIgnoredProduct
-  public var unaddedProduct: MealzIOSFramework.TypeSafeRecipeDetailsUnaddedProduct
-  public var addedProduct: MealzIOSFramework.TypeSafeRecipeDetailsAddedProduct
-  public var loadingProduct: MealzIOSFramework.TypeSafeLoading
+public class RecipeDetailsProductParameters : MealziOSSDK.RecipeDetailsProductProtocol {
+  public var ignoredProduct: MealziOSSDK.TypeSafeRecipeDetailsIgnoredProduct
+  public var unaddedProduct: MealziOSSDK.TypeSafeRecipeDetailsUnaddedProduct
+  public var addedProduct: MealziOSSDK.TypeSafeRecipeDetailsAddedProduct
+  public var loadingProduct: MealziOSSDK.TypeSafeLoading
   public init(viewOption: MealzUIiOSSDK.RecipeDetailsProductViewOptions = RecipeDetailsProductViewOptions())
-  public typealias AddedProduct = MealzIOSFramework.TypeSafeRecipeDetailsAddedProduct
-  public typealias IgnoredProduct = MealzIOSFramework.TypeSafeRecipeDetailsIgnoredProduct
-  public typealias LoadingProduct = MealzIOSFramework.TypeSafeLoading
-  public typealias UnaddedProduct = MealzIOSFramework.TypeSafeRecipeDetailsUnaddedProduct
+  public typealias AddedProduct = MealziOSSDK.TypeSafeRecipeDetailsAddedProduct
+  public typealias IgnoredProduct = MealziOSSDK.TypeSafeRecipeDetailsIgnoredProduct
+  public typealias LoadingProduct = MealziOSSDK.TypeSafeLoading
+  public typealias UnaddedProduct = MealziOSSDK.TypeSafeRecipeDetailsUnaddedProduct
   @objc deinit
 }
 @available(iOS 14, *)
 public struct RecipeDetailsViewOptions {
-  public var header: MealzIOSFramework.TypeSafeRecipeDetailsHeader
-  public var sponsor: MealzIOSFramework.TypeSafeRecipeDetailsSponsor
-  public var numberOfIngredientsTitle: MealzIOSFramework.TypeSafeBaseTitle
-  public var selectedControl: MealzIOSFramework.TypeSafeRecipeDetailsSelectedControl
-  public var ingredients: MealzIOSFramework.TypeSafeRecipeDetailsIngredients
-  public var steps: MealzIOSFramework.TypeSafeRecipeDetailsSteps
-  public var footer: MealzIOSFramework.TypeSafeRecipeDetailsFooter
-  public var ingredientsAtHomeToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var unavailableIngredientsToggleButton: MealzIOSFramework.TypeSafeBaseButton
-  public var ingredientsAtHome: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public var unavailableIngredients: MealzIOSFramework.TypeSafeNotInBasketProduct
-  public init(header: MealzIOSFramework.TypeSafeRecipeDetailsHeader = TypeSafeRecipeDetailsHeader(MealzRecipeDetailsHeaderView()), sponsor: MealzIOSFramework.TypeSafeRecipeDetailsSponsor = TypeSafeRecipeDetailsSponsor(MealzRecipeDetailsSponsor()), selectedControl: MealzIOSFramework.TypeSafeRecipeDetailsSelectedControl = TypeSafeRecipeDetailsSelectedControl(MealzRecipeDetailsSelectedControlView()), numberOfIngredientsTitle: MealzIOSFramework.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzRecipeDetailsNumberOfIngredientsTitleView()), ingredients: MealzIOSFramework.TypeSafeRecipeDetailsIngredients = TypeSafeRecipeDetailsIngredients(MealzRecipeDetailsIngredientsView()), steps: MealzIOSFramework.TypeSafeRecipeDetailsSteps = TypeSafeRecipeDetailsSteps(MealzRecipeDetailsStepsView()), footer: MealzIOSFramework.TypeSafeRecipeDetailsFooter = TypeSafeRecipeDetailsFooter(MealzRecipeDetailsFooterView()), ingredientsAtHomeToggleButton: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), unavailableIngredientsToggleButton: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), ingredientsAtHome: MealzIOSFramework.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()), unavailableIngredients: MealzIOSFramework.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()))
+  public var header: MealziOSSDK.TypeSafeRecipeDetailsHeader
+  public var sponsor: MealziOSSDK.TypeSafeRecipeDetailsSponsor
+  public var numberOfIngredientsTitle: MealziOSSDK.TypeSafeBaseTitle
+  public var selectedControl: MealziOSSDK.TypeSafeRecipeDetailsSelectedControl
+  public var ingredients: MealziOSSDK.TypeSafeRecipeDetailsIngredients
+  public var steps: MealziOSSDK.TypeSafeRecipeDetailsSteps
+  public var footer: MealziOSSDK.TypeSafeRecipeDetailsFooter
+  public var ingredientsAtHomeToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var unavailableIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton
+  public var ingredientsAtHome: MealziOSSDK.TypeSafeNotInBasketProduct
+  public var unavailableIngredients: MealziOSSDK.TypeSafeNotInBasketProduct
+  public init(header: MealziOSSDK.TypeSafeRecipeDetailsHeader = TypeSafeRecipeDetailsHeader(MealzRecipeDetailsHeaderView()), sponsor: MealziOSSDK.TypeSafeRecipeDetailsSponsor = TypeSafeRecipeDetailsSponsor(MealzRecipeDetailsSponsor()), selectedControl: MealziOSSDK.TypeSafeRecipeDetailsSelectedControl = TypeSafeRecipeDetailsSelectedControl(MealzRecipeDetailsSelectedControlView()), numberOfIngredientsTitle: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzRecipeDetailsNumberOfIngredientsTitleView()), ingredients: MealziOSSDK.TypeSafeRecipeDetailsIngredients = TypeSafeRecipeDetailsIngredients(MealzRecipeDetailsIngredientsView()), steps: MealziOSSDK.TypeSafeRecipeDetailsSteps = TypeSafeRecipeDetailsSteps(MealzRecipeDetailsStepsView()), footer: MealziOSSDK.TypeSafeRecipeDetailsFooter = TypeSafeRecipeDetailsFooter(MealzRecipeDetailsFooterView()), ingredientsAtHomeToggleButton: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), unavailableIngredientsToggleButton: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(MealzNotInBasketTitle()), ingredientsAtHome: MealziOSSDK.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()), unavailableIngredients: MealziOSSDK.TypeSafeNotInBasketProduct = TypeSafeNotInBasketProduct(MealzNotInBasketProduct()))
 }
 @available(iOS 14, *)
 public struct MyMealsViewOptions {
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var itemSelectorCTA: MealzIOSFramework.TypeSafeBaseButton
-  public var recipeCard: MealzIOSFramework.TypeSafeMyMealRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(title: MealzIOSFramework.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzMyMealsTitle()), itemSelectorCTA: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(EmptyButtonView()), recipeCard: MealzIOSFramework.TypeSafeMyMealRecipeCard = TypeSafeMyMealRecipeCard(MealzMyMealRecipeCard()), recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton
+  public var recipeCard: MealziOSSDK.TypeSafeMyMealRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzMyMealsTitle()), itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(EmptyButtonView()), recipeCard: MealziOSSDK.TypeSafeMyMealRecipeCard = TypeSafeMyMealRecipeCard(MealzMyMealRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
 }
 @available(iOS 14, *)
 extension MealzUIiOSSDK.MyMealsViewOptions {
@@ -1034,258 +1034,258 @@ extension MealzUIiOSSDK.MyMealsViewOptions {
 }
 @available(iOS 14, *)
 public struct NestedMyMealsViewOptions {
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var itemSelectorCTA: MealzIOSFramework.TypeSafeBaseButton
-  public var recipeCard: MealzIOSFramework.TypeSafeMyMealRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(title: MealzIOSFramework.TypeSafeBaseTitle = TypeSafeBaseTitle(EmptyTitleView()), itemSelectorCTA: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(MealzMyBasketOpenItemSelectorCTA()), recipeCard: MealzIOSFramework.TypeSafeMyMealRecipeCard = TypeSafeMyMealRecipeCard(MealzMyMealRecipeCard()), recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton
+  public var recipeCard: MealziOSSDK.TypeSafeMyMealRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(EmptyTitleView()), itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(MealzMyBasketOpenItemSelectorCTA()), recipeCard: MealziOSSDK.TypeSafeMyMealRecipeCard = TypeSafeMyMealRecipeCard(MealzMyMealRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
 }
 @available(iOS 14, *)
-public class MyMealsParameters : MealzIOSFramework.MyMealsParametersProtocol {
-  public var actions: MealzIOSFramework.MyMealsActions
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var itemSelectorCTA: MealzIOSFramework.TypeSafeBaseButton
-  public var recipeCard: MealzIOSFramework.TypeSafeMyMealRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(actions: MealzIOSFramework.MyMealsActions, viewOptions: MealzUIiOSSDK.MyMealsViewOptions = MyMealsViewOptions())
-  public typealias OpenItemSelectorCallToAction = MealzIOSFramework.TypeSafeBaseButton
-  public typealias RecipeCard = MealzIOSFramework.TypeSafeMyMealRecipeCard
-  public typealias RecipeCardLoading = MealzIOSFramework.TypeSafeRecipeCardLoading
-  public typealias Title = MealzIOSFramework.TypeSafeBaseTitle
+public class MyMealsParameters : MealziOSSDK.MyMealsParametersProtocol {
+  public var actions: MealziOSSDK.MyMealsActions
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton
+  public var recipeCard: MealziOSSDK.TypeSafeMyMealRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(actions: MealziOSSDK.MyMealsActions, viewOptions: MealzUIiOSSDK.MyMealsViewOptions = MyMealsViewOptions())
+  public typealias OpenItemSelectorCallToAction = MealziOSSDK.TypeSafeBaseButton
+  public typealias RecipeCard = MealziOSSDK.TypeSafeMyMealRecipeCard
+  public typealias RecipeCardLoading = MealziOSSDK.TypeSafeRecipeCardLoading
+  public typealias Title = MealziOSSDK.TypeSafeBaseTitle
   @objc deinit
 }
 @available(iOS 14, *)
-public class FavoritesParameters : MealzIOSFramework.FavoritesParametersProtocol {
-  public var actions: MealzIOSFramework.FavoritesActions
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(actions: MealzIOSFramework.FavoritesActions, viewOptions: MealzUIiOSSDK.FavoritesViewOptions = FavoritesViewOptions())
-  public typealias RecipeCardContent = MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public typealias RecipeLoading = MealzIOSFramework.TypeSafeRecipeCardLoading
-  public typealias Title = MealzIOSFramework.TypeSafeBaseTitle
+public class FavoritesParameters : MealziOSSDK.FavoritesParametersProtocol {
+  public var actions: MealziOSSDK.FavoritesActions
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(actions: MealziOSSDK.FavoritesActions, viewOptions: MealzUIiOSSDK.FavoritesViewOptions = FavoritesViewOptions())
+  public typealias RecipeCardContent = MealziOSSDK.TypeSafeCatalogRecipeCard
+  public typealias RecipeLoading = MealziOSSDK.TypeSafeRecipeCardLoading
+  public typealias Title = MealziOSSDK.TypeSafeBaseTitle
   @objc deinit
 }
 @available(iOS 14, *)
 public struct FavoritesViewOptions {
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public init(title: MealzIOSFramework.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzFavoritesTitle()), recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public init(title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzFavoritesTitle()), recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
 }
 @available(iOS 14, *)
-public class CatalogPackageRowParameters : MealzIOSFramework.CatalogPackageRowParametersProtocol {
-  public var actions: MealzIOSFramework.CatalogPackageRowActions
-  public var callToAction: MealzIOSFramework.TypeSafeCatalogPackageCTA
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(actions: MealzIOSFramework.CatalogPackageRowActions, viewOptions: MealzUIiOSSDK.CatalogPackageRowViewOptions = CatalogPackageRowViewOptions())
-  public typealias CallToAction = MealzIOSFramework.TypeSafeCatalogPackageCTA
-  public typealias RecipeCardContent = MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public typealias RecipeLoading = MealzIOSFramework.TypeSafeRecipeCardLoading
+public class CatalogPackageRowParameters : MealziOSSDK.CatalogPackageRowParametersProtocol {
+  public var actions: MealziOSSDK.CatalogPackageRowActions
+  public var callToAction: MealziOSSDK.TypeSafeCatalogPackageCTA
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(actions: MealziOSSDK.CatalogPackageRowActions, viewOptions: MealzUIiOSSDK.CatalogPackageRowViewOptions = CatalogPackageRowViewOptions())
+  public typealias CallToAction = MealziOSSDK.TypeSafeCatalogPackageCTA
+  public typealias RecipeCardContent = MealziOSSDK.TypeSafeCatalogRecipeCard
+  public typealias RecipeLoading = MealziOSSDK.TypeSafeRecipeCardLoading
   @objc deinit
 }
 @available(iOS 14, *)
 public class CatalogPackageRowViewOptions {
-  public var callToAction: MealzIOSFramework.TypeSafeCatalogPackageCTA
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(callToAction: MealzIOSFramework.TypeSafeCatalogPackageCTA = TypeSafeCatalogPackageCTA(MealzCatalogPackageCTA()), recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
+  public var callToAction: MealziOSSDK.TypeSafeCatalogPackageCTA
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(callToAction: MealziOSSDK.TypeSafeCatalogPackageCTA = TypeSafeCatalogPackageCTA(MealzCatalogPackageCTA()), recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
   @objc deinit
 }
 @available(iOS 14, *)
-public class CatalogSearchParameters : MealzIOSFramework.CatalogSearchParametersProtocol {
-  public var actions: MealzIOSFramework.CatalogSearchActions
-  public var search: MealzIOSFramework.TypeSafeSearch
-  public init(actions: MealzIOSFramework.CatalogSearchActions, viewOptions: MealzUIiOSSDK.CatalogSearchViewOptions = CatalogSearchViewOptions())
-  public typealias Search = MealzIOSFramework.TypeSafeSearch
+public class CatalogSearchParameters : MealziOSSDK.CatalogSearchParametersProtocol {
+  public var actions: MealziOSSDK.CatalogSearchActions
+  public var search: MealziOSSDK.TypeSafeSearch
+  public init(actions: MealziOSSDK.CatalogSearchActions, viewOptions: MealzUIiOSSDK.CatalogSearchViewOptions = CatalogSearchViewOptions())
+  public typealias Search = MealziOSSDK.TypeSafeSearch
   @objc deinit
 }
 @available(iOS 14, *)
 public class CatalogSearchViewOptions {
-  public var search: MealzIOSFramework.TypeSafeSearch
-  public init(search: MealzIOSFramework.TypeSafeSearch = TypeSafeSearch(MealzGeneralSearch()))
+  public var search: MealziOSSDK.TypeSafeSearch
+  public init(search: MealziOSSDK.TypeSafeSearch = TypeSafeSearch(MealzGeneralSearch()))
   @objc deinit
 }
 @available(iOS 14, *)
 public struct CatalogViewOptions {
-  public var catalogToolbar: MealzIOSFramework.TypeSafeCatalogToolbar
-  public var resultsToolbar: MealzIOSFramework.TypeSafeCatalogToolbar
-  public var mealPlannerCTA: MealzIOSFramework.TypeSafeMealPlannerCTA
+  public var catalogToolbar: MealziOSSDK.TypeSafeCatalogToolbar
+  public var resultsToolbar: MealziOSSDK.TypeSafeCatalogToolbar
+  public var mealPlannerCTA: MealziOSSDK.TypeSafeMealPlannerCTA
   public var mealsInBasketButton: MealzUIiOSSDK.MealsInBasketButtonParameters
-  public init(catalogToolbar: MealzIOSFramework.TypeSafeCatalogToolbar = TypeSafeCatalogToolbar(MealzCatalogToolbar()), resultsToolbar: MealzIOSFramework.TypeSafeCatalogToolbar = TypeSafeCatalogToolbar(MealzCatalogResultsToolbar()), mealPlannerCTA: MealzIOSFramework.TypeSafeMealPlannerCTA = TypeSafeMealPlannerCTA( MealzMealPlannerCallToAction()), mealsInBasketButtonSuccess: MealzIOSFramework.TypeSafeMealsInBasketButtonSuccess = TypeSafeMealsInBasketButtonSuccess(MealzMealsInBasketButtonSuccess()), mealsInBasketButtonEmpty: MealzIOSFramework.TypeSafeEmpty = TypeSafeEmpty(DefaultEmptyView()))
+  public init(catalogToolbar: MealziOSSDK.TypeSafeCatalogToolbar = TypeSafeCatalogToolbar(MealzCatalogToolbar()), resultsToolbar: MealziOSSDK.TypeSafeCatalogToolbar = TypeSafeCatalogToolbar(MealzCatalogResultsToolbar()), mealPlannerCTA: MealziOSSDK.TypeSafeMealPlannerCTA = TypeSafeMealPlannerCTA( MealzMealPlannerCallToAction()), mealsInBasketButtonSuccess: MealziOSSDK.TypeSafeMealsInBasketButtonSuccess = TypeSafeMealsInBasketButtonSuccess(MealzMealsInBasketButtonSuccess()), mealsInBasketButtonEmpty: MealziOSSDK.TypeSafeEmpty = TypeSafeEmpty(DefaultEmptyView()))
 }
 @available(iOS 14, *)
-public struct CatalogParameters : MealzIOSFramework.CatalogParametersProtocol {
-  public var actions: MealzIOSFramework.CatalogActions
-  public var catalogToolbar: MealzIOSFramework.TypeSafeCatalogToolbar
-  public var resultsToolbar: MealzIOSFramework.TypeSafeCatalogToolbar
-  public var mealPlannerCTA: MealzIOSFramework.TypeSafeMealPlannerCTA
+public struct CatalogParameters : MealziOSSDK.CatalogParametersProtocol {
+  public var actions: MealziOSSDK.CatalogActions
+  public var catalogToolbar: MealziOSSDK.TypeSafeCatalogToolbar
+  public var resultsToolbar: MealziOSSDK.TypeSafeCatalogToolbar
+  public var mealPlannerCTA: MealziOSSDK.TypeSafeMealPlannerCTA
   public var mealsInBasketButton: MealzUIiOSSDK.MealsInBasketButtonParameters
-  public init(actions: MealzIOSFramework.CatalogActions, viewOptions: MealzUIiOSSDK.CatalogViewOptions = CatalogViewOptions())
-  public typealias CatalogToolbar = MealzIOSFramework.TypeSafeCatalogToolbar
-  public typealias MealPlannerCTA = MealzIOSFramework.TypeSafeMealPlannerCTA
+  public init(actions: MealziOSSDK.CatalogActions, viewOptions: MealzUIiOSSDK.CatalogViewOptions = CatalogViewOptions())
+  public typealias CatalogToolbar = MealziOSSDK.TypeSafeCatalogToolbar
+  public typealias MealPlannerCTA = MealziOSSDK.TypeSafeMealPlannerCTA
   public typealias MealsInBasketButton = MealzUIiOSSDK.MealsInBasketButtonParameters
-  public typealias ResultsToolbar = MealzIOSFramework.TypeSafeCatalogToolbar
+  public typealias ResultsToolbar = MealziOSSDK.TypeSafeCatalogToolbar
 }
 @available(iOS 14, *)
 public struct RecipeCarouselViewOptions {
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()))
 }
 @available(iOS 14, *)
-public class RecipeCarouselParameters : MealzIOSFramework.RecipeCarouselParametersProtocol {
-  public var actions: MealzIOSFramework.RecipeCarouselActions
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public init(actions: MealzIOSFramework.RecipeCarouselActions, viewOptions: MealzUIiOSSDK.RecipeCarouselViewOptions = RecipeCarouselViewOptions())
-  public typealias RecipeCardContent = MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public typealias RecipeLoading = MealzIOSFramework.TypeSafeRecipeCardLoading
+public class RecipeCarouselParameters : MealziOSSDK.RecipeCarouselParametersProtocol {
+  public var actions: MealziOSSDK.RecipeCarouselActions
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public init(actions: MealziOSSDK.RecipeCarouselActions, viewOptions: MealzUIiOSSDK.RecipeCarouselViewOptions = RecipeCarouselViewOptions())
+  public typealias RecipeCardContent = MealziOSSDK.TypeSafeCatalogRecipeCard
+  public typealias RecipeLoading = MealziOSSDK.TypeSafeRecipeCardLoading
   @objc deinit
 }
 @available(iOS 14, *)
 public struct PriceViewOptions {
-  public var priceSuccess: MealzIOSFramework.TypeSafePriceSuccess
-  public var empty: MealzIOSFramework.TypeSafeEmpty
-  public var loading: MealzIOSFramework.TypeSafeLoading
-  public init(pricePerPerson: Swift.Bool = true, priceSuccess: (MealzIOSFramework.TypeSafePriceSuccess)? = nil, empty: MealzIOSFramework.TypeSafeEmpty = TypeSafeEmpty(DefaultEmptyView()), loading: MealzIOSFramework.TypeSafeLoading = TypeSafeLoading(DefaultLoadingView()))
+  public var priceSuccess: MealziOSSDK.TypeSafePriceSuccess
+  public var empty: MealziOSSDK.TypeSafeEmpty
+  public var loading: MealziOSSDK.TypeSafeLoading
+  public init(pricePerPerson: Swift.Bool = true, priceSuccess: (MealziOSSDK.TypeSafePriceSuccess)? = nil, empty: MealziOSSDK.TypeSafeEmpty = TypeSafeEmpty(DefaultEmptyView()), loading: MealziOSSDK.TypeSafeLoading = TypeSafeLoading(DefaultLoadingView()))
 }
 @available(iOS 14, *)
-public struct PriceParameters : MealzIOSFramework.PriceParametersProtocol {
-  public var priceSuccess: MealzIOSFramework.TypeSafePriceSuccess
-  public var empty: MealzIOSFramework.TypeSafeEmpty
-  public var loading: MealzIOSFramework.TypeSafeLoading
+public struct PriceParameters : MealziOSSDK.PriceParametersProtocol {
+  public var priceSuccess: MealziOSSDK.TypeSafePriceSuccess
+  public var empty: MealziOSSDK.TypeSafeEmpty
+  public var loading: MealziOSSDK.TypeSafeLoading
   public init(viewOptions: MealzUIiOSSDK.PriceViewOptions = PriceViewOptions())
-  public typealias Empty = MealzIOSFramework.TypeSafeEmpty
-  public typealias Loading = MealzIOSFramework.TypeSafeLoading
-  public typealias PriceSuccess = MealzIOSFramework.TypeSafePriceSuccess
+  public typealias Empty = MealziOSSDK.TypeSafeEmpty
+  public typealias Loading = MealziOSSDK.TypeSafeLoading
+  public typealias PriceSuccess = MealziOSSDK.TypeSafePriceSuccess
 }
 @available(iOS 14, *)
 public struct StoreLocatorButtonViewOptions {
-  public var callToAction: MealzIOSFramework.TypeSafeBaseButton
-  public init(callToAction: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(MealzStoreLocatorButton()))
+  public var callToAction: MealziOSSDK.TypeSafeBaseButton
+  public init(callToAction: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(MealzStoreLocatorButton()))
 }
 @available(iOS 14, *)
-public class StoreLocatorButtonParameters : MealzIOSFramework.StoreLocatorButtonParametersProtocol {
-  public var callToAction: MealzIOSFramework.TypeSafeBaseButton
-  public var actions: MealzIOSFramework.StoreLocatorButtonActions
-  public init(viewOptions: MealzUIiOSSDK.StoreLocatorButtonViewOptions = StoreLocatorButtonViewOptions(), actions: MealzIOSFramework.StoreLocatorButtonActions)
-  public typealias CallToAction = MealzIOSFramework.TypeSafeBaseButton
+public class StoreLocatorButtonParameters : MealziOSSDK.StoreLocatorButtonParametersProtocol {
+  public var callToAction: MealziOSSDK.TypeSafeBaseButton
+  public var actions: MealziOSSDK.StoreLocatorButtonActions
+  public init(viewOptions: MealzUIiOSSDK.StoreLocatorButtonViewOptions = StoreLocatorButtonViewOptions(), actions: MealziOSSDK.StoreLocatorButtonActions)
+  public typealias CallToAction = MealziOSSDK.TypeSafeBaseButton
   @objc deinit
 }
 @available(iOS 14, *)
 public struct PreferencesSearchViewOptions {
-  public var search: MealzIOSFramework.TypeSafeSearch
-  public var tagButton: MealzIOSFramework.TypeSafeBaseButton
-  public init(search: MealzIOSFramework.TypeSafeSearch = TypeSafeSearch(MealzGeneralSearch(hasButton: false)), tagButton: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(MealzPreferencesSearchTag()))
+  public var search: MealziOSSDK.TypeSafeSearch
+  public var tagButton: MealziOSSDK.TypeSafeBaseButton
+  public init(search: MealziOSSDK.TypeSafeSearch = TypeSafeSearch(MealzGeneralSearch(hasButton: false)), tagButton: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(MealzPreferencesSearchTag()))
 }
 @available(iOS 14, *)
-public class PreferencesSearchParameters : MealzIOSFramework.PreferencesSearchProtocol {
-  public var actions: MealzIOSFramework.PreferencesSearchActions
-  public var search: MealzIOSFramework.TypeSafeSearch
-  public var tagButton: MealzIOSFramework.TypeSafeBaseButton
-  public init(actions: MealzIOSFramework.PreferencesSearchActions, viewOptions: MealzUIiOSSDK.PreferencesSearchViewOptions = PreferencesSearchViewOptions())
-  public typealias Search = MealzIOSFramework.TypeSafeSearch
-  public typealias TagButton = MealzIOSFramework.TypeSafeBaseButton
+public class PreferencesSearchParameters : MealziOSSDK.PreferencesSearchProtocol {
+  public var actions: MealziOSSDK.PreferencesSearchActions
+  public var search: MealziOSSDK.TypeSafeSearch
+  public var tagButton: MealziOSSDK.TypeSafeBaseButton
+  public init(actions: MealziOSSDK.PreferencesSearchActions, viewOptions: MealzUIiOSSDK.PreferencesSearchViewOptions = PreferencesSearchViewOptions())
+  public typealias Search = MealziOSSDK.TypeSafeSearch
+  public typealias TagButton = MealziOSSDK.TypeSafeBaseButton
   @objc deinit
 }
 @available(iOS 14, *)
-public struct BaseComponentViewParameters : MealzIOSFramework.BaseViewsProtocol {
-  public var loading: MealzIOSFramework.TypeSafeLoading
-  public var empty: MealzIOSFramework.TypeSafeEmpty
-  public var background: MealzIOSFramework.TypeSafeBackground
-  public init(loading: MealzIOSFramework.TypeSafeLoading = TypeSafeLoading(MealzGeneralComponentLoading()), empty: MealzIOSFramework.TypeSafeEmpty = TypeSafeEmpty(DefaultEmptyView()), background: MealzIOSFramework.TypeSafeBackground = TypeSafeBackground(DefaultBackgroundView()))
-  public typealias Background = MealzIOSFramework.TypeSafeBackground
-  public typealias Empty = MealzIOSFramework.TypeSafeEmpty
-  public typealias Loading = MealzIOSFramework.TypeSafeLoading
+public struct BaseComponentViewParameters : MealziOSSDK.BaseViewsProtocol {
+  public var loading: MealziOSSDK.TypeSafeLoading
+  public var empty: MealziOSSDK.TypeSafeEmpty
+  public var background: MealziOSSDK.TypeSafeBackground
+  public init(loading: MealziOSSDK.TypeSafeLoading = TypeSafeLoading(MealzGeneralComponentLoading()), empty: MealziOSSDK.TypeSafeEmpty = TypeSafeEmpty(DefaultEmptyView()), background: MealziOSSDK.TypeSafeBackground = TypeSafeBackground(DefaultBackgroundView()))
+  public typealias Background = MealziOSSDK.TypeSafeBackground
+  public typealias Empty = MealziOSSDK.TypeSafeEmpty
+  public typealias Loading = MealziOSSDK.TypeSafeLoading
 }
 @available(iOS 14, *)
-public struct BasePageViewParameters : MealzIOSFramework.BaseViewsProtocol {
-  public var loading: MealzIOSFramework.TypeSafeLoading
-  public var empty: MealzIOSFramework.TypeSafeEmpty
-  public var background: MealzIOSFramework.TypeSafeBackground
-  public init(loading: MealzIOSFramework.TypeSafeLoading = TypeSafeLoading(DefaultLoadingView()), empty: MealzIOSFramework.TypeSafeEmpty = TypeSafeEmpty(MealzGeneralEmpty()), background: MealzIOSFramework.TypeSafeBackground = TypeSafeBackground(DefaultBackgroundView()))
-  public typealias Background = MealzIOSFramework.TypeSafeBackground
-  public typealias Empty = MealzIOSFramework.TypeSafeEmpty
-  public typealias Loading = MealzIOSFramework.TypeSafeLoading
+public struct BasePageViewParameters : MealziOSSDK.BaseViewsProtocol {
+  public var loading: MealziOSSDK.TypeSafeLoading
+  public var empty: MealziOSSDK.TypeSafeEmpty
+  public var background: MealziOSSDK.TypeSafeBackground
+  public init(loading: MealziOSSDK.TypeSafeLoading = TypeSafeLoading(DefaultLoadingView()), empty: MealziOSSDK.TypeSafeEmpty = TypeSafeEmpty(MealzGeneralEmpty()), background: MealziOSSDK.TypeSafeBackground = TypeSafeBackground(DefaultBackgroundView()))
+  public typealias Background = MealziOSSDK.TypeSafeBackground
+  public typealias Empty = MealziOSSDK.TypeSafeEmpty
+  public typealias Loading = MealziOSSDK.TypeSafeLoading
 }
 @available(iOS 14, *)
-public class CatalogRecipesListParameters : MealzIOSFramework.CatalogRecipesListParametersProtocol {
-  public var actions: MealzIOSFramework.CatalogRecipesListActions
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var noResults: MealzIOSFramework.TypeSafeCatalogRecipesListNoResults
-  public var loading: MealzIOSFramework.TypeSafeLoading
-  public init(actions: MealzIOSFramework.CatalogRecipesListActions, viewOptions: MealzUIiOSSDK.CatalogRecipesListViewOptions = CatalogRecipesListViewOptions())
-  public typealias Loading = MealzIOSFramework.TypeSafeLoading
-  public typealias NoResults = MealzIOSFramework.TypeSafeCatalogRecipesListNoResults
-  public typealias RecipeCardContent = MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public typealias RecipeLoading = MealzIOSFramework.TypeSafeRecipeCardLoading
-  public typealias Title = MealzIOSFramework.TypeSafeBaseTitle
+public class CatalogRecipesListParameters : MealziOSSDK.CatalogRecipesListParametersProtocol {
+  public var actions: MealziOSSDK.CatalogRecipesListActions
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults
+  public var loading: MealziOSSDK.TypeSafeLoading
+  public init(actions: MealziOSSDK.CatalogRecipesListActions, viewOptions: MealzUIiOSSDK.CatalogRecipesListViewOptions = CatalogRecipesListViewOptions())
+  public typealias Loading = MealziOSSDK.TypeSafeLoading
+  public typealias NoResults = MealziOSSDK.TypeSafeCatalogRecipesListNoResults
+  public typealias RecipeCardContent = MealziOSSDK.TypeSafeCatalogRecipeCard
+  public typealias RecipeLoading = MealziOSSDK.TypeSafeRecipeCardLoading
+  public typealias Title = MealziOSSDK.TypeSafeBaseTitle
   @objc deinit
 }
 @available(iOS 14, *)
 public struct CatalogRecipesListViewOptions {
-  public var recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard
-  public var recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var noResults: MealzIOSFramework.TypeSafeCatalogRecipesListNoResults
-  public var loading: MealzIOSFramework.TypeSafeLoading
-  public init(recipeCard: MealzIOSFramework.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealzIOSFramework.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()), title: MealzIOSFramework.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzCatalogPackageTitle()), noResults: MealzIOSFramework.TypeSafeCatalogRecipesListNoResults = TypeSafeCatalogRecipesListNoResults(MealzCatalogRecipesListNoResults()), loading: MealzIOSFramework.TypeSafeLoading = TypeSafeLoading(DefaultLoadingView()))
+  public var recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard
+  public var recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults
+  public var loading: MealziOSSDK.TypeSafeLoading
+  public init(recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()), title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzCatalogPackageTitle()), noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults = TypeSafeCatalogRecipesListNoResults(MealzCatalogRecipesListNoResults()), loading: MealziOSSDK.TypeSafeLoading = TypeSafeLoading(DefaultLoadingView()))
 }
 @available(iOS 14, *)
-public class MealsInBasketButtonParameters : MealzIOSFramework.MealsInBasketButtonParametersProtocol {
-  public var success: MealzIOSFramework.TypeSafeMealsInBasketButtonSuccess
-  public var empty: MealzIOSFramework.TypeSafeEmpty
-  public init(success: MealzIOSFramework.TypeSafeMealsInBasketButtonSuccess = TypeSafeMealsInBasketButtonSuccess(MealzMealsInBasketButtonSuccess()), empty: MealzIOSFramework.TypeSafeEmpty = TypeSafeEmpty(DefaultEmptyView()))
-  public typealias Empty = MealzIOSFramework.TypeSafeEmpty
-  public typealias Success = MealzIOSFramework.TypeSafeMealsInBasketButtonSuccess
+public class MealsInBasketButtonParameters : MealziOSSDK.MealsInBasketButtonParametersProtocol {
+  public var success: MealziOSSDK.TypeSafeMealsInBasketButtonSuccess
+  public var empty: MealziOSSDK.TypeSafeEmpty
+  public init(success: MealziOSSDK.TypeSafeMealsInBasketButtonSuccess = TypeSafeMealsInBasketButtonSuccess(MealzMealsInBasketButtonSuccess()), empty: MealziOSSDK.TypeSafeEmpty = TypeSafeEmpty(DefaultEmptyView()))
+  public typealias Empty = MealziOSSDK.TypeSafeEmpty
+  public typealias Success = MealziOSSDK.TypeSafeMealsInBasketButtonSuccess
   @objc deinit
 }
 @available(iOS 14, *)
 public struct MyProductsViewOptions {
-  public var productCard: MealzIOSFramework.TypeSafeMyProductsProductCard
-  public var loadingProduct: MealzIOSFramework.TypeSafeLoading
-  public var itemSelectorCTA: MealzIOSFramework.TypeSafeBaseButton
-  public init(productCard: MealzIOSFramework.TypeSafeMyProductsProductCard = TypeSafeMyProductsProductCard(MealzMyProductsProductCard()), loadingProduct: MealzIOSFramework.TypeSafeLoading = TypeSafeLoading(MealzRecipeDetailsLoadingProductView()), itemSelectorCTA: MealzIOSFramework.TypeSafeBaseButton = TypeSafeBaseButton(MealzMyBasketOpenItemSelectorCTA()))
+  public var productCard: MealziOSSDK.TypeSafeMyProductsProductCard
+  public var loadingProduct: MealziOSSDK.TypeSafeLoading
+  public var itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton
+  public init(productCard: MealziOSSDK.TypeSafeMyProductsProductCard = TypeSafeMyProductsProductCard(MealzMyProductsProductCard()), loadingProduct: MealziOSSDK.TypeSafeLoading = TypeSafeLoading(MealzRecipeDetailsLoadingProductView()), itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton = TypeSafeBaseButton(MealzMyBasketOpenItemSelectorCTA()))
 }
 @available(iOS 14, *)
-public class MyProductsParameters : MealzIOSFramework.MyProductsParametersProtocol {
-  public var itemSelectorCTA: MealzIOSFramework.TypeSafeBaseButton
-  public var productCard: MealzIOSFramework.TypeSafeMyProductsProductCard
-  public var loadingProduct: MealzIOSFramework.TypeSafeLoading
-  public var actions: MealzIOSFramework.MyProductsActions
-  public init(viewOptions: MealzUIiOSSDK.MyProductsViewOptions = MyProductsViewOptions(), actions: MealzIOSFramework.MyProductsActions)
-  public typealias LoadingProduct = MealzIOSFramework.TypeSafeLoading
-  public typealias OpenItemSelectorCallToAction = MealzIOSFramework.TypeSafeBaseButton
-  public typealias ProductCard = MealzIOSFramework.TypeSafeMyProductsProductCard
+public class MyProductsParameters : MealziOSSDK.MyProductsParametersProtocol {
+  public var itemSelectorCTA: MealziOSSDK.TypeSafeBaseButton
+  public var productCard: MealziOSSDK.TypeSafeMyProductsProductCard
+  public var loadingProduct: MealziOSSDK.TypeSafeLoading
+  public var actions: MealziOSSDK.MyProductsActions
+  public init(viewOptions: MealzUIiOSSDK.MyProductsViewOptions = MyProductsViewOptions(), actions: MealziOSSDK.MyProductsActions)
+  public typealias LoadingProduct = MealziOSSDK.TypeSafeLoading
+  public typealias OpenItemSelectorCallToAction = MealziOSSDK.TypeSafeBaseButton
+  public typealias ProductCard = MealziOSSDK.TypeSafeMyProductsProductCard
   @objc deinit
 }
 @available(iOS 14, *)
 public struct ItemSelectorViewOptions {
-  public var searchBar: MealzIOSFramework.TypeSafeSearch
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var selectedProduct: MealzIOSFramework.TypeSafeItemSelectorSelectedProduct
-  public var productOptions: MealzIOSFramework.TypeSafeItemSelectorOptionProducts
-  public var noResults: MealzIOSFramework.TypeSafeItemSelectorNoResults
-  public init(searchBar: MealzIOSFramework.TypeSafeSearch = TypeSafeSearch(MealzItemSelectorSearch()), title: MealzIOSFramework.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzItemSelectorTitle()), selectedProduct: MealzIOSFramework.TypeSafeItemSelectorSelectedProduct = TypeSafeItemSelectorSelectedProduct(MealzItemSelectorSelectedProduct()), productOptions: MealzIOSFramework.TypeSafeItemSelectorOptionProducts = TypeSafeItemSelectorOptionProducts(MealzItemSelectorOptionProducts()), noResults: MealzIOSFramework.TypeSafeItemSelectorNoResults = TypeSafeItemSelectorNoResults(MealzItemSelectorNoResultsView()))
+  public var searchBar: MealziOSSDK.TypeSafeSearch
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var selectedProduct: MealziOSSDK.TypeSafeItemSelectorSelectedProduct
+  public var productOptions: MealziOSSDK.TypeSafeItemSelectorOptionProducts
+  public var noResults: MealziOSSDK.TypeSafeItemSelectorNoResults
+  public init(searchBar: MealziOSSDK.TypeSafeSearch = TypeSafeSearch(MealzItemSelectorSearch()), title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzItemSelectorTitle()), selectedProduct: MealziOSSDK.TypeSafeItemSelectorSelectedProduct = TypeSafeItemSelectorSelectedProduct(MealzItemSelectorSelectedProduct()), productOptions: MealziOSSDK.TypeSafeItemSelectorOptionProducts = TypeSafeItemSelectorOptionProducts(MealzItemSelectorOptionProducts()), noResults: MealziOSSDK.TypeSafeItemSelectorNoResults = TypeSafeItemSelectorNoResults(MealzItemSelectorNoResultsView()))
 }
 @available(iOS 14, *)
-public struct ItemSelectorParameters : MealzIOSFramework.ItemSelectorParametersProtocol {
-  public var searchBar: MealzIOSFramework.TypeSafeSearch
-  public var title: MealzIOSFramework.TypeSafeBaseTitle
-  public var selectedProduct: MealzIOSFramework.TypeSafeItemSelectorSelectedProduct
-  public var productOptions: MealzIOSFramework.TypeSafeItemSelectorOptionProducts
-  public var noResults: MealzIOSFramework.TypeSafeItemSelectorNoResults
-  public var actions: MealzIOSFramework.ItemSelectorActions
-  public init(actions: MealzIOSFramework.ItemSelectorActions, viewOptions: MealzUIiOSSDK.ItemSelectorViewOptions = ItemSelectorViewOptions())
-  public typealias NoResults = MealzIOSFramework.TypeSafeItemSelectorNoResults
-  public typealias ProductOptions = MealzIOSFramework.TypeSafeItemSelectorOptionProducts
-  public typealias ProductTitle = MealzIOSFramework.TypeSafeBaseTitle
-  public typealias SearchBar = MealzIOSFramework.TypeSafeSearch
-  public typealias SelectedProduct = MealzIOSFramework.TypeSafeItemSelectorSelectedProduct
+public struct ItemSelectorParameters : MealziOSSDK.ItemSelectorParametersProtocol {
+  public var searchBar: MealziOSSDK.TypeSafeSearch
+  public var title: MealziOSSDK.TypeSafeBaseTitle
+  public var selectedProduct: MealziOSSDK.TypeSafeItemSelectorSelectedProduct
+  public var productOptions: MealziOSSDK.TypeSafeItemSelectorOptionProducts
+  public var noResults: MealziOSSDK.TypeSafeItemSelectorNoResults
+  public var actions: MealziOSSDK.ItemSelectorActions
+  public init(actions: MealziOSSDK.ItemSelectorActions, viewOptions: MealzUIiOSSDK.ItemSelectorViewOptions = ItemSelectorViewOptions())
+  public typealias NoResults = MealziOSSDK.TypeSafeItemSelectorNoResults
+  public typealias ProductOptions = MealziOSSDK.TypeSafeItemSelectorOptionProducts
+  public typealias ProductTitle = MealziOSSDK.TypeSafeBaseTitle
+  public typealias SearchBar = MealziOSSDK.TypeSafeSearch
+  public typealias SelectedProduct = MealziOSSDK.TypeSafeItemSelectorSelectedProduct
 }
 @available(iOS 14, *)
 public struct ProgressLoader : SwiftUI.View {

@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		I674REv7O3aTRrujDsbEwiTPpy0=
+		4b3MPaoVwlZbNfx46LglwwPgaHs=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pGNBQO18vVAK7Xd/dYiV1Ld5yR8=
+		aii9vAEY+POtvdFO3lEo+Uv0sf0=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pGNBQO18vVAK7Xd/dYiV1Ld5yR8=
+		aii9vAEY+POtvdFO3lEo+Uv0sf0=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		88Im3T+Ji5z37yL8Gqsz6gxM4z0=
+		GrbjQlwZS+pquPTClefdbyJv0zY=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		I674REv7O3aTRrujDsbEwiTPpy0=
+		4b3MPaoVwlZbNfx46LglwwPgaHs=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yBT++UwPwZnAVNhugN8C8f94NlE=
+		K93Bm+l59HrdQTU1ueJccBCClkI=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yBT++UwPwZnAVNhugN8C8f94NlE=
+		K93Bm+l59HrdQTU1ueJccBCClkI=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mjOCCUSw83hJIkvE3qfPhnukTbg=
+		vYQc6U514jWjn3rEbrpJe8yL6Aw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>build_xcframework.sh</key>
 		<data>
-		8CgFa19FVZQLA6g7rO/k6sAFUow=
+		VbrRrZ+mkpQ1POv9PKLZS0Thw+g=
 		</data>
 		<key>changelog.md</key>
 		<data>
@@ -118,14 +118,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yo/YQC/eBQQUuaji2qsk4yTq2gC2bf4nVMSPL9TuP1I=
+			ldpw9hA77/0q3iKmI7aTj9u6lyVQVdrrxd2b60g2GKg=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yObKWoJjS5kdhjVbs9xKUr001sYesAypD5y6Y/qsRm8=
+			lhJdKQvklK1O6W924BsR3+LBTmzskt9YUmk0N6BTiE4=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -139,28 +139,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yObKWoJjS5kdhjVbs9xKUr001sYesAypD5y6Y/qsRm8=
+			lhJdKQvklK1O6W924BsR3+LBTmzskt9YUmk0N6BTiE4=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w468zJ0bDxOl53BTBXToJDN2Hb6/gYxwFzk5YvcmcUg=
+			8b8hCvzoamycNbBnqCfotUvjeJ69zQUYJqj3faJg7fQ=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yo/YQC/eBQQUuaji2qsk4yTq2gC2bf4nVMSPL9TuP1I=
+			ldpw9hA77/0q3iKmI7aTj9u6lyVQVdrrxd2b60g2GKg=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uch1BYDloq1wm1+hCfmvuQFKanZU4iMsCf6jkmvIVcI=
+			Q4QMpH6gvUSNJC/BORRkYgYrXmo5MoAOH70qMAX2QN4=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -174,14 +174,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uch1BYDloq1wm1+hCfmvuQFKanZU4iMsCf6jkmvIVcI=
+			Q4QMpH6gvUSNJC/BORRkYgYrXmo5MoAOH70qMAX2QN4=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pKTH+IujVX51wNwYP+uvEluBVnRo4OSKmEGQ6CLYgMg=
+			NQAo5shISDG3u1wxRV5VCvhPo0qBviGmgVfJmb3qd5M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -202,7 +202,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QPbhdPq+hV9DXI7fM8XfYH7LxyTGTT2DMymnhN8IlIc=
+			gVQqO6dlXmD1qEcrkSkH0iRXrdwW6Nb+OmQZKr2n2J8=
 			</data>
 		</dict>
 		<key>changelog.md</key>
