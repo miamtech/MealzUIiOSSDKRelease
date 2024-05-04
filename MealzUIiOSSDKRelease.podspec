@@ -11,7 +11,10 @@ Pod::Spec.new do |spec|
     spec.author             = { "Diarmuid McGonagle" => "it@miam.tech" }
     spec.platform     = :ios, "12.0"
     spec.swift_version = '5.8'
-    spec.source       = { :git => "https://github.com/miamtech/MealzUIiOSSDKRelease.git", :tag => "#{spec.version}" }
-    spec.dependency 'MealziOSSDKRelease', '~> 1.1.0-alpha'
+        spec.source            = { :http => "https://github.com/miamtech/#{spec.name}/archive/refs/tags/#{spec.version}.zip" }
+    spec.ios.vendored_frameworks =
+        "#{spec.name}-#{spec.version}/MealzUIiOSSDK.xcframework"
+    spec.dependency 'MealzCoreRelease', '~> 4.1.0-alpha'
+    spec.dependency 'MealziOSSDKRelease', '~> 4.1.0-alpha'
     spec.static_framework = true
 end
