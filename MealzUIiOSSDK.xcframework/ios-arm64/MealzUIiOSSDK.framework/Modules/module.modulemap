@@ -1,4 +1,0 @@
-framework module MealzUIiOSSDK {
-  header "MealzUIiOSSDK-Swift.h"
-  requires objc
-}
