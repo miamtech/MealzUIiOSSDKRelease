@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 #    spec.license           = { :type => 'GPLv3', :file => 'LICENSE' }
     spec.swift_versions = "5.8"
     spec.platform          = :ios, "12.0"
-    spec.source            = { :http => 'https://github.com/miamtech/MealzUIiOSSDK/raw/release/4.1.0/MealzUIiOSSDK.zip' }
+    spec.source            = { :http => 'https://github.com/miamtech/MealzUIiOSSDKRelease/raw/release/4.1.0/MealzUIiOSSDK.zip' }
     spec.dependency 'MealziOSSDKRelease', '~> 4.1.0'
     spec.ios.vendored_frameworks = 'MealzUIiOSSDK.xcframework'
 #    spec.resource_bundles = {'MealzCore' => ['*.xcprivacy']}
