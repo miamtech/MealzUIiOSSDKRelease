@@ -1,16 +1,30 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios17.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MealzUIiOSSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MealzUIiOSSDK
 import Foundation
 import MealziOSSDK
 import Swift
 import SwiftUI
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import mealzcore
+@available(iOS 14, *)
+public struct MealzCatalogToolbar : MealziOSSDK.CatalogToolbarProtocol {
+  public init()
+  public func content(params: MealziOSSDK.CatalogToolbarParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14CatalogToolbarV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct MealzCatalogResultsToolbar : MealziOSSDK.CatalogToolbarProtocol {
+  public init()
+  public func content(params: MealziOSSDK.CatalogToolbarParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A21CatalogResultsToolbarV7content6paramsQr06MealziC00dF10ParametersV_tF", 0) __
+}
 @available(iOS 14, *)
 public struct MealzMealPlannerRecap : MealziOSSDK.MealPlannerRecapProtocol {
   public init()
@@ -116,7 +130,6 @@ public struct MealzBasketRecipeOverview : MealziOSSDK.BasketRecipeOverviewProtoc
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20BasketRecipeOverviewV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
-
 @available(iOS 14, *)
 public struct MealzBasketProduct : MealziOSSDK.BasketProductProtocol {
   public init()
@@ -170,6 +183,7 @@ public struct MealzPreferencesListView : SwiftUI.View {
 @available(iOS 14, *)
 public struct MealzPreferenceTagView : SwiftUI.View {
   public let tag: mealzcore.CheckableTag
+  public let addedByUser: Swift.Bool
   public let onToggleTag: (mealzcore.CheckableTag) -> Swift.Void
   public var tagName: Swift.String {
     get
@@ -180,7 +194,7 @@ public struct MealzPreferenceTagView : SwiftUI.View {
   public var foregroundColor: SwiftUI.Color {
     get
   }
-  public init(tag: mealzcore.CheckableTag, onToggleTag: @escaping (mealzcore.CheckableTag) -> Swift.Void)
+  public init(tag: mealzcore.CheckableTag, addedByUser: Swift.Bool, onToggleTag: @escaping (mealzcore.CheckableTag) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -188,7 +202,7 @@ public struct MealzPreferenceTagView : SwiftUI.View {
 }
 @available(iOS 14, *)
 public struct MealzPreferencesTagsListView : SwiftUI.View {
-  public init(title: Swift.String, subtitle: Swift.String, tags: [mealzcore.CheckableTag], geometry: SwiftUI.GeometryProxy, onToggleTag: @escaping (mealzcore.CheckableTag) -> Swift.Void, onAddTagTapped: @escaping () -> Swift.Void)
+  public init(tags: [mealzcore.CheckableTag], geometry: SwiftUI.GeometryProxy, onToggleTag: @escaping (mealzcore.CheckableTag) -> Swift.Void, onAddTagTapped: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -242,6 +256,13 @@ public struct MealzBasketTagItemLoading : MealziOSSDK.LoadingProtocol {
   public func content(params: MealziOSSDK.BaseLoadingParameters) -> some SwiftUI.View
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A20BasketTagItemLoadingV7content6paramsQr06MealziC004BaseG10ParametersV_tF", 0) __
+}
+@available(iOS 14.0, *)
+public struct TransferBasketAbortOrContinueView : MealziOSSDK.TransferBasketAbortOrContinueViewProtocol {
+  public init()
+  public func content(params: MealziOSSDK.TransferBasketAbortOrContinueViewParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK33TransferBasketAbortOrContinueViewV7content6paramsQr06MealziC00defghI10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
 public struct MealzMyBasketSwapper : MealziOSSDK.MyBasketSwapperProtocol {
@@ -305,6 +326,12 @@ public struct MealzRecipeDetailsIgnoredProductView : MealziOSSDK.RecipeDetailsIg
   public init()
   public func content(params: MealziOSSDK.RecipeDetailsIgnoredProductParameters) -> some SwiftUI.View
   
+  public static func ingredientNameAndAmount(ingredientName: Swift.String, ingredientUnit: Swift.String?, ingredientQuantity: Swift.String?, guestCount: Swift.Int, defaultRecipeGuest: Swift.Int) -> some SwiftUI.View
+  
+  public static func willNotBeAddedText() -> some SwiftUI.View
+  
+  public static func ignoreOrAddProduct(onChooseProduct: @escaping () -> Swift.Void) -> some SwiftUI.View
+  
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A31RecipeDetailsIgnoredProductViewV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
@@ -355,6 +382,7 @@ public struct MealzRecipeDetailsTagsView : SwiftUI.View {
 }
 @available(iOS 14, *)
 public struct PriceInMyBasket : SwiftUI.View {
+  public init(totalPriceInBasket: Swift.String)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -396,7 +424,6 @@ public struct MealzMyMealRecipeCard : MealziOSSDK.MyMealRecipeCardProtocol {
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A16MyMealRecipeCardV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
-
 @available(iOS 14, *)
 public struct MealzMyMealsTitle : MealziOSSDK.BaseTitleProtocol {
   public init()
@@ -438,20 +465,6 @@ public struct MealzFiltersSection : MealziOSSDK.FiltersSectionProtocol {
   public func content(params: MealziOSSDK.FiltersSectionParameters) -> some SwiftUI.View
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14FiltersSectionV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
-}
-@available(iOS 14, *)
-public struct MealzCatalogToolbar : MealziOSSDK.CatalogToolbarProtocol {
-  public init()
-  public func content(params: MealziOSSDK.CatalogToolbarParameters) -> some SwiftUI.View
-  
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A14CatalogToolbarV7content6paramsQr06MealziC00dE10ParametersV_tF", 0) __
-}
-@available(iOS 14, *)
-public struct MealzCatalogResultsToolbar : MealziOSSDK.CatalogToolbarProtocol {
-  public init()
-  public func content(params: MealziOSSDK.CatalogToolbarParameters) -> some SwiftUI.View
-  
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A21CatalogResultsToolbarV7content6paramsQr06MealziC00dF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
 public struct MealzCatalogEmpty : MealziOSSDK.EmptyProtocol {
@@ -534,13 +547,6 @@ public struct MealzRecipeCard : MealziOSSDK.CatalogRecipeCardProtocol {
   public func content(params: MealziOSSDK.CatalogRecipeCardParameters) -> some SwiftUI.View
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A10RecipeCardV7content6paramsQr06MealziC007CatalogdE10ParametersV_tF", 0) __
-}
-@available(iOS 14, *)
-public struct DemoCatalogRecipeCardView : MealziOSSDK.CatalogRecipeCardProtocol {
-  public init()
-  public func content(params: MealziOSSDK.CatalogRecipeCardParameters) -> some SwiftUI.View
-  
-  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK25DemoCatalogRecipeCardViewV7content6paramsQr06MealziC00efG10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
 public struct MealzStoreLocatorButton : MealziOSSDK.BaseButtonProtocol {
@@ -670,12 +676,37 @@ public struct DefaultErrorView : MealziOSSDK.ErrorProtocol {
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK16DefaultErrorViewV7content6paramsQr06MealziC004BaseE10ParametersV_tF", 0) __
 }
+@available(iOS 14.0, *)
+public struct TransferBasketLoadingView : MealziOSSDK.TransferBasketLoadingViewProtocol {
+  public init()
+  public func content(params: MealziOSSDK.TransferBasketLoadingViewParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK25TransferBasketLoadingViewV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
+}
 @available(iOS 14, *)
 public struct DefaultMealPlannerCTA : MealziOSSDK.MealPlannerCTAProtocol {
   public init()
   public func content(params: MealziOSSDK.MealPlannerCTAViewParameters) -> some SwiftUI.View
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK21DefaultMealPlannerCTAV7content6paramsQr06MealziC00eF17CTAViewParametersV_tF", 0) __
+}
+@available(iOS 14, *)
+public struct MealzGuestCounter : SwiftUI.View {
+  public let currentGuests: Swift.Int
+  public let maxValue: Swift.Int?
+  public let minValue: Swift.Int?
+  public let isLoading: Swift.Bool
+  public let isDisable: Swift.Bool
+  public let withBorder: Swift.Bool
+  public let buttonColor: SwiftUI.Color
+  public let borderColor: SwiftUI.Color
+  public let cornerRadius: CoreFoundation.CGFloat
+  public var onCounterChanged: (Swift.Int) -> Swift.Void
+  public init(currentGuests: Swift.Int, isLoading: Swift.Bool = false, isDisable: Swift.Bool = false, minValue: Swift.Int? = nil, maxValue: Swift.Int? = nil, buttonColor: SwiftUI.Color = Color.mealzColor(.primary), withBorder: Swift.Bool = false, borderColor: SwiftUI.Color = Color.mealzColor(.primary), cornerRadius: CoreFoundation.CGFloat = Dimension.sharedInstance.sCornerRadius, onCounterChanged: @escaping (Swift.Int) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A12GuestCounterV4bodyQrvp", 0) __
 }
 @available(iOS 14, *)
 public struct MealzMealsInBasketButtonSuccess : MealziOSSDK.MealsInBasketButtonSuccessProtocol {
@@ -688,6 +719,12 @@ public struct MealzMealsInBasketButtonSuccess : MealziOSSDK.MealsInBasketButtonS
 public struct MealzMyProductsProductCard : MealziOSSDK.MyProductsProductCardProtocol {
   public init()
   public func content(params: MealziOSSDK.MyProductsProductCardParameters) -> some SwiftUI.View
+  
+  public static func productName(name: Swift.String) -> some SwiftUI.View
+  
+  public static func showUnitOfMeasurement(pricePerUnitOfMeasurement: Swift.Double, productUnit: Swift.String) -> some SwiftUI.View
+  
+  public static func replaceButton(numberOfRecipesSharingThisIngredient: Swift.Int, replaceProduct: @escaping () -> Swift.Void) -> some SwiftUI.View
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A21MyProductsProductCardV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
 }
@@ -711,6 +748,13 @@ public struct MealzItemSelectorNoResultsView : MealziOSSDK.ItemSelectorNoResults
   public func content(params: MealziOSSDK.ItemSelectorNoResultsParameters) -> some SwiftUI.View
   
   public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A25ItemSelectorNoResultsViewV7content6paramsQr06MealziC00defG10ParametersV_tF", 0) __
+}
+@available(iOS 14.0, *)
+public struct TransferBasketWebviewView : MealziOSSDK.TransferBasketWebviewProtocol {
+  public init()
+  public func content(params: MealziOSSDK.TransferBasketWebviewParameters) -> some SwiftUI.View
+  
+  public typealias Content = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK25TransferBasketWebviewViewV7content6paramsQr06MealziC00deF10ParametersV_tF", 0) __
 }
 @available(iOS 14, *)
 public struct MealzItemSelectorOptionProducts : MealziOSSDK.ItemSelectorOptionProductsProtocol {
@@ -1201,6 +1245,28 @@ public struct BaseComponentViewParameters : MealziOSSDK.BaseViewsProtocol {
   public typealias Loading = MealziOSSDK.TypeSafeLoading
 }
 @available(iOS 14, *)
+public struct MealzProductBase {
+  public static func ingredientNameAndAmount(ingredientName: Swift.String, ingredientUnit: Swift.String?, ingredientQuantity: Swift.Float, isInBasket: Swift.Bool) -> some SwiftUI.View
+  
+  public static func productImage(pictureURL: Swift.String, width: CoreFoundation.CGFloat = 72, height: CoreFoundation.CGFloat = 72) -> some SwiftUI.View
+  
+  public static func productTitleDescriptionWeightReplace(brand: Swift.String?, name: Swift.String, capacity: Swift.String, isSponsored: Swift.Bool, onChooseProduct: @escaping () -> Swift.Void) -> some SwiftUI.View
+  
+  public static func productPrice(formattedProductPrice: Swift.String) -> some SwiftUI.View
+  
+  public static func ignoreOrAddProduct(lockButton: Swift.Bool, onIgnoreProduct: @escaping () -> Swift.Void, onAddProduct: @escaping () -> Swift.Void) -> some SwiftUI.View
+  
+  public struct ProductCounter : SwiftUI.View {
+    public init(productQuantity: Swift.Int, isLocked: Swift.Bool, updateQuantity: @escaping (Swift.Int) -> Swift.Void)
+    @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+      get
+    }
+    public typealias Body = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK0A11ProductBaseV0D7CounterV4bodyQrvp", 0) __
+  }
+  public static func showNumberOfSharedRecipes(numberOfOtherRecipesSharingThisIngredient: Swift.Int) -> some SwiftUI.View
+  
+}
+@available(iOS 14, *)
 public struct BasePageViewParameters : MealziOSSDK.BaseViewsProtocol {
   public var loading: MealziOSSDK.TypeSafeLoading
   public var empty: MealziOSSDK.TypeSafeEmpty
@@ -1233,7 +1299,7 @@ public struct CatalogRecipesListViewOptions {
   public var title: MealziOSSDK.TypeSafeBaseTitle
   public var noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults
   public var loading: MealziOSSDK.TypeSafeLoading
-  public init(recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()), title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(MealzCatalogPackageTitle()), noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults = TypeSafeCatalogRecipesListNoResults(MealzCatalogRecipesListNoResults()), loading: MealziOSSDK.TypeSafeLoading = TypeSafeLoading(DefaultLoadingView()))
+  public init(recipeCard: MealziOSSDK.TypeSafeCatalogRecipeCard = TypeSafeCatalogRecipeCard(MealzRecipeCard()), recipeCardLoading: MealziOSSDK.TypeSafeRecipeCardLoading = TypeSafeRecipeCardLoading(MealzRecipeCardLoading()), title: MealziOSSDK.TypeSafeBaseTitle = TypeSafeBaseTitle(EmptyTitleView()), noResults: MealziOSSDK.TypeSafeCatalogRecipesListNoResults = TypeSafeCatalogRecipesListNoResults(MealzCatalogRecipesListNoResults()), loading: MealziOSSDK.TypeSafeLoading = TypeSafeLoading(DefaultLoadingView()))
 }
 @available(iOS 14, *)
 public class MealsInBasketButtonParameters : MealziOSSDK.MealsInBasketButtonParametersProtocol {
@@ -1294,4 +1360,13 @@ public struct ProgressLoader : SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s13MealzUIiOSSDK14ProgressLoaderV4bodyQrvp", 0) __
+}
+@available(iOS 14, *)
+extension SwiftUI.View {
+  public func shadow() -> some SwiftUI.View
+  
+  public func addOpacity(_ needOpacity: Swift.Bool) -> some SwiftUI.View
+  
+  public func darkenView(_ darken: Swift.Bool) -> some SwiftUI.View
+  
 }

@@ -6,31 +6,31 @@
 	<dict>
 		<key>Headers/MealzUIiOSSDK-Swift.h</key>
 		<data>
-		cgDxLXKP4xYTpyp5XDsMl6hVZBQ=
+		m9GERLDHa7TPVZYxVurOLuA53XY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+xlTRNUDjT3YJOMywd6GXNifVDw=
+		OJNWu6eiXGqBoRsq953/zPsHbdQ=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		KJbNKcWZxyu/55UpPSRvFDvxaas=
+		u42FLhy8QRpXSNxAG8l1dm/3LAw=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		y/Am0W0/v0bljvt+AEdRKGpamI4=
+		3R+nIsBRCF8HSEr4PilIRP4yVGk=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		HxfdgfUvfYRGhaSTcNjunOXBtrQ=
+		BNhXXicgmVJqKhfWbVm/yvCvwwY=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		y/Am0W0/v0bljvt+AEdRKGpamI4=
+		3R+nIsBRCF8HSEr4PilIRP4yVGk=
 		</data>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sLgrcrFdG6J+oPPsHBfbeQ9Km5E=
+		CCIWKgRFR98MlxQpRj98DmZSCEc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>build_xcframework.sh</key>
 		<data>
-		VbrRrZ+mkpQ1POv9PKLZS0Thw+g=
+		GB1AmTPWDZiqAjxh6RxZ6K4OwLA=
 		</data>
 		<key>changelog.md</key>
 		<data>
-		wn+3Qf05Nl5KSUDMwVu6EE7kkc8=
+		UXZaDpp0VTsjpv2RhvHa5H7YXAI=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -91,42 +91,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a4YNdaIlqkll3raVcsE7ZRPd9qCQrQmtU1HXr3+6NJE=
+			g3SsLTO4oTHWtD+4lBTCnEUH5EPqDYsSvJRd22bWDUs=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zg4JpIIb44F7Lh9TnoW+UHN9McShM9EVzzXGwHFq5QI=
+			NlxUAjWnwh9Sx3qOQITjxj7jGmG2SX2t7JDrnBKr4R8=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZmdqcLFbqSKsmBHoNgbI/0DWWWIEUcvEHp+XqqMdqOE=
+			S9fr5bSCnO/QD0SyVr0piAiStodUMvFrwklewTKyzkY=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			etUDgK6Z78AtKmvachCt9RPs/htq+TYp4PjZb2MSDi8=
+			On+/+5uezBdVUHF5bcWnJ8RjM6kNdpnxKTa/+BGSzQM=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZmdqcLFbqSKsmBHoNgbI/0DWWWIEUcvEHp+XqqMdqOE=
+			S9fr5bSCnO/QD0SyVr0piAiStodUMvFrwklewTKyzkY=
 			</data>
 		</dict>
 		<key>Modules/MealzUIiOSSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ele4Fmt2T/KhGjMQFmL1Fbxdq6nQo0+42MlMtGYsfi8=
+			YuRdSoNs5PYBxKPZ9Z9oNThkTZ7j+pW7Z7Ss3ppaXkc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -147,14 +147,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gVQqO6dlXmD1qEcrkSkH0iRXrdwW6Nb+OmQZKr2n2J8=
+			uWb3OHuE5msUvtLzEChs6lV58FmbJ6cqBUXVYQigY+c=
 			</data>
 		</dict>
 		<key>changelog.md</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wu1hx5mh5EFte3wju3CQ18ZgHCaT9dItDuRmRiD4Tow=
+			nKJ/nmFTIAxH9Rsh3rxI9HiLo0qRGzrWF9vzi4X1W74=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
