@@ -1250,7 +1250,7 @@ public struct MealzProductBase {
   
   public static func productImage(pictureURL: Swift.String, width: CoreFoundation.CGFloat = 72, height: CoreFoundation.CGFloat = 72) -> some SwiftUI.View
   
-  public static func productTitleDescriptionWeightReplace(brand: Swift.String?, name: Swift.String, capacity: Swift.String, isSponsored: Swift.Bool, onChooseProduct: @escaping () -> Swift.Void) -> some SwiftUI.View
+  public static func productTitleDescriptionWeightReplace(brand: Swift.String?, name: Swift.String, capacity: Swift.String, isSponsored: Swift.Bool, pricePerUnitOfMeasurement: Swift.Double, productUnit: Swift.String, onChooseProduct: @escaping () -> Swift.Void) -> some SwiftUI.View
   
   public static func productPrice(formattedProductPrice: Swift.String) -> some SwiftUI.View
   

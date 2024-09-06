@@ -35612,8 +35612,8 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "mealzcore",
+        "printedName": "mealzcore",
         "declKind": "Import",
         "moduleName": "MealzUIiOSSDK",
         "declAttributes": [
@@ -35629,8 +35629,8 @@
       },
       {
         "kind": "Import",
-        "name": "mealzcore",
-        "printedName": "mealzcore",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "MealzUIiOSSDK"
       },
@@ -35754,7 +35754,7 @@
           {
             "kind": "Function",
             "name": "productTitleDescriptionWeightReplace",
-            "printedName": "productTitleDescriptionWeightReplace(brand:name:capacity:isSponsored:onChooseProduct:)",
+            "printedName": "productTitleDescriptionWeightReplace(brand:name:capacity:isSponsored:pricePerUnitOfMeasurement:productUnit:onChooseProduct:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -35802,6 +35802,18 @@
                 "usr": "s:Sb"
               },
               {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
                 "printedName": "() -> ()",
@@ -35820,8 +35832,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13MealzUIiOSSDK0A11ProductBaseV36productTitleDescriptionWeightReplace5brand4name8capacity11isSponsored08onChooseD0QrSSSg_S2SSbyyctFZ",
-            "mangledName": "$s13MealzUIiOSSDK0A11ProductBaseV36productTitleDescriptionWeightReplace5brand4name8capacity11isSponsored08onChooseD0QrSSSg_S2SSbyyctFZ",
+            "usr": "s:13MealzUIiOSSDK0A11ProductBaseV36productTitleDescriptionWeightReplace5brand4name8capacity11isSponsored25pricePerUnitOfMeasurement0fR008onChooseD0QrSSSg_S2SSbSdSSyyctFZ",
+            "mangledName": "$s13MealzUIiOSSDK0A11ProductBaseV36productTitleDescriptionWeightReplace5brand4name8capacity11isSponsored25pricePerUnitOfMeasurement0fR008onChooseD0QrSSSg_S2SSbSdSSyyctFZ",
             "moduleName": "MealzUIiOSSDK",
             "static": true,
             "declAttributes": [
@@ -40808,14 +40820,14 @@
     {
       "filePath": "\/Users\/dwalerowicz\/Documents\/Projects\/Marmiton\/MealzUIiOSSDK\/Sources\/MealzUIiOSSDK\/ui\/RecipeDetails\/Product\/Subviews\/MealzProductBase.swift",
       "kind": "IntegerLiteral",
-      "offset": 1346,
+      "offset": 1348,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/dwalerowicz\/Documents\/Projects\/Marmiton\/MealzUIiOSSDK\/Sources\/MealzUIiOSSDK\/ui\/RecipeDetails\/Product\/Subviews\/MealzProductBase.swift",
       "kind": "IntegerLiteral",
-      "offset": 1368,
+      "offset": 1370,
       "length": 2,
       "value": "72"
     },

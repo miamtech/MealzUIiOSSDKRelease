@@ -8,6 +8,7 @@
 [FEA] Add mealzOptionSelectedColor
 [FEA] Item Selector no substition has custom text
 [FIX] Item Selector uses formatted capacity
+[FEA] Add price per unit of mesurement
 
 # 1.0.0
 - Initial Release
